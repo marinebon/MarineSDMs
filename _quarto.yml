@@ -14,6 +14,7 @@ book:
   search: true
   date: today
   date-format: "YYYY-MM-DD"
+  google-analytics: "G-V3HZN14Z8G"
   page-navigation: true
   page-footer:
     left: |
