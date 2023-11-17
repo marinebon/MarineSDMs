@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "sdm-book",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n\nCode\n1 + 1\n\n\n[1] 2"
+    "text": "Preface\nThis is a Quarto book. Testing.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n\nCode\n1 + 1\n\n\n[1] 2"
   },
   {
     "objectID": "intro.html",
