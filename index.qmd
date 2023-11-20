@@ -1,7 +1,9 @@
 # Introduction
 
 ```{r}
-library(glossary) # remotes::install_github("debruine/glossary")
+library(glossary)
+# remotes::install_github("debruine/glossary")
+# renv::install("debruine/glossary")
 # check: renv::dependencies()
 
 glossary_path("glossary.yml")
