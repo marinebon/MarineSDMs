@@ -1,0 +1,32 @@
+---
+title: "_diagram"
+---
+
+```{mermaid}
+%%| mermaid-format: js
+
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+    click a1 href "https://nytimes.com"
+```
+
+<!-- <script> -->
+<!-- const printArguments = function (arg1, arg2, arg3) { -->
+<!--   alert('printArguments called with arguments: ' + arg1 + ', ' + arg2 + ', ' + arg3); -->
+<!-- }; -->
+<!-- const printTask = function (taskId) { -->
+<!--   alert('taskId: ' + taskId); -->
+<!-- }; -->
+<!-- const config = { -->
+<!--   startOnLoad: true, -->
+<!--   securityLevel: 'loose', -->
+<!-- }; -->
+<!-- mermaid.initialize(config); -->
+<!-- </script> -->

@@ -1,0 +1,13 @@
+---
+title: "Experiments"
+listing: 
+  id: listing-experiments
+  contents: 
+   - "experiments/*.qmd"
+  type: grid
+  categories: true
+---
+
+::: {#listing-experiments}
+:::
+

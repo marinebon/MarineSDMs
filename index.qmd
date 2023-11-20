@@ -1,9 +1,34 @@
-# Preface {.unnumbered}
-
-This is a Quarto book. Testing.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+# Welcome
 
 ```{r}
-1 + 1
+librarian::shelf(
+  debruine/glossary)
+
+glossary_path("glossary.yml")
+glossary_popup("click")
+glossary_persistent(TRUE)
 ```
+
+## Background
+
+The best available global distributions are presently AquaMaps [@kaschner2006; @ready2010] with supplementation by IUCN RedList range maps[^index-1]. We previously used this to calculate the Biodiversity goal of the Ocean Health Index across all Exclusive Economic Zones (EEZs) [@halpern2012] and beyond EEZs in the high seas [@visalli2020] with taxonomic groupings \[based on [@tittensor2010]: see [gmbi](https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups) (global marine biodiversity indicators)\].
+
+[^index-1]: IUCN RedList range maps: <https://www.iucnredlist.org/resources/spatial-data-download>
+
+## Goals
+
+This book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:
+
+1.  **Space**\
+    The current AquaMaps distributions are ${1}/{2}$º (\~55 km at equator), whereas the best available global bathymetry is ${1}/{240}$º (\< 0.5 km).
+
+2.  **Time**\
+    The current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.
+
+3.  **Environment**\
+    Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species' environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.
+
+4.  **Taxa**\
+    Where sufficient observations exist, subspecies and populations, could be modeled.
+
+By definition `r glossary("MBON")` is a network, so this is inclusive of and meant for all participants.
