@@ -16,3 +16,27 @@
     **environment
 -   **tbl**\
     table of observations (presence and absence) with environmental values
+
+### Environmental Predictors
+
+### Physiographic
+
+-   `depth`\
+    Bathymetric Depth
+
+-   `d2coast`\
+    Distance to Coast
+
+-   `d2shelf`\
+    Distance to Shelf
+
+### Time Varying
+
+-   `vgpm`\
+    Vertically integrated primary Productivity model
+
+#### Depth & Time Varying
+
+-   Temperature
+
+-   Salinity
