@@ -1,0 +1,55 @@
+flowchart TD
+
+  %% nodes
+  P(presence):::in
+  A("pseudo-absence"):::in
+  pts(obs):::out
+  X[/extract/]:::fxn
+  env(env):::in
+  D[[data]]:::out
+  S[/split/]:::fxn
+  t1[[train]]:::out
+  t2[[test]]:::out
+  F[/fit/]:::fxn
+  M{{model}}:::out
+  E[/evaluate/]:::fxn
+  C[/calibrate/]:::fxn
+  P[/predict/]:::fxn
+  N[["new data"]]:::in
+  prd(prediction):::out
+  prf(performance):::out
+
+  %% edges
+  P   --> pts
+  A   --> pts
+  pts --> X
+  env --> X
+  X   --> D
+  D   --> S
+  S   --> t1
+  S   --> t2
+  t1  --> F
+  F   --> M
+  t2  --> E
+  M   --> C
+  C   --> F
+  M   --> P
+  N   --> P
+  M   --> E
+  P   --> prd
+  E   --> prf
+
+  %% Legend
+  in(input):::in
+  fxn[/process/]:::fxn
+  out(output):::out
+  subgraph Legend
+    in
+    fxn
+    out
+  end
+
+  %% styles
+  classDef in  fill:lightblue
+  classDef out fill:lightgreen
+  classDef fxn fill:yellow
