@@ -3,6 +3,7 @@
 ```{r}
 librarian::shelf(
   debruine/glossary)
+# check: renv::dependencies()
 
 glossary_path("glossary.yml")
 glossary_popup("click")
@@ -29,7 +30,15 @@ This book is meant to capture the overview and details of modeling species distr
     Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species' environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.
 
 4.  **Biology**\
-    Where sufficient observations exist, subspecies and populations, should be modeled.
+    Where sufficient observations exist, additional models should be developed highlighting differences between:
+
+    -   **Life stage**, e.g. larval vs adult.
+
+    -   **Gender** where varies, such as male sperm whales being more cosmopolitan.
+
+    -   **Subpopulations** for understanding metapopulation dynamics
+
+    -   **Behavior**, such as migrating, feeding or breeding.
 
 By definition `r glossary("MBON")` is a network, so this is inclusive of and meant for all participants.
 

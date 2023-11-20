@@ -4,12 +4,25 @@
 
 Most packages have not yet migrated from using the deprecated `raster` R package to the new `terra` package, except for [`biomod2`](https://biomodhub.github.io/biomod2/) (ref?).
 
+-   [`eks`](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)\
+    Tidy and Geospatial Kernel Smoothing\
+    for spatially filtering outlier observations\
+    ```{r}
+    #| label: fig-eks
+    #| fig.width: 3
+    #| fig.cap: 'Source: [Kernel density estimates for tidy and geospatial data in the eks package](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)'
+    
+    knitr::include_graphics("figures/software/eks.png")
+    ```
+    
+-   test
+
 ## Python
 
-
+-   [Xarray](https://docs.xarray.dev/en/stable/)\
+    Xarray makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!
 
 ## Google Earth Engine
 
-- [XEE](https://github.com/google/Xee)
-    XEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab.
-  [Documentation](https://google.github.io/Xee/)
+-   [XEE](https://github.com/google/Xee)\
+    XEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab. [Documentation](https://google.github.io/Xee/)

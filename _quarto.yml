@@ -7,8 +7,8 @@ project:
     - /.nojekyll
 
 book:
-  title: "SDM-book"
-  subtitle: "Species Distribution Modeling with MarineBON"
+  title: "MarineSDMs"
+  subtitle: "Marine Species Distribution Models"
   author: "Ben Best"
   repo-url: https://github.com/marinebon/sdm-book
   reader-mode: true
@@ -29,6 +29,7 @@ book:
       chapters:
         - prep-data.qmd
         - model.qmd
+        - mosaic.qmd
     - software.qmd
     - organize.qmd
     - references.qmd

@@ -4,7 +4,8 @@
 
 -   ***Confirmed***
 
-    -   **AquaMaps**\
+    -   [**AquaMaps**](https://www.aquamaps.org/)**\
+        ***distribution maps for over 33,500 species of fishes, marine mammals and invertebrates*\
         contacts:
 
         -   Gabriel Reygondeau (g.reygondeau\@oceans.ubc.ca)
@@ -12,7 +13,16 @@
     ```{=html}
     <!-- -->
     ```
-    -   **MBON**\
+    -   [**DisMAP**](https://apps-st.fisheries.noaa.gov/dismap/)\
+        *Distribution Mapping and Analysis Portal*\
+        contacts:
+
+        -   Melissa Karp (melissa.karp\@noaa.gov)
+
+        -   Roger Griffis (roger.b.griffis\@noaa.gov)
+
+    -   [**MBON**](https://marinebon.org/)**\
+        ***Marine Biodiversity Observation Network*\
         contacts:
 
         -   Ben Best
@@ -23,35 +33,32 @@
 
         -   Frank Muller-Karger
 
-    -   **OBIS**\
+    -   [**OBIS**](https://obis.org/)**\
+        ***Ocean Biodiversity Information System*\
         contacts:
 
         -   Candido Principe De Souza, Silas (s.principe\@unesco.org)
 
         -   Ward Appeltans (w.appeltans\@unesco.org)
 
-    -   **DisMAP** (Distribution Mapping and Analysis Portal)\
-        contacts:
-
-        -   Melissa Karp (melissa.karp\@noaa.gov)
-
-        -   Roger Griffis (roger.b.griffis\@noaa.gov)
-
 -   ***Proposed***
 
-    -   **FishGLOB** (global bottom trawl)\
+    -   [**FishGLOB**](https://fishglob.sites.ucsc.edu/)\
+        *fish biodiversity under global change (global bottom trawl)*\
         contacts:
 
         -   Malin Pinsky
 
-    -   **MGEL** (Marine Geospatial Ecology Lab, Duke)\
+    -   [**MGEL**](https://mgel.env.duke.edu/)\
+        *Marine Geospatial Ecology Lab, Duke*\
         contacts:
 
         -   Jason Roberts
 
         -   Patrick Halpin
 
-    -   **PMEL** (Pacific Marine Environmental Lab, NOAA)\
+    -   [**PMEL**](https://www.pmel.noaa.gov/)\
+        *Pacific Marine Environmental Lab, NOAA*\
         contacts:
 
         -   Heather Welch

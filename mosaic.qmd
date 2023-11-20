@@ -1,0 +1,5 @@
+# Mosaic
+
+![Hierarchy of preferred model outputs based on response type and age.](figures/sdm-response-hiearchy.png){#fig-sdm-response-hierarchy}
+
+This is illustrated well by @fig-sdm-response-hierarchy.
