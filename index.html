@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -159,7 +159,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
     <div class="sidebar-title mb-0 py-0">
       <a href="./">MarineSDMs</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/marinebon/sdm-book" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/marinebon/sdm-book" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -320,10 +320,12 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glossary)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_path</span>(<span class="st">"glossary.yml"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_popup</span>(<span class="st">"click"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_persistent</span>(<span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github("debruine/glossary")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glossary)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_path</span>(<span class="st">"glossary.yml"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_popup</span>(<span class="st">"click"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_persistent</span>(<span class="cn">TRUE</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># quarto publish gh-pages</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <section id="background" class="level2" data-number="1.1">
@@ -354,7 +356,7 @@ Where sufficient observations exist, additional models should be developed highl
 <section id="inspirations" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="inspirations"><span class="header-section-number">1.3</span> Inspirations</h2>
 <ul>
-<li><p>AquaMaps<br>
+<li><p><a href="https://aquamaps.org/">AquaMaps.org</a><br>
 Lots of work. To be continued</p></li>
 <li><p>R package <code>dismo</code>: sdm.pdf -&gt; <a href="https://rspatial.org/raster/sdm/"><code>raster</code> sdm</a> -&gt; <a href="https://rspatial.org/sdm/"><code>terra</code> sdm</a></p></li>
 <li></li>
@@ -801,52 +803,54 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glossary)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_path</span>(<span class="st">"glossary.yml"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_popup</span>(<span class="st">"click"</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_persistent</span>(<span class="cn">TRUE</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Background</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github("debruine/glossary")</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glossary)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_path</span>(<span class="st">"glossary.yml"</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_popup</span>(<span class="st">"click"</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_persistent</span>(<span class="cn">TRUE</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># quarto publish gh-pages</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>The best available global distributions are presently AquaMaps <span class="co">[</span><span class="ot">@kaschner2006; @ready2010</span><span class="co">]</span> with supplementation by IUCN RedList range maps<span class="ot">[^index-1]</span>. We previously used this to calculate the Biodiversity goal of the Ocean Health Index across all Exclusive Economic Zones (EEZs) <span class="co">[</span><span class="ot">@halpern2012</span><span class="co">]</span> and beyond EEZs in the high seas <span class="co">[</span><span class="ot">@visalli2020</span><span class="co">]</span> with taxonomic groupings <span class="sc">\[</span>based on <span class="co">[</span><span class="ot">@tittensor2010</span><span class="co">]</span>: see <span class="co">[</span><span class="ot">gmbi</span><span class="co">](https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups)</span> (global marine biodiversity indicators)<span class="sc">\]</span>.</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Background</span></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="ot">[^index-1]: </span>IUCN RedList range maps: <span class="ot">&lt;https://www.iucnredlist.org/resources/spatial-data-download&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>The best available global distributions are presently AquaMaps <span class="co">[</span><span class="ot">@kaschner2006; @ready2010</span><span class="co">]</span> with supplementation by IUCN RedList range maps<span class="ot">[^index-1]</span>. We previously used this to calculate the Biodiversity goal of the Ocean Health Index across all Exclusive Economic Zones (EEZs) <span class="co">[</span><span class="ot">@halpern2012</span><span class="co">]</span> and beyond EEZs in the high seas <span class="co">[</span><span class="ot">@visalli2020</span><span class="co">]</span> with taxonomic groupings <span class="sc">\[</span>based on <span class="co">[</span><span class="ot">@tittensor2010</span><span class="co">]</span>: see <span class="co">[</span><span class="ot">gmbi</span><span class="co">](https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups)</span> (global marine biodiversity indicators)<span class="sc">\]</span>.</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Goals</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ot">[^index-1]: </span>IUCN RedList range maps: <span class="ot">&lt;https://www.iucnredlist.org/resources/spatial-data-download&gt;</span></span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>This book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Goals</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Space**\</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    The current AquaMaps distributions are ${1}/{2}$º (\~55 km at equator), whereas the best available global bathymetry is ${1}/{240}$º (<span class="sc">\&lt;</span> 0.5 km).</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Time**\</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    The current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Environment**\</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species' environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Biology**\</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    Where sufficient observations exist, additional models should be developed highlighting differences between:</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Life stage**, e.g. larval vs adult.</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>This book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Space**\</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    The current AquaMaps distributions are ${1}/{2}$º (\~55 km at equator), whereas the best available global bathymetry is ${1}/{240}$º (<span class="sc">\&lt;</span> 0.5 km).</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Time**\</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    The current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Environment**\</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species' environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Biology**\</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    Where sufficient observations exist, additional models should be developed highlighting differences between:</span>
 <span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Gender** where varies, such as male sperm whales being more cosmopolitan.</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Life stage**, e.g. larval vs adult.</span>
 <span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Subpopulations** for understanding metapopulation dynamics</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Gender** where varies, such as male sperm whales being more cosmopolitan.</span>
 <span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Behavior**, such as migrating, feeding or breeding.</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Subpopulations** for understanding metapopulation dynamics</span>
 <span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>By definition <span class="in">`r glossary("MBON")`</span> is a network, so this is inclusive of and meant for all participants.</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Behavior**, such as migrating, feeding or breeding.</span>
 <span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Inspirations</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>By definition <span class="in">`r glossary("MBON")`</span> is a network, so this is inclusive of and meant for all participants.</span>
 <span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>AquaMaps\</span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>    Lots of work. To be continued</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>R package <span class="in">`dismo`</span>: sdm.pdf -<span class="sc">\&gt;</span> <span class="co">[</span><span class="ot">`raster` sdm</span><span class="co">](https://rspatial.org/raster/sdm/)</span> -<span class="sc">\&gt;</span> <span class="co">[</span><span class="ot">`terra` sdm</span><span class="co">](https://rspatial.org/sdm/)</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Inspirations</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">AquaMaps.org</span><span class="co">](https://aquamaps.org/)</span>\</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    Lots of work. To be continued</span>
 <span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>R package <span class="in">`dismo`</span>: sdm.pdf -<span class="sc">\&gt;</span> <span class="co">[</span><span class="ot">`raster` sdm</span><span class="co">](https://rspatial.org/raster/sdm/)</span> -<span class="sc">\&gt;</span> <span class="co">[</span><span class="ot">`terra` sdm</span><span class="co">](https://rspatial.org/sdm/)</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
