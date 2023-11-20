@@ -252,14 +252,9 @@
     },
     "glossary": {
       "Package": "glossary",
-      "Version": "1.0.0.9003",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "debruine",
-      "RemoteRepo": "glossary",
-      "RemoteRef": "master",
-      "RemoteSha": "05e4a61063e4e83340c89d85f65f354dd1e6cf94",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
       "Requirements": [
         "kableExtra",
         "knitr",
@@ -268,7 +263,7 @@
         "xml2",
         "yaml"
       ],
-      "Hash": "8f30d7606b583f876eb644a97ffba1ab"
+      "Hash": "701c091205860e349c1aad2b06dacb71"
     },
     "glue": {
       "Package": "glue",
