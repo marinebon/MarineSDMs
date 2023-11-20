@@ -2,11 +2,8 @@
 title: "Glossary"
 ---
 
-
 ```{r}
 #| results="asis"
-
-glossary_table(as_kable=F) |> 
+glossary::glossary_table(as_kable=F) |> 
   knitr::kable("pipe", escape = F, row.names = F)
 ```
-

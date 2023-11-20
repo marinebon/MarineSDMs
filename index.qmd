@@ -1,14 +1,12 @@
 # Introduction
 
 ```{r}
-library(glossary)
 # remotes::install_github("debruine/glossary")
-# renv::install("debruine/glossary")
-# check: renv::dependencies()
-
-glossary_path("glossary.yml")
-glossary_popup("click")
-glossary_persistent(TRUE)
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary::glossary_popup("click")
+glossary::glossary_persistent(TRUE)
+# quarto publish gh-pages
 ```
 
 ## Background
@@ -45,7 +43,7 @@ By definition `r glossary("MBON")` is a network, so this is inclusive of and mea
 
 ## Inspirations
 
--   AquaMaps\
+-   [AquaMaps.org](https://aquamaps.org/)\
     Lots of work. To be continued
 
 -   R package `dismo`: sdm.pdf -\> [`raster` sdm](https://rspatial.org/raster/sdm/) -\> [`terra` sdm](https://rspatial.org/sdm/)
