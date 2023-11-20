@@ -1,0 +1,85 @@
+# Organize
+
+## Partners
+
+-   ***Confirmed***
+
+    -   **AquaMaps**\
+        contacts:
+
+        -   Gabriel Reygondeau (g.reygondeau\@oceans.ubc.ca)
+
+    ```{=html}
+    <!-- -->
+    ```
+    -   **MBON**\
+        contacts:
+
+        -   Ben Best
+
+        -   Tylar Murray
+
+        -   Dan Otis
+
+        -   Frank Muller-Karger
+
+    -   **OBIS**\
+        contacts:
+
+        -   Candido Principe De Souza, Silas (s.principe\@unesco.org)
+
+        -   Ward Appeltans (w.appeltans\@unesco.org)
+
+    -   **DisMAP** (Distribution Mapping and Analysis Portal)\
+        contacts:
+
+        -   Melissa Karp (melissa.karp\@noaa.gov)
+
+        -   Roger Griffis (roger.b.griffis\@noaa.gov)
+
+-   ***Proposed***
+
+    -   **FishGLOB** (global bottom trawl)\
+        contacts:
+
+        -   Malin Pinsky
+
+    -   **MGEL** (Marine Geospatial Ecology Lab, Duke)\
+        contacts:
+
+        -   Jason Roberts
+
+        -   Patrick Halpin
+
+    -   **PMEL** (Pacific Marine Environmental Lab, NOAA)\
+        contacts:
+
+        -   Heather Welch
+
+        -   Elliot Hazen
+
+## Portal
+
+-   Candidate website: \
+    [MarineSpeciesMaps.org](MarineSpeciesMaps.org) (BDB registered domain)
+    -   similar to:
+        -   MarineRegions.org\
+            spatial authority
+        -   MarineSpecies.org\
+            taxonomic authority
+
+## Timeline
+
+### Meetings
+
+-   **2024-01-23**\
+    Marine Biodiversity Summit in DC \
+    (organized by Gabrielle, Emmett)
+
+-   **2024-03-21**\
+    SDM meeting in New Orleans\
+    (organized by BDB; so far AquaMaps)
+
+### Sequence
+
+1.  

@@ -1,0 +1,8 @@
+# Model
+
+```{mermaid}
+%%| label: fig-model
+%%| fig-cap: "Diagram of SDM Modeling processes."
+%%| file: diagrams/sdm-model.mmd
+```
+

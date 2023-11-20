@@ -1,0 +1,15 @@
+# Software
+
+## R
+
+Most packages have not yet migrated from using the deprecated `raster` R package to the new `terra` package, except for [`biomod2`](https://biomodhub.github.io/biomod2/) (ref?).
+
+## Python
+
+
+
+## Google Earth Engine
+
+- [XEE](https://github.com/google/Xee)
+    XEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab.
+  [Documentation](https://google.github.io/Xee/)

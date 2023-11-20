@@ -1,0 +1,18 @@
+# Prep Data
+
+```{mermaid}
+%%| label: fig-prep
+%%| fig-cap: "Diagram of SDM data preparation for model fitting."
+%%| file: diagrams/sdm-prep.mmd
+```
+
+-   **obs\
+    **observations: occurrences from OBIS; masked by FAO regions defined by AquaMaps [@aquamapsdata]
+    -   **presence**\
+        OBIS: species occurrence
+    -   **absence**\
+        OBIS not-species, but same family
+-   **env\
+    **environment
+-   **tbl**\
+    table of observations (presence and absence) with environmental values

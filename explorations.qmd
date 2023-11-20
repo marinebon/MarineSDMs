@@ -1,13 +1,13 @@
 ---
-title: "Experiments"
-listing: 
+listing:
   id: listing-experiments
-  contents: 
-   - "experiments/*.qmd"
+  contents:
+   - "explorations/*.qmd"
   type: grid
   categories: true
 ---
 
+# Explorations
+
 ::: {#listing-experiments}
 :::
-

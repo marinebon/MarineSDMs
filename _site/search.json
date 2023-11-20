@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "",
+    "section": "",
+    "text": "CodeShow All CodeHide All CodeView Source"
+  },
+  {
+    "objectID": "overview.html#background",
+    "href": "overview.html#background",
+    "title": "",
+    "section": "1.1 Background",
+    "text": "1.1 Background\nThe best available global distributions are presently AquaMaps (Kaschner et al. 2006; Ready et al. 2010) with supplementation by IUCN RedList range maps1. We previously used this to calculate the Biodiversity goal of the Ocean Health Index across all Exclusive Economic Zones (EEZs) (Halpern et al. 2012) and beyond EEZs in the high seas (Visalli et al. 2020) with taxonomic groupings [based on (Tittensor et al. 2010): see gmbi (global marine biodiversity indicators)]."
+  },
+  {
+    "objectID": "overview.html#goals",
+    "href": "overview.html#goals",
+    "title": "",
+    "section": "1.2 Goals",
+    "text": "1.2 Goals\nThis book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:\n\nSpace\nThe current AquaMaps distributions are \\({1}/{2}\\)º (~55 km at equator), whereas the best available global bathymetry is \\({1}/{240}\\)º (&lt; 0.5 km).\nTime\nThe current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.\nEnvironment\nOther environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species’ environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.\nTaxa\nWhere sufficient observations exist, subspecies and populations, could be modeled.\n\nBy definition MBONMarine Biodiversity Observation Network; see MarineBON.org is a network, so this is inclusive of and meant for all participants.\n\n\n\n\n\n\nHalpern, Benjamin S., Catherine Longo, Darren Hardy, Karen L. McLeod, Jameal F. Samhouri, Steven K. Katona, Kristin Kleisner, et al. 2012. “An Index to Assess the Health and Benefits of the Global Ocean.” Nature. https://doi.org/10.1038/nature11397.\n\n\nKaschner, K., R. Watson, A. W. Trites, and D. Pauly. 2006. “Mapping World-Wide Distributions of Marine Mammal Species Using a Relative Environmental Suitability (RES) Model.” Marine Ecology Progress Series 316 (July): 285–310. https://doi.org/10.3354/meps316285.\n\n\nReady, Jonathan, Kristin Kaschner, Andy B. South, Paul D. Eastwood, Tony Rees, Josephine Rius, Eli Agbayani, Sven Kullander, and Rainer Froese. 2010. “Predicting the Distributions of Marine Organisms at the Global Scale.” Ecological Modelling 221 (3): 467–78. https://doi.org/10.1016/j.ecolmodel.2009.10.025.\n\n\nTittensor, Derek P., Camilo Mora, Walter Jetz, Heike K. Lotze, Daniel Ricard, Edward Vanden Berghe, and Boris Worm. 2010. “Global Patterns and Predictors of Marine Biodiversity Across Taxa.” Nature 466 (7310): 1098–1101. https://doi.org/10.1038/nature09329.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. “Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.” Marine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927."
+  },
+  {
+    "objectID": "overview.html#footnotes",
+    "href": "overview.html#footnotes",
+    "title": "",
+    "section": "",
+    "text": "IUCN RedList range maps: https://www.iucnredlist.org/resources/spatial-data-download↩︎"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n1 MIT License\nCopyright (c) 2023 sdm-book authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "explorations.html",
+    "href": "explorations.html",
+    "title": "Experiments",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "model.html",
+    "href": "model.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n1 Model\n\n\n\n\n\nflowchart LR\n\n  %% nodes\n  D[[data]]:::in\n  S[/split/]:::fxn\n  t1[[train]]:::out\n  t2[[test]]:::out\n  F[/fit/]:::fxn\n  M{{model}}:::out\n  E[/evaluate/]:::fxn\n  C[/calibrate/]:::fxn\n  P[/predict/]:::fxn\n  N[[\"new data\"]]:::in\n  prd(prediction):::out\n  prf(performance):::out\n\n  %% edges\n  D  --&gt; S\n  S  --&gt; t1\n  S  --&gt; t2\n  t1 --&gt; F\n  F  --&gt; M\n  t2 --&gt; E\n  M  --&gt; C\n  C  --&gt; F\n  M  --&gt; P\n  N  --&gt; P\n  M  --&gt; E\n  P  --&gt; prd\n  E  --&gt; prf\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n%% source: https://bbest.github.io/eds232-ml/lab1d_sdm-evaluate.html\n\n\nFigure 1: Diagram of SDM Modeling processes."
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Code\nglossary_table(as_kable=F) |&gt; \n  knitr::kable(\"pipe\", escape = F, row.names = F)\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMBON\nMarine Biodiversity Observation Network; see MarineBON.org"
+  },
+  {
+    "objectID": "process.html",
+    "href": "process.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n1 Process\nTODO: Overview figure"
+  },
+  {
+    "objectID": "prep-data.html",
+    "href": "prep-data.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n1 Prep Data\n\n\n\n\n\nflowchart LR\n\n  %% nodes\n  P(presence):::in\n  A(\"pseudo-absence\"):::in\n  pts(obs):::out\n  X[/extract/]:::fxn\n  env(env):::in\n  D[[data]]:::out\n\n  %% edges\n  P   --&gt; pts\n  A   --&gt; pts\n  pts --&gt; X\n  env --&gt; X\n  X   --&gt; D\n\n  %% Legend\n  in(input):::in\n  fxn[/process/]:::fxn\n  out(output):::out\n  subgraph Legend\n    in\n    fxn\n    out\n  end\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n\nFigure 1: Diagram of SDM data preparation for model fitting.\n\n\n\n\n\nobs\nobservations: occurrences from OBIS; masked by FAO regions defined by AquaMaps (Skyttner 2020)\n\npresence\nOBIS: species occurrence\nabsence\nOBIS not-species, but same family\n\nenv\nenvironment\ntbl\ntable of observations (presence and absence) with environmental values\n\n\n\n\n\n\n\nSkyttner, Markus. 2020. “Aquamapsdata: Curated Data from AquaMaps.org.” https://github.com/raquamaps/aquamapsdata."
+  }
+]

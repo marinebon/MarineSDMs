@@ -1,4 +1,4 @@
-# Welcome
+# Introduction
 
 ```{r}
 librarian::shelf(
@@ -28,7 +28,16 @@ This book is meant to capture the overview and details of modeling species distr
 3.  **Environment**\
     Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species' environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.
 
-4.  **Taxa**\
-    Where sufficient observations exist, subspecies and populations, could be modeled.
+4.  **Biology**\
+    Where sufficient observations exist, subspecies and populations, should be modeled.
 
 By definition `r glossary("MBON")` is a network, so this is inclusive of and meant for all participants.
+
+## Inspirations
+
+-   AquaMaps\
+    Lots of work. To be continued
+
+-   R package `dismo`: sdm.pdf -\> [`raster` sdm](https://rspatial.org/raster/sdm/) -\> [`terra` sdm](https://rspatial.org/sdm/)
+
+-   

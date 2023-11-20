@@ -1,8 +1,10 @@
 project:
   type: book
   output-dir: _book
+  # type: website
+  # output-dir: _site
   resources:
-  - "/.nojekyll"
+    - /.nojekyll
 
 book:
   title: "SDM-book"
@@ -23,14 +25,40 @@ book:
       This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - part: experiments.qmd
+    - part: process.qmd
       chapters:
-        - experiments/am-fine.qmd
+        - prep-data.qmd
+        - model.qmd
+    - software.qmd
+    - organize.qmd
     - references.qmd
   appendices:
     - glossary.qmd
+    - part: explorations.qmd
+      chapters:
+        - explorations/am-fine.qmd
+
+
+# website:
+#   title: "MarineSDMs"
+#   repo-url: https://github.com/marinebon/sdm-book
+#   reader-mode: true
+#   repo-actions: [edit]
+#   search: true
+#   google-analytics: "G-V3HZN14Z8G"
+#   page-navigation: true
+#   sidebar:
+#     style: "docked"
+#     search: true
+#     contents:
+#       - overview.qmd
+#       - section: "Process"
+#         contents:
+#           - prep-data.qmd
+#           - model.qmd
+#       - text: "---"
+#       - explorations.qmd
+#       - glossary.qmd
 
 bibliography: references.bib
 
@@ -47,12 +75,13 @@ format:
     mermaid:
       theme: neutral
     theme:
-      dark: darkly
       light: flatly
+      dark: darkly
     css: glossary.css
-
   pdf:
     documentclass: scrreprt
+  docx: default
+    # reference-doc: custom-reference.docx
 
 editor: visual
 

@@ -1,0 +1,37 @@
+flowchart LR
+
+  %% nodes
+  D[[data]]:::in
+  S[/split/]:::fxn
+  t1[[train]]:::out
+  t2[[test]]:::out
+  F[/fit/]:::fxn
+  M{{model}}:::out
+  E[/evaluate/]:::fxn
+  C[/calibrate/]:::fxn
+  P[/predict/]:::fxn
+  N[["new data"]]:::in
+  prd(prediction):::out
+  prf(performance):::out
+
+  %% edges
+  D  --> S
+  S  --> t1
+  S  --> t2
+  t1 --> F
+  F  --> M
+  t2 --> E
+  M  --> C
+  C  --> F
+  M  --> P
+  N  --> P
+  M  --> E
+  P  --> prd
+  E  --> prf
+
+  %% styles
+  classDef in  fill:lightblue
+  classDef out fill:lightgreen
+  classDef fxn fill:yellow
+
+%% source: https://bbest.github.io/eds232-ml/lab1d_sdm-evaluate.html
