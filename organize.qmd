@@ -10,9 +10,6 @@
 
         -   Gabriel Reygondeau (g.reygondeau\@oceans.ubc.ca)
 
-    ```{=html}
-    <!-- -->
-    ```
     -   [**DisMAP**](https://apps-st.fisheries.noaa.gov/dismap/)\
         *Distribution Mapping and Analysis Portal*\
         contacts:
@@ -67,7 +64,7 @@
 
 ## Portal
 
--   Candidate website: \
+-   Candidate website:\
     [MarineSpeciesMaps.org](MarineSpeciesMaps.org) (BDB registered domain)
     -   similar to:
         -   MarineRegions.org\
@@ -80,7 +77,7 @@
 ### Meetings
 
 -   **2024-01-23**\
-    Marine Biodiversity Summit in DC \
+    Marine Biodiversity Summit in DC\
     (organized by Gabrielle, Emmett)
 
 -   **2024-03-21**\
