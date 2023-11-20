@@ -79,9 +79,9 @@ format:
       light: flatly
       dark: darkly
     css: glossary.css
-  # pdf:
-  #   documentclass: scrreprt
-  # docx: default
+  pdf:
+    documentclass: scrreprt
+  docx: default
     # reference-doc: custom-reference.docx
 
 editor: visual
