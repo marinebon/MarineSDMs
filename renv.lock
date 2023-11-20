@@ -256,9 +256,9 @@
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "glossary",
       "RemoteUsername": "debruine",
-      "RemoteRef": "HEAD",
+      "RemoteRepo": "glossary",
+      "RemoteRef": "master",
       "RemoteSha": "05e4a61063e4e83340c89d85f65f354dd1e6cf94",
       "Requirements": [
         "kableExtra",
@@ -268,7 +268,7 @@
         "xml2",
         "yaml"
       ],
-      "Hash": "29ac684c5ea99cef325e5af65cb10c69"
+      "Hash": "8f30d7606b583f876eb644a97ffba1ab"
     },
     "glue": {
       "Package": "glue",
