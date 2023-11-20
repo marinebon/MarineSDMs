@@ -6,16 +6,12 @@ Most packages have not yet migrated from using the deprecated `raster` R package
 
 -   [`eks`](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)\
     Tidy and Geospatial Kernel Smoothing\
-    for spatially filtering outlier observations\
-    ```{r}
-    #| label: fig-eks
-    #| fig.width: 3
-    #| fig.cap: 'Source: [Kernel density estimates for tidy and geospatial data in the eks package](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)'
+    for spatially filtering outlier observations
     
-    knitr::include_graphics("figures/software/eks.png")
-    ```
-    
+    ![Source: [Kernel density estimates for tidy and geospatial data in the eks package](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)](figures/software/eks.png){#fig-eks}
+
 -   test
+
 
 ## Python
 

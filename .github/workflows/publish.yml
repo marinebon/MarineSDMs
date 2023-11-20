@@ -32,9 +32,9 @@ jobs:
         with:
           r-version: '4.3.0'
 
-      - name: "Install R packages (while renv not working for glossary)"
-        run: |
-          Rscript -e "remotes::install_github('debruine/glossary')"
+      # - name: "Install R packages (while renv not working for glossary)"
+      #   run: |
+      #     Rscript -e "remotes::install_github('debruine/glossary')"
 
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
