@@ -46,11 +46,14 @@ This book is meant to capture the overview and details of modeling species distr
 
 By definition `r glossary("MBON")` is a network, so this is inclusive of and meant for all participants.
 
-## Inspirations
+## Motivations
 
 -   [AquaMaps.org](https://aquamaps.org/)\
-    Lots of work. To be continued
+    AquaMaps [@kaschner2006; @ready2010] represents a massive amount of work to gather parameters for \>33.5K marine species, including areas to mask out.
 
--   R package `dismo`: sdm.pdf -\> [`raster` sdm](https://rspatial.org/raster/sdm/) -\> [`terra` sdm](https://rspatial.org/sdm/)
+-   [OBIS.org](OBIS.org)\
+    The Ocean Biogeographic Information System [@klein2019; @grassle2000]is the central portal for continuously added observations with extra flags for quality control, all of which makes marine SDMs possible.
 
--   
+-   **Modeling** methods have dramatically improved over time and are ripe for fresh application. The R package `dismo` originally came came out with an [SDM vignette](https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf) as a practical supplement to their excellent review of SDMs [@elith2009] and using the Maxent algorithm [@elith2011]. The raster package furthered that (raster[ sdm](https://rspatial.org/raster/sdm/)) and now there's [`terra` sdm](https://rspatial.org/sdm/). Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine [@gorelick2017; @camposEcologicalNicheModels2023], allowing for dense global raster processing.
+
+-   The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "[**30 by 30**](https://en.wikipedia.org/wiki/30_by_30)". In the U.S., this is [America the Beautiful](https://www.noaa.gov/america-the-beautiful) initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.
