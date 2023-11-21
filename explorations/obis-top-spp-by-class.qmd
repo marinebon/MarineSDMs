@@ -1,15 +1,15 @@
 ---
-description: "Predict species distribution of N Atlantic right whale using OBIS occcurrences and `predicts` package in R."
-image: "../figures/explorations/sdm-1_predicts.png"
-url: "https://marinebon.github.io/sdm-explore/sdm_1.html"
-url-code: "https://github.com/marinebon/sdm-explore/blob/main/sdm_1.qmd"
+description: "Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R."
+image: "../figures/explorations/obis-top-spp-by-class.png"
+url: "https://marinebon.github.io/sdm-explore/explore_obis.html"
+url-code: "https://github.com/marinebon/sdm-explore/blob/main/explore_obis.qmd"
 categories: 
    - "data: OBIS"
    - "tech: R"
 editor: source   
 ---
 
-# SDM using `predicts` in R {.unnumbered}
+# OBIS Top Species by Class {.unnumbered}
 
 ```{r}
 #| echo: false
@@ -29,5 +29,3 @@ url_code <- metadata[["url-code"]]
 -   [{{< fa brands github >}} `code`](`r url_code`)
 
 ![](`r img`)
-
-![](%60r%20img%60)

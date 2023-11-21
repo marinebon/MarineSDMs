@@ -1,12 +1,12 @@
 ---
 description: "Extract and plot AquaMaps environmental envelope, ramp rasters, using R."
 image: "https://marinebon.github.io/aquamaps-downscaled/index_files/figure-html/fig-blue_whale_env_yes-1.png"
-format: 
-  html: 
-    toc: true
+url: "https://marinebon.github.io/aquamaps-downscaled/"
+url-code: "https://github.com/marinebon/aquamaps-downscaled/blob/main/index.qmd"
 categories: 
    - "data: AquaMaps"
    - "tech: R"
+editor: source   
 ---
 
 # AquaMaps Envelope {.unnumbered}
@@ -24,9 +24,8 @@ url_code <- metadata[["url-code"]]
 
 `r descr`
 
-- [{{< fa globe >}} website](`r url_web`)
+-   [{{< fa globe >}} website](`r url_web`)
 
-- [{{< fa brands github >}} `code`](`r url_code`)
+-   [{{< fa brands github >}} `code`](`r url_code`)
 
 ![](`r img`)
-
