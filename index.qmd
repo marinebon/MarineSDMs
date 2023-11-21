@@ -12,21 +12,21 @@ if (!"glossary" %in% rownames(installed.packages()))
       "https://debruine.r-universe.dev",
       "https://cloud.r-project.org"))
 library(glossary)
-glossary::glossary_path("glossary.yml")
+glossary::glossary_path("glossary/glossary.yml")
 glossary::glossary_popup("click")
-glossary::glossary_persistent(TRUE)
+glossary::glossary_persistent("glossary/glossary-persistent.yml")
 # Terminal: quarto publish gh-pages
 ```
 
 ## Background
 
-The best available global distributions are presently AquaMaps [@kaschner2006; @ready2010] with supplementation by IUCN RedList range maps[^index-1]. These have been used to calculate the biodiversity within Exclusive Economic Zones (EEZs) [@halpern2012] as well as beyond in the high seas [@visalli2020].
+The best available global distributions are presently AquaMaps [@kaschner2006; @ready2010] with supplementation by IUCN RedList range maps[^index-1]. These have been used to calculate the biodiversity within national waters [@halpern2012] as well as beyond in the high seas [@visalli2020].
 
 [^index-1]: IUCN RedList range maps: <https://www.iucnredlist.org/resources/spatial-data-download>
 
 ## Goals
 
-This book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:
+This book aims to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:
 
 1.  **Space**\
     The current AquaMaps distributions are ${1}/{2}$º (\~55 km at equator), whereas the best available global bathymetry is ${1}/{240}$º (\< 0.5 km).
@@ -83,3 +83,21 @@ We very much welcome your feedback, contributions and collaboration. Here are a 
 3.  Click on "<i class="bi bi-github"></i> Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request.
 
 4.  If you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).
+
+## Features of this Book
+
+-   Multiple formats\
+    From the singe set of source Quarto documents (\*.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.
+
+-   Self-rendering\
+    Github hosts the web pages (\*.html), which get rendered from the source code (\*.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.
+
+-   Mermaid diagrams
+
+-   Quarto document listings
+
+-   References
+
+-   Glossary
+
+-   Search

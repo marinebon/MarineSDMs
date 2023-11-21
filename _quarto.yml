@@ -29,9 +29,9 @@ book:
       chapters:
         - prep-data.qmd
         - model.qmd
-        - ensemble.qmd
     - part: combine.qmd
       chapters:
+        - ensemble.qmd
         - mosaic.qmd
         - group.qmd
         - indicators.qmd
