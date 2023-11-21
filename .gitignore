@@ -5,3 +5,4 @@
 /.quarto/
 /_book/
 .DS_Store
+*.html

@@ -20,9 +20,9 @@ book:
   page-navigation: true
   page-footer:
     left: |
-      Website created by Ben Best, with attribution to external content
+      © [Ben Best](https://bbest.github.io/cv/)
     right: |
-      This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a>
+      Built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
     - index.qmd
     - part: process.qmd
