@@ -1,0 +1,7 @@
+---
+title: "Ensemble"
+---
+
+-   [`biomod2`](https://biomodhub.github.io/biomod2/)\
+    *Species distribution modeling, calibration and evaluation, ensemble modeling\
+    *![Graphical overview of \`biomod2\` functions for data formatting, single SDMs, ensemble methods and visualization. Source: \[\`biomod2\`\](https://biomodhub.github.io/biomod2/)](https://biomodhub.github.io/biomod2/articles/pictures/SCHEMA_BIOMOD2_WORKFLOW_functions.png){alt="Graphical overview of `biomod2` functions for data formatting, single SDMs, ensemble methods and visualization. Source: [`biomod2`](https://biomodhub.github.io/biomod2/)"}

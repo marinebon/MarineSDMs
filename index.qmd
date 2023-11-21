@@ -1,6 +1,9 @@
 # Introduction
 
 ```{r}
+#| echo: false
+
+# in .Rprofile:
 # remotes::install_github("debruine/glossary")
 library(glossary)
 glossary::glossary_path("glossary.yml")
@@ -11,7 +14,7 @@ glossary::glossary_persistent(TRUE)
 
 ## Background
 
-The best available global distributions are presently AquaMaps [@kaschner2006; @ready2010] with supplementation by IUCN RedList range maps[^index-1]. We previously used this to calculate the Biodiversity goal of the Ocean Health Index across all Exclusive Economic Zones (EEZs) [@halpern2012] and beyond EEZs in the high seas [@visalli2020] with taxonomic groupings \[based on [@tittensor2010]: see [gmbi](https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups) (global marine biodiversity indicators)\].
+The best available global distributions are presently AquaMaps [@kaschner2006; @ready2010] with supplementation by IUCN RedList range maps[^index-1]. These have been used to calculate the biodiversity within Exclusive Economic Zones (EEZs) [@halpern2012] as well as beyond in the high seas [@visalli2020].
 
 [^index-1]: IUCN RedList range maps: <https://www.iucnredlist.org/resources/spatial-data-download>
 

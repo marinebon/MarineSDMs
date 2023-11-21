@@ -1,0 +1,39 @@
+---
+title: "Indicators"
+---
+
+## Diversity
+
+Here are the classic diversity indices from the R package `vegan`:
+
+$$
+\begin{align*}
+H   &= - \sum_{i=1}^S p_i \log_b  p_i  &\text{Shannon-Weaver}  \\
+D_1 &= 1 - \sum_{i=1}^S p_i^2          &\text{Simpson}         \\
+D_2 &= \frac{1}{\sum_{i=1}^S p_i^2}    &\text{inverse Simpson} \\
+\end{align*}
+$$
+
+## Endemism
+
+Endemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps.
+
+## Extinction Risk
+
+This is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe's [Conservation Status Ranks](https://www.natureserve.org/conservation-status-assessment) for the U.S.
+
+## Functional Importance
+
+## Habitat Forming
+
+Habitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services.
+
+## Phylogenetic Uniqueness
+
+## Richness
+
+## Sensitivity
+
+Sensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy.
+
+## Trophic Index

@@ -4,14 +4,17 @@
 
 Most packages have not yet migrated from using the deprecated `raster` R package to the new `terra` package, except for [`biomod2`](https://biomodhub.github.io/biomod2/) (ref?).
 
+-   [`biomod2`](https://biomodhub.github.io/biomod2/)\
+    *Species distribution modeling, calibration and evaluation, ensemble modeling\
+    *![Graphical overview of \`biomod2\` functions for data formatting, single SDMs, ensemble methods and visualization. Source: \[\`biomod2\`\](https://biomodhub.github.io/biomod2/)](https://biomodhub.github.io/biomod2/articles/pictures/SCHEMA_BIOMOD2_WORKFLOW_functions.png)
+
 -   [`eks`](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)\
-    Tidy and Geospatial Kernel Smoothing\
-    for spatially filtering outlier observations
-    
+    *Tidy and Geospatial Kernel Smoothing for spatially filtering outlier observations*
+
     ![Source: [Kernel density estimates for tidy and geospatial data in the eks package](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)](figures/software/eks.png){#fig-eks}
 
--   test
-
+-   [`predicts`](Species%20distribution%20modeling,%20calibration%20and%20evaluation,%20ensemble%20modeling)\
+    *New R library using terra for predicting from fitted model*
 
 ## Python
 

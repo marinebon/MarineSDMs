@@ -1,7 +1,0 @@
-# Process
-
-```{mermaid}
-%%| label: fig-process
-%%| fig-cap: "Diagram of SDM data preparation and model fitting."
-%%| file: diagrams/sdm-process.mmd
-```

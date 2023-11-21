@@ -6,3 +6,4 @@
 /_book/
 .DS_Store
 *.html
+*_files/

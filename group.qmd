@@ -1,0 +1,5 @@
+---
+title: "Group Taxa"
+---
+
+Taxonomic groups [@tittensor2010] in the high seas [@visalli2020] were packaged with simple query statements in the draft R package [`gmbi`](https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups) (global marine biodiversity indicators).

@@ -25,11 +25,16 @@ book:
       Built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
     - index.qmd
-    - part: process.qmd
+    - part: create.qmd
       chapters:
         - prep-data.qmd
         - model.qmd
+        - ensemble.qmd
+    - part: combine.qmd
+      chapters:
         - mosaic.qmd
+        - group.qmd
+        - indicators.qmd
     - software.qmd
     - organize.qmd
     - references.qmd
@@ -38,6 +43,8 @@ book:
     - part: explorations.qmd
       chapters:
         - explorations/am-fine.qmd
+        - explorations/am-envelope.qmd
+        - "explorations/sdm-1_predicts.qmd"
 
 bibliography: references.bib
 

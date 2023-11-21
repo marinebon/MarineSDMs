@@ -1,0 +1,33 @@
+---
+description: "Predict species distribution of N Atlantic right whale using OBIS occcurrences and `predicts` package in R."
+image: "../figures/experiments/sdm-1_predicts.png"
+format: 
+  html: 
+    toc: true
+categories: 
+   - "data: OBIS"
+   - "tech: R"
+---
+
+# SDM using `predicts` in R {.unnumbered}
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(rmarkdown)
+descr    <- metadata[["description"]]
+img      <- metadata[["image"]]
+url_web  <- metadata[["url"]]
+url_code <- metadata[["url-code"]]
+```
+
+`r descr`
+
+- [{{< fa globe >}} website](`r url_web`)
+
+- [{{< fa brands github >}} `code`](`r url_code`)
+
+![](`r img`)
+
+

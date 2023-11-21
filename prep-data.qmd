@@ -1,4 +1,4 @@
-# Prep Data
+# Prepare Data
 
 ```{mermaid}
 %%| label: fig-prep
@@ -17,7 +17,7 @@
 -   **tbl**\
     table of observations (presence and absence) with environmental values
 
-### Environmental Predictors
+## Environmental Predictors
 
 ### Physiographic
 
@@ -35,8 +35,10 @@
 -   `vgpm`\
     Vertically integrated primary Productivity model
 
-#### Depth & Time Varying
+### Depth & Time Varying
 
--   Temperature
+-   `temp`\
+    Temperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus
 
--   Salinity
+-   `salin`\
+    Salinity
