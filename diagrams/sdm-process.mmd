@@ -14,7 +14,7 @@ flowchart TD
   M{{model}}:::out
   E[/evaluate/]:::fxn
   C[/calibrate/]:::fxn
-  P[/predict/]:::fxn
+  pr[/predict/]:::fxn
   N[["new data"]]:::in
   prd(prediction):::out
   prf(performance):::out
@@ -33,10 +33,10 @@ flowchart TD
   t2  --> E
   M   --> C
   C   --> F
-  M   --> P
-  N   --> P
+  M   --> pr
+  N   --> pr
   M   --> E
-  P   --> prd
+  pr  --> prd
   E   --> prf
 
   %% Legend

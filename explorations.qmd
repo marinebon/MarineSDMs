@@ -1,4 +1,5 @@
 ---
+title: Explorations
 listing:
   id: listing-experiments
   contents:
@@ -6,8 +7,6 @@ listing:
   type: grid
   categories: true
 ---
-
-# Explorations
 
 ::: {#listing-experiments}
 :::
