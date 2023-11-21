@@ -11,7 +11,7 @@
         -   Gabriel Reygondeau (g.reygondeau\@oceans.ubc.ca)
 
     -   [**DisMAP**](https://apps-st.fisheries.noaa.gov/dismap/)\
-        *Distribution Mapping and Analysis Portal*\
+        *Distribution Mapping and Analysis Portal (NOAA)*\
         contacts:
 
         -   Melissa Karp (melissa.karp\@noaa.gov)
@@ -19,7 +19,7 @@
         -   Roger Griffis (roger.b.griffis\@noaa.gov)
 
     -   [**MBON**](https://marinebon.org/)**\
-        ***Marine Biodiversity Observation Network*\
+        ***Marine Biodiversity Observation Network (NOAA, NASA)*\
         contacts:
 
         -   Ben Best
@@ -31,7 +31,7 @@
         -   Frank Muller-Karger
 
     -   [**OBIS**](https://obis.org/)**\
-        ***Ocean Biodiversity Information System*\
+        ***Ocean Biodiversity Information System (UNESCO)*\
         contacts:
 
         -   Candido Principe De Souza, Silas (s.principe\@unesco.org)
