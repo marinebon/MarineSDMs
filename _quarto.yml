@@ -13,6 +13,8 @@ book:
   repo-url: https://github.com/marinebon/sdm-book
   reader-mode: true
   repo-actions: [edit]
+  downloads: [pdf, docx]
+  sharing: [twitter, facebook]
   search: true
   date: today
   date-format: "YYYY-MM-DD"
