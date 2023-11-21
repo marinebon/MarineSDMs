@@ -61,3 +61,25 @@ By definition `r glossary("MBON")` is a network, so this is inclusive of and mea
 -   **Modeling** methods have dramatically improved over time and are ripe for fresh application. The R package `dismo` originally came came out with an [SDM vignette](https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf) as a practical supplement to their excellent review of SDMs [@elith2009] and using the Maxent algorithm [@elith2011]. The raster package furthered that (raster[ sdm](https://rspatial.org/raster/sdm/)) and now there's [`terra` sdm](https://rspatial.org/sdm/). Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine [@gorelick2017; @camposEcologicalNicheModels2023], allowing for dense global raster processing.
 
 -   The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "[**30 by 30**](https://en.wikipedia.org/wiki/30_by_30)". In the U.S., this is [America the Beautiful](https://www.noaa.gov/america-the-beautiful) initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.
+
+## Contribute
+
+We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:
+
+1.  Email Ben (ben\@ecoquants.com) with any suggestions, including suggested revisions of this online book. 
+    
+    ::: {.callout-note}
+    Note that you can download this entire book as:
+    
+    - {{< fa file-pdf >}} Adobe Acrobat [pdf](https://marinebon.github.io/MarineSDMs/MarineSDMs.pdf) to add annotations; or
+    
+    - {{< fa file-word >}} Microsoft Word [docx](https://marinebon.github.io/MarineSDMs/MarineSDMs.docx)  to edit with Track Changes on.
+    
+    These are available in the upper left navigation menu by clicking the download icon <i class="bi bi-download"></i>.
+    :::
+
+2.  Submit a [New Issue](https://github.com/marinebon/MarineSDMs/issues/new/choose) on Github.
+
+3.  Click on the "Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request.
+
+4.  If you are a regular contributor, you can be added to the collaborators of this repository to make push changes directly (without needing a pull request).

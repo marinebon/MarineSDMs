@@ -7,3 +7,10 @@
 .DS_Store
 *.html
 *_files/
+_test.pdf
+_test.qmd
+index.aux
+index.log
+index.pdf
+index.tex
+index.toc
