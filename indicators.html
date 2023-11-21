@@ -363,6 +363,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <section id="diversity" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="diversity"><span class="header-section-number">7.1</span> Diversity</h2>
 <p>Here are the classic diversity indices from the R package <code>vegan</code>:</p>
+<blockquote class="blockquote">
 <p><span class="math display">\[
 \begin{aligned}
 H   &amp;= - \sum_{i=1}^S p_i \log_b  p_i  &amp;\text{Shannon-Weaver}  \\
@@ -370,6 +371,8 @@ D_1 &amp;= 1 - \sum_{i=1}^S p_i^2          &amp;\text{Simpson}         \\
 D_2 &amp;= \frac{1}{\sum_{i=1}^S p_i^2}    &amp;\text{inverse Simpson}
 \end{aligned}
 \]</span></p>
+<p>where <span class="math inline">\(p_i\)</span> is the proportion of species <span class="math inline">\(i\)</span>, and <span class="math inline">\(S\)</span> is the number of species so that <span class="math inline">\(\sum_{i=1}^S p_i = 1\)</span>, and <span class="math inline">\(b\)</span> is the base of the logarithm.</p>
+</blockquote>
 </section>
 <section id="endemism" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="endemism"><span class="header-section-number">7.2</span> Endemism</h2>
@@ -824,37 +827,39 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Here are the classic diversity indices from the R package <span class="in">`vegan`</span>:</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>\begin{aligned}</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>H   &amp;= - \sum_{i=1}^S p_i \log_b  p_i  &amp;\text{Shannon-Weaver}  <span class="sc">\\</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>D_1 &amp;= 1 - \sum_{i=1}^S p_i^2          &amp;\text{Simpson}         <span class="sc">\\</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>D_2 &amp;= \frac{1}{\sum_{i=1}^S p_i^2}    &amp;\text{inverse Simpson}</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>\end{aligned}</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Endemism</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; $$</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; \begin{aligned}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; H   &amp;= - \sum_{i=1}^S p_i \log_b  p_i  &amp;\text{Shannon-Weaver}  </span><span class="sc">\\</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; D_1 &amp;= 1 - \sum_{i=1}^S p_i^2          &amp;\text{Simpson}         </span><span class="sc">\\</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; D_2 &amp;= \frac{1}{\sum_{i=1}^S p_i^2}    &amp;\text{inverse Simpson}</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; \end{aligned}</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; $$</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; where $p_i$ is the proportion of species $i$, and $S$ is the number of species so that $\sum_{i=1}^S p_i = 1$, and $b$ is the base of the logarithm.</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Endemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Endemism</span></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Extinction Risk</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Endemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps.</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>This is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe's <span class="co">[</span><span class="ot">Conservation Status Ranks</span><span class="co">](https://www.natureserve.org/conservation-status-assessment)</span> for the U.S.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Extinction Risk</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Functional Importance</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>This is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe's <span class="co">[</span><span class="ot">Conservation Status Ranks</span><span class="co">](https://www.natureserve.org/conservation-status-assessment)</span> for the U.S.</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Habitat Forming</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Functional Importance</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Habitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Habitat Forming</span></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phylogenetic Uniqueness</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Habitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services.</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Richness</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phylogenetic Uniqueness</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sensitivity</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Richness</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Sensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sensitivity</span></span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Trophic Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Sensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Trophic Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
