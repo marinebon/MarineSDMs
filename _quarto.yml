@@ -1,8 +1,6 @@
 project:
   type: book
   output-dir: _book
-  # type: website
-  # output-dir: _site
   resources:
     - /.nojekyll
 
@@ -41,28 +39,6 @@ book:
       chapters:
         - explorations/am-fine.qmd
 
-
-# website:
-#   title: "MarineSDMs"
-#   repo-url: https://github.com/marinebon/sdm-book
-#   reader-mode: true
-#   repo-actions: [edit]
-#   search: true
-#   google-analytics: "G-V3HZN14Z8G"
-#   page-navigation: true
-#   sidebar:
-#     style: "docked"
-#     search: true
-#     contents:
-#       - overview.qmd
-#       - section: "Process"
-#         contents:
-#           - prep-data.qmd
-#           - model.qmd
-#       - text: "---"
-#       - explorations.qmd
-#       - glossary.qmd
-
 bibliography: references.bib
 
 filters:
@@ -84,7 +60,6 @@ format:
   pdf:
     documentclass: scrreprt
   docx: default
-    # reference-doc: custom-reference.docx
 
 editor: visual
 
