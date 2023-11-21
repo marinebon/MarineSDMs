@@ -6,13 +6,15 @@ title: "Indicators"
 
 Here are the classic diversity indices from the R package `vegan`:
 
-$$
-\begin{aligned}
-H   &= - \sum_{i=1}^S p_i \log_b  p_i  &\text{Shannon-Weaver}  \\
-D_1 &= 1 - \sum_{i=1}^S p_i^2          &\text{Simpson}         \\
-D_2 &= \frac{1}{\sum_{i=1}^S p_i^2}    &\text{inverse Simpson}
-\end{aligned}
-$$
+> $$
+> \begin{aligned}
+> H   &= - \sum_{i=1}^S p_i \log_b  p_i  &\text{Shannon-Weaver}  \\
+> D_1 &= 1 - \sum_{i=1}^S p_i^2          &\text{Simpson}         \\
+> D_2 &= \frac{1}{\sum_{i=1}^S p_i^2}    &\text{inverse Simpson}
+> \end{aligned}
+> $$
+> 
+> where $p_i$ is the proportion of species $i$, and $S$ is the number of species so that $\sum_{i=1}^S p_i = 1$, and $b$ is the base of the logarithm.
 
 ## Endemism
 
