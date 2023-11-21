@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ben Best">
-<meta name="dcterms.date" content="2023-11-21">
 
-<title>MarineSDMs</title>
+<title>MarineSDMs - 7&nbsp; Indicators</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -56,26 +54,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,7 +64,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./create.html" rel="next">
+<link href="./software.html" rel="next">
+<link href="./group.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -97,8 +77,6 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -144,7 +122,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./combine.html">Combine SDMs</a></li><li class="breadcrumb-item"><a href="./indicators.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -214,7 +192,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -270,7 +248,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./indicators.html" class="sidebar-item-text sidebar-link">
+  <a href="./indicators.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
   </div>
 </li>
@@ -350,42 +328,31 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
-  <ul class="collapse">
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">1.1</span> Background</a></li>
-  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals"><span class="header-section-number">1.2</span> Goals</a></li>
-  <li><a href="#motivations" id="toc-motivations" class="nav-link" data-scroll-target="#motivations"><span class="header-section-number">1.3</span> Motivations</a></li>
-  <li><a href="#contribute" id="toc-contribute" class="nav-link" data-scroll-target="#contribute"><span class="header-section-number">1.4</span> Contribute</a></li>
-  </ul></li>
+  <li><a href="#diversity" id="toc-diversity" class="nav-link active" data-scroll-target="#diversity"><span class="header-section-number">7.1</span> Diversity</a></li>
+  <li><a href="#endemism" id="toc-endemism" class="nav-link" data-scroll-target="#endemism"><span class="header-section-number">7.2</span> Endemism</a></li>
+  <li><a href="#extinction-risk" id="toc-extinction-risk" class="nav-link" data-scroll-target="#extinction-risk"><span class="header-section-number">7.3</span> Extinction Risk</a></li>
+  <li><a href="#functional-importance" id="toc-functional-importance" class="nav-link" data-scroll-target="#functional-importance"><span class="header-section-number">7.4</span> Functional Importance</a></li>
+  <li><a href="#habitat-forming" id="toc-habitat-forming" class="nav-link" data-scroll-target="#habitat-forming"><span class="header-section-number">7.5</span> Habitat Forming</a></li>
+  <li><a href="#phylogenetic-uniqueness" id="toc-phylogenetic-uniqueness" class="nav-link" data-scroll-target="#phylogenetic-uniqueness"><span class="header-section-number">7.6</span> Phylogenetic Uniqueness</a></li>
+  <li><a href="#richness" id="toc-richness" class="nav-link" data-scroll-target="#richness"><span class="header-section-number">7.7</span> Richness</a></li>
+  <li><a href="#sensitivity" id="toc-sensitivity" class="nav-link" data-scroll-target="#sensitivity"><span class="header-section-number">7.8</span> Sensitivity</a></li>
+  <li><a href="#trophic-index" id="toc-trophic-index" class="nav-link" data-scroll-target="#trophic-index"><span class="header-section-number">7.9</span> Trophic Index</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/index.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/indicators.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">MarineSDMs</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">Marine Species Distribution Models</p>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ben Best </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2023-11-21</p>
-    </div>
-  </div>
   
     
   </div>
@@ -393,114 +360,48 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
-<section id="introduction" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<section id="background" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="background"><span class="header-section-number">1.1</span> Background</h2>
-<p>The best available global distributions are presently AquaMaps <span class="citation" data-cites="kaschner2006 ready2010">(<a href="references.html#ref-kaschner2006" role="doc-biblioref">Kaschner et al. 2006</a>; <a href="references.html#ref-ready2010" role="doc-biblioref">Ready et al. 2010</a>)</span> with supplementation by IUCN RedList range maps<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. These have been used to calculate the biodiversity within Exclusive Economic Zones (EEZs) <span class="citation" data-cites="halpern2012">(<a href="references.html#ref-halpern2012" role="doc-biblioref">Halpern et al. 2012</a>)</span> as well as beyond in the high seas <span class="citation" data-cites="visalli2020">(<a href="references.html#ref-visalli2020" role="doc-biblioref">Visalli et al. 2020</a>)</span>.</p>
+<section id="diversity" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="diversity"><span class="header-section-number">7.1</span> Diversity</h2>
+<p>Here are the classic diversity indices from the R package <code>vegan</code>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+H   &amp;= - \sum_{i=1}^S p_i \log_b  p_i  &amp;\text{Shannon-Weaver}  \\
+D_1 &amp;= 1 - \sum_{i=1}^S p_i^2          &amp;\text{Simpson}         \\
+D_2 &amp;= \frac{1}{\sum_{i=1}^S p_i^2}    &amp;\text{inverse Simpson}
+\end{aligned}
+\]</span></p>
 </section>
-<section id="goals" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="goals"><span class="header-section-number">1.2</span> Goals</h2>
-<p>This book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:</p>
-<ol type="1">
-<li><p><strong>Space</strong><br>
-The current AquaMaps distributions are <span class="math inline">\({1}/{2}\)</span>º (~55 km at equator), whereas the best available global bathymetry is <span class="math inline">\({1}/{240}\)</span>º (&lt; 0.5 km).</p></li>
-<li><p><strong>Time</strong><br>
-The current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.</p></li>
-<li><p><strong>Environment</strong><br>
-Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species’ environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.</p></li>
-<li><p><strong>Biology</strong><br>
-Where sufficient observations exist, additional models should be developed highlighting differences between:</p>
-<ul>
-<li><p><strong>Life stage</strong>, e.g.&nbsp;larval vs adult.</p></li>
-<li><p><strong>Gender</strong> where varies, such as male sperm whales being more cosmopolitan.</p></li>
-<li><p><strong>Subpopulations</strong> for understanding metapopulation dynamics</p></li>
-<li><p><strong>Behavior</strong>, such as migrating, feeding or breeding.</p></li>
-</ul></li>
-</ol>
-<p>By definition <a class="glossary">MBON<span class="def">Marine Biodiversity Observation Network; see MarineBON.org</span></a> is a network, so this is inclusive of and meant for all participants.</p>
+<section id="endemism" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="endemism"><span class="header-section-number">7.2</span> Endemism</h2>
+<p>Endemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps.</p>
 </section>
-<section id="motivations" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="motivations"><span class="header-section-number">1.3</span> Motivations</h2>
-<ul>
-<li><p><a href="https://aquamaps.org/">AquaMaps.org</a><br>
-AquaMaps <span class="citation" data-cites="kaschner2006 ready2010">(<a href="references.html#ref-kaschner2006" role="doc-biblioref">Kaschner et al. 2006</a>; <a href="references.html#ref-ready2010" role="doc-biblioref">Ready et al. 2010</a>)</span> represents a massive amount of work to gather parameters for &gt;33.5K marine species, including areas to mask out.</p></li>
-<li><p><a href="OBIS.org">OBIS.org</a><br>
-The Ocean Biogeographic Information System <span class="citation" data-cites="klein2019 grassle2000">(<a href="references.html#ref-klein2019" role="doc-biblioref">Klein et al. 2019</a>; <a href="references.html#ref-grassle2000" role="doc-biblioref">Grassle 2000</a>)</span>is the central portal for continuously added observations with extra flags for quality control, all of which makes marine SDMs possible.</p></li>
-<li><p><strong>Modeling</strong> methods have dramatically improved over time and are ripe for fresh application. The R package <code>dismo</code> originally came came out with an <a href="https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf">SDM vignette</a> as a practical supplement to their excellent review of SDMs <span class="citation" data-cites="elith2009">(<a href="references.html#ref-elith2009" role="doc-biblioref">Elith and Leathwick 2009</a>)</span> and using the Maxent algorithm <span class="citation" data-cites="elith2011">(<a href="references.html#ref-elith2011" role="doc-biblioref">Elith et al. 2011</a>)</span>. The raster package furthered that (raster<a href="https://rspatial.org/raster/sdm/">sdm</a>) and now there’s <a href="https://rspatial.org/sdm/"><code>terra</code> sdm</a>. Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine <span class="citation" data-cites="gorelick2017 camposEcologicalNicheModels2023">(<a href="references.html#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>; <a href="references.html#ref-camposEcologicalNicheModels2023" role="doc-biblioref">Campos et al. 2023</a>)</span>, allowing for dense global raster processing.</p></li>
-<li><p>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called “<a href="https://en.wikipedia.org/wiki/30_by_30"><strong>30 by 30</strong></a>”. In the U.S., this is <a href="https://www.noaa.gov/america-the-beautiful">America the Beautiful</a> initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of <strong>climate change</strong>, as evidenced by marine heatwaves and shifts in population distributions.</p></li>
-</ul>
+<section id="extinction-risk" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="extinction-risk"><span class="header-section-number">7.3</span> Extinction Risk</h2>
+<p>This is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe’s <a href="https://www.natureserve.org/conservation-status-assessment">Conservation Status Ranks</a> for the U.S.</p>
 </section>
-<section id="contribute" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="contribute"><span class="header-section-number">1.4</span> Contribute</h2>
-<p>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</p>
-<ol type="1">
-<li><p>Email Ben (ben@ecoquants.com) with any suggestions, including suggested revisions of this online book.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Note that you can download this entire book as:</p>
-<ul>
-<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Adobe Acrobat <a href="https://marinebon.github.io/MarineSDMs/MarineSDMs.pdf">pdf</a> to add annotations; or</p></li>
-<li><p><i class="fa-solid fa-file-word" aria-label="file-word"></i> Microsoft Word <a href="https://marinebon.github.io/MarineSDMs/MarineSDMs.docx">docx</a> to edit with Track Changes on.</p></li>
-</ul>
-<p>These are available in the upper left navigation menu by clicking the download icon <i class="bi bi-download"></i>.</p>
-</div>
-</div></li>
-<li><p>Submit a <a href="https://github.com/marinebon/MarineSDMs/issues/new/choose">New Issue</a> on Github.</p></li>
-<li><p>Click on the “Edit this Page” in the upper right. If you have a Github account, then you can fork this repository from owner “marinebon” to your username, edit the page(s) and submit a pull request.</p></li>
-<li><p>If you are a regular contributor, you can be added to the collaborators of this repository to make push changes directly (without needing a pull request).</p></li>
-</ol>
+<section id="functional-importance" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="functional-importance"><span class="header-section-number">7.4</span> Functional Importance</h2>
+</section>
+<section id="habitat-forming" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="habitat-forming"><span class="header-section-number">7.5</span> Habitat Forming</h2>
+<p>Habitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services.</p>
+</section>
+<section id="phylogenetic-uniqueness" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="phylogenetic-uniqueness"><span class="header-section-number">7.6</span> Phylogenetic Uniqueness</h2>
+</section>
+<section id="richness" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="richness"><span class="header-section-number">7.7</span> Richness</h2>
+</section>
+<section id="sensitivity" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="sensitivity"><span class="header-section-number">7.8</span> Sensitivity</h2>
+<p>Sensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy.</p>
+</section>
+<section id="trophic-index" class="level2" data-number="7.9">
+<h2 data-number="7.9" class="anchored" data-anchor-id="trophic-index"><span class="header-section-number">7.9</span> Trophic Index</h2>
 
 
 <!-- -->
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-camposEcologicalNicheModels2023" class="csl-entry" role="listitem">
-Campos, João C., Nuno Garcia, João Alírio, Salvador Arenas-Castro, Ana C. Teodoro, and Neftalí Sillero. 2023. <span>“Ecological <span>Niche Models</span> Using <span>MaxEnt</span> in <span>Google Earth Engine</span>: <span>Evaluation</span>, Guidelines and Recommendations.”</span> <em>Ecological Informatics</em> 76 (September): 102147. <a href="https://doi.org/10.1016/j.ecoinf.2023.102147">https://doi.org/10.1016/j.ecoinf.2023.102147</a>.
-</div>
-<div id="ref-elith2009" class="csl-entry" role="listitem">
-Elith, Jane, and John R. Leathwick. 2009. <span>“Species Distribution Models: Ecological Explanation and Prediction Across Space and Time.”</span> <em>Annual Review of Ecology, Evolution, and Systematics</em> 40 (1): 677–97. <a href="https://doi.org/10.1146/annurev.ecolsys.110308.120159">https://doi.org/10.1146/annurev.ecolsys.110308.120159</a>.
-</div>
-<div id="ref-elith2011" class="csl-entry" role="listitem">
-Elith, Jane, Steven J. Phillips, Trevor Hastie, Miroslav Dudík, Yung En Chee, and Colin J. Yates. 2011. <span>“A Statistical Explanation of MaxEnt for Ecologists.”</span> <em>Diversity and Distributions</em> 17 (1): 43–57. <a href="http://dx.doi.org/10.1111/j.1472-4642.2010.00725.x">http://dx.doi.org/10.1111/j.1472-4642.2010.00725.x</a>.
-</div>
-<div id="ref-gorelick2017" class="csl-entry" role="listitem">
-Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. <span>“Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.”</span> <em>Remote Sensing of Environment</em>, Big remotely sensed data: Tools, applications and experiences, 202 (December): 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031">https://doi.org/10.1016/j.rse.2017.06.031</a>.
-</div>
-<div id="ref-grassle2000" class="csl-entry" role="listitem">
-Grassle, J. Frederick. 2000. <span>“The Ocean Biogeographic Information System (OBIS): An on-Line, Worldwide Atlas for Accessing, Modeling and Mapping Marine Biological Data in a Multidimensional Geographic Context.”</span> <em>Oceanography</em> 13 (3): 5–7. <a href="https://www.jstor.org/stable/43924357">https://www.jstor.org/stable/43924357</a>.
-</div>
-<div id="ref-halpern2012" class="csl-entry" role="listitem">
-Halpern, Benjamin S., Catherine Longo, Darren Hardy, Karen L. McLeod, Jameal F. Samhouri, Steven K. Katona, Kristin Kleisner, et al. 2012. <span>“An Index to Assess the Health and Benefits of the Global Ocean.”</span> <em>Nature</em>. <a href="https://doi.org/10.1038/nature11397">https://doi.org/10.1038/nature11397</a>.
-</div>
-<div id="ref-kaschner2006" class="csl-entry" role="listitem">
-Kaschner, K., R. Watson, A. W. Trites, and D. Pauly. 2006. <span>“Mapping World-Wide Distributions of Marine Mammal Species Using a Relative Environmental Suitability (RES) Model.”</span> <em>Marine Ecology Progress Series</em> 316 (July): 285–310. <a href="https://doi.org/10.3354/meps316285">https://doi.org/10.3354/meps316285</a>.
-</div>
-<div id="ref-klein2019" class="csl-entry" role="listitem">
-Klein, Eduardo, Ward Appeltans, Pieter Provoost, Hanieh Saeedi, Abigail Benson, Lenore Bajona, Ana Carolina Peralta, and R. Sky Bristol. 2019. <span>“OBIS Infrastructure, Lessons Learned, and Vision for the Future.”</span> <em>Frontiers in Marine Science</em> 6. <a href="https://www.frontiersin.org/articles/10.3389/fmars.2019.00588">https://www.frontiersin.org/articles/10.3389/fmars.2019.00588</a>.
-</div>
-<div id="ref-ready2010" class="csl-entry" role="listitem">
-Ready, Jonathan, Kristin Kaschner, Andy B. South, Paul D. Eastwood, Tony Rees, Josephine Rius, Eli Agbayani, Sven Kullander, and Rainer Froese. 2010. <span>“Predicting the Distributions of Marine Organisms at the Global Scale.”</span> <em>Ecological Modelling</em> 221 (3): 467–78. <a href="https://doi.org/10.1016/j.ecolmodel.2009.10.025">https://doi.org/10.1016/j.ecolmodel.2009.10.025</a>.
-</div>
-<div id="ref-visalli2020" class="csl-entry" role="listitem">
-Visalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. <span>“Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.”</span> <em>Marine Policy</em>, March, 103927. <a href="https://doi.org/10.1016/j.marpol.2020.103927">https://doi.org/10.1016/j.marpol.2020.103927</a>.
-</div>
-</div>
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>IUCN RedList range maps: <a href="https://www.iucnredlist.org/resources/spatial-data-download" class="uri">https://www.iucnredlist.org/resources/spatial-data-download</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -905,99 +806,55 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./group.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group Taxa</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./create.html" class="pagination-link">
-        <span class="nav-page-text">Create SDM</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./software.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Software</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Indicators"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Diversity</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Here are the classic diversity indices from the R package <span class="in">`vegan`</span>:</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># in .Rprofile:</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="st">"glossary"</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>()))</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"glossary"</span>,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">"https://debruine.r-universe.dev"</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="st">"https://cloud.r-project.org"</span>))</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glossary)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_path</span>(<span class="st">"glossary.yml"</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_popup</span>(<span class="st">"click"</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>glossary<span class="sc">::</span><span class="fu">glossary_persistent</span>(<span class="cn">TRUE</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Terminal: quarto publish gh-pages</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>\begin{aligned}</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>H   &amp;= - \sum_{i=1}^S p_i \log_b  p_i  &amp;\text{Shannon-Weaver}  <span class="sc">\\</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>D_1 &amp;= 1 - \sum_{i=1}^S p_i^2          &amp;\text{Simpson}         <span class="sc">\\</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>D_2 &amp;= \frac{1}{\sum_{i=1}^S p_i^2}    &amp;\text{inverse Simpson}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>\end{aligned}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Endemism</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Endemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Extinction Risk</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Background</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>This is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe's <span class="co">[</span><span class="ot">Conservation Status Ranks</span><span class="co">](https://www.natureserve.org/conservation-status-assessment)</span> for the U.S.</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>The best available global distributions are presently AquaMaps <span class="co">[</span><span class="ot">@kaschner2006; @ready2010</span><span class="co">]</span> with supplementation by IUCN RedList range maps<span class="ot">[^index-1]</span>. These have been used to calculate the biodiversity within Exclusive Economic Zones (EEZs) <span class="co">[</span><span class="ot">@halpern2012</span><span class="co">]</span> as well as beyond in the high seas <span class="co">[</span><span class="ot">@visalli2020</span><span class="co">]</span>.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Functional Importance</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ot">[^index-1]: </span>IUCN RedList range maps: <span class="ot">&lt;https://www.iucnredlist.org/resources/spatial-data-download&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Habitat Forming</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Goals</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Habitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services.</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>This book is meant to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phylogenetic Uniqueness</span></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Space**\</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    The current AquaMaps distributions are ${1}/{2}$º (\~55 km at equator), whereas the best available global bathymetry is ${1}/{240}$º (<span class="sc">\&lt;</span> 0.5 km).</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Time**\</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    The current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Richness</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sensitivity</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Sensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy.</span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Environment**\</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    Other environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species' environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Biology**\</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    Where sufficient observations exist, additional models should be developed highlighting differences between:</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Life stage**, e.g. larval vs adult.</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Gender** where varies, such as male sperm whales being more cosmopolitan.</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Subpopulations** for understanding metapopulation dynamics</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Behavior**, such as migrating, feeding or breeding.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>By definition <span class="in">`r glossary("MBON")`</span> is a network, so this is inclusive of and meant for all participants.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Motivations</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">AquaMaps.org</span><span class="co">](https://aquamaps.org/)</span>\</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    AquaMaps <span class="co">[</span><span class="ot">@kaschner2006; @ready2010</span><span class="co">]</span> represents a massive amount of work to gather parameters for <span class="sc">\&gt;</span>33.5K marine species, including areas to mask out.</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">OBIS.org</span><span class="co">](OBIS.org)</span>\</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    The Ocean Biogeographic Information System <span class="co">[</span><span class="ot">@klein2019; @grassle2000</span><span class="co">]</span>is the central portal for continuously added observations with extra flags for quality control, all of which makes marine SDMs possible.</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Modeling** methods have dramatically improved over time and are ripe for fresh application. The R package <span class="in">`dismo`</span> originally came came out with an <span class="co">[</span><span class="ot">SDM vignette</span><span class="co">](https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf)</span> as a practical supplement to their excellent review of SDMs <span class="co">[</span><span class="ot">@elith2009</span><span class="co">]</span> and using the Maxent algorithm <span class="co">[</span><span class="ot">@elith2011</span><span class="co">]</span>. The raster package furthered that (raster<span class="co">[</span><span class="ot"> sdm</span><span class="co">](https://rspatial.org/raster/sdm/)</span>) and now there's <span class="co">[</span><span class="ot">`terra` sdm</span><span class="co">](https://rspatial.org/sdm/)</span>. Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine <span class="co">[</span><span class="ot">@gorelick2017; @camposEcologicalNicheModels2023</span><span class="co">]</span>, allowing for dense global raster processing.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "<span class="co">[</span><span class="ot">**30 by 30**</span><span class="co">](https://en.wikipedia.org/wiki/30_by_30)</span>". In the U.S., this is <span class="co">[</span><span class="ot">America the Beautiful</span><span class="co">](https://www.noaa.gov/america-the-beautiful)</span> initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contribute</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Email Ben (ben\@ecoquants.com) with any suggestions, including suggested revisions of this online book. </span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    ::: {.callout-note}</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    Note that you can download this entire book as:</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>{{&lt; fa file-pdf &gt;}} Adobe Acrobat <span class="co">[</span><span class="ot">pdf</span><span class="co">](https://marinebon.github.io/MarineSDMs/MarineSDMs.pdf)</span> to add annotations; or</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>{{&lt; fa file-word &gt;}} Microsoft Word <span class="co">[</span><span class="ot">docx</span><span class="co">](https://marinebon.github.io/MarineSDMs/MarineSDMs.docx)</span>  to edit with Track Changes on.</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    These are available in the upper left navigation menu by clicking the download icon <span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">"bi bi-download"</span><span class="kw">&gt;&lt;/i&gt;</span>.</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    :::</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Submit a <span class="co">[</span><span class="ot">New Issue</span><span class="co">](https://github.com/marinebon/MarineSDMs/issues/new/choose)</span> on Github.</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Click on the "Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request.</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>If you are a regular contributor, you can be added to the collaborators of this repository to make push changes directly (without needing a pull request).</span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Trophic Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
