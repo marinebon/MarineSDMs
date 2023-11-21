@@ -67,6 +67,7 @@ format:
     css: glossary.css
   pdf:
     documentclass: scrreprt
+    keep-tex: true
   docx: default
 
 editor: visual

@@ -29,5 +29,3 @@ url_code <- metadata[["url-code"]]
 -   [{{< fa brands github >}} `code`](`r url_code`)
 
 ![](`r img`)
-
-![](%60r%20img%60)
