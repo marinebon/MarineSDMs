@@ -328,7 +328,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
   M{{model}}:::out
   E[/evaluate/]:::fxn
   C[/calibrate/]:::fxn
-  P[/predict/]:::fxn
+  pr[/predict/]:::fxn
   N[["new data"]]:::in
   prd(prediction):::out
   prf(performance):::out
@@ -347,10 +347,10 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
   t2  --&gt; E
   M   --&gt; C
   C   --&gt; F
-  M   --&gt; P
-  N   --&gt; P
+  M   --&gt; pr
+  N   --&gt; pr
   M   --&gt; E
-  P   --&gt; prd
+  pr  --&gt; prd
   E   --&gt; prf
 
   %% Legend
@@ -798,8 +798,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>%%| fig<span class="ot">-c</span>ap: <span class="ot">"</span><span class="st">Diagram of SDM data preparation and model fitting.</span><span class="ot">"</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>%%| file: diagrams/sdm<span class="ot">-p</span>rocess.mmd</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
