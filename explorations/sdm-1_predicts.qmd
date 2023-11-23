@@ -6,6 +6,7 @@ url-code: "https://github.com/marinebon/sdm-explore/blob/main/sdm_1.qmd"
 categories: 
    - "data: OBIS"
    - "tech: R"
+   - "model: Maxent"
 editor: source   
 ---
 

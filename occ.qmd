@@ -1,0 +1,21 @@
+---
+title: "Occurrences"
+subtitle: "Fetch presence observations and filter for quality control"
+---
+
+To describe:
+
+-   `robis`
+
+-   Filter based on quality flags
+
+-   Remove outliers
+
+    -   [`eks`](https://cran.r-project.org/web/packages/eks/vignettes/tidysf_kde.html)\
+        *Tidy and Geospatial Kernel Smoothing for spatially filtering outlier observations*
+
+        ![Source: Kernel density estimates for tidy and geospatial data in the eks package](figures/software/eks.png){#fig-eks}
+
+## Fetch OBIS
+
+## Filter occurrences

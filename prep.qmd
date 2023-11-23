@@ -1,4 +1,9 @@
-# Prepare Data
+---
+title: "Prepare"
+subtitle: "Prepare observations and environmental data for modeling"
+---
+
+# Prepare
 
 ```{mermaid}
 %%| label: fig-prep

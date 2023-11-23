@@ -25,15 +25,26 @@ book:
       Built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
     - index.qmd
-    - part: create.qmd
+    - part: "Prepare"
       chapters:
-        - prep-data.qmd
+        - prep.qmd
+        - occ.qmd
+        - abs.qmd
+        - env.qmd
+    - part: "Model"
+      chapters:
         - model.qmd
-    - part: combine.qmd
+        - split.qmd
+        - fit.qmd
+        - calibrate.qmd
+        - predict.qmd
+        - evaluate.qmd
+    - part: "Combine"
       chapters:
+        - combine.qmd
         - ensemble.qmd
         - mosaic.qmd
-        - group.qmd
+        - taxa.qmd
         - indicators.qmd
     - software.qmd
     - organize.qmd

@@ -62,6 +62,14 @@ By definition `r glossary("MBON")` is a network, so this is inclusive of and mea
 
 -   The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "[**30 by 30**](https://en.wikipedia.org/wiki/30_by_30)". In the U.S., this is [America the Beautiful](https://www.noaa.gov/america-the-beautiful) initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.
 
+## Process
+
+```{mermaid}
+%%| label: fig-process
+%%| fig-cap: "Diagram of SDM data preparation and model fitting."
+%%| file: diagrams/sdm-process.mmd
+```
+
 ## Contribute
 
 We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:
@@ -84,7 +92,9 @@ We very much welcome your feedback, contributions and collaboration. Here are a 
 
 4.  If you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).
 
-## Features of this Book
+## Features
+
+This Quarto book has a few cool features:
 
 -   Multiple formats\
     From the singe set of source Quarto documents (\*.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.
@@ -92,7 +102,8 @@ We very much welcome your feedback, contributions and collaboration. Here are a 
 -   Self-rendering\
     Github hosts the web pages (\*.html), which get rendered from the source code (\*.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.
 
--   Mermaid diagrams
+-   Mermaid diagrams\
+    e.g., @fig-process, @fig-prep, @fig-model
 
 -   Quarto document listings
 

@@ -1,5 +1,6 @@
 ---
 title: "Indicators"
+subtitle: "Calculate indicators of ecological or management interest beyond taxonomic groupings"
 ---
 
 ## Diversity
@@ -13,7 +14,7 @@ Here are the classic diversity indices from the R package `vegan`:
 > D_2 &= \frac{1}{\sum_{i=1}^S p_i^2}    &\text{inverse Simpson}
 > \end{aligned}
 > $$
-> 
+>
 > where $p_i$ is the proportion of species $i$, and $S$ is the number of species so that $\sum_{i=1}^S p_i = 1$, and $b$ is the base of the logarithm.
 
 ## Endemism

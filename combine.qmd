@@ -1,5 +1,6 @@
 ---
-title: "Combine SDMs"
+title: "Combine"
+subtitle: "Combine SDMs from the same or multiple species"
 ---
 
 We look at combining SDMs to calculate biodiversity based on addressing questions of interest and relevance.

@@ -1,0 +1,21 @@
+---
+title: "Pseudo-absences"
+subtitle: "Generate pseudo-absence or background environmental values to compare with occurrence environment"
+---
+
+Describe various strategies for generating pseudo-absences.
+
+-   [Pseudo-absences • biomod2](https://biomodhub.github.io/biomod2/articles/vignette_pseudoAbsences.html)
+    -   [@barbet-massin2012]
+
+## All background
+
+A common Maxent strategy is to feed all background points into Maxent, and then to use the resulting distribution as a null model. This is the default strategy in Maxent [@phillips2017; @phillips2006; @phillips2008].
+
+## Mask by FAO areas
+
+The FAO areas applicable to species are included in the `aquamapsdata`, presumably from evaluating OBIS observations and the literature.
+
+## Use occurrences from same Family, different species
+
+By using the same family, we can be sure that the pseudo-absences are ecologically similar to the species of interest.

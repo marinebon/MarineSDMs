@@ -1,0 +1,6 @@
+# Split
+
+Data is often split so that \~20% of the observations (presence and absence) are set aside from the model fitting to be used for model evaluation.
+
+The `k-fold` function is often used to split the data into k groups, and then the model is fit k times, each time using a different group as the test data and the remaining groups as the training data.
+
