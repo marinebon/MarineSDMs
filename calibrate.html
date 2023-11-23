@@ -96,9 +96,6 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -415,14 +412,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#predict" id="toc-predict" class="nav-link active" data-scroll-target="#predict"><span class="header-section-number">9.1</span> Predict</a></li>
-  <li><a href="#evaluate" id="toc-evaluate" class="nav-link" data-scroll-target="#evaluate"><span class="header-section-number">9.2</span> Evaluate</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/calibrate.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -430,6 +420,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Calibrate</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Calibrate model fit, i.e., model selection</p>
 </div>
 
 
@@ -446,50 +437,6 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 <p>The process of refining the model to only the most relevant environmental predictor terms is commonly called “Model Selection.” One of the most cited scientific paper of all time <span class="citation" data-cites="akaike1974">(<a href="references.html#ref-akaike1974" role="doc-biblioref">Akaike 1974</a>)</span> is based on taking a most parsimonious approach to this process – the so called Akaike Information Criteria (AIC).</p>
 <p>It is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.</p>
-<section id="predict" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="predict"><span class="header-section-number">9.1</span> Predict</h2>
-<p>The prediction step applies the environmental relationships from the fitted model to a new set of data, typically the seascape of interest, and perhaps with some sort of temporal snapshot (e.g., climatic annual or monthly average).</p>
-</section>
-<section id="evaluate" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="evaluate"><span class="header-section-number">9.2</span> Evaluate</h2>
-<p>Model evaluation uses the set aside test data from the earlier splitting to evaluate how well the model predicts the response of presence or absence. Since the test response data is binary [0,1] and the prediction from the model is continuous [0-1], a threshold needs to be applied to assign to convert the continuous response to binary. This is often performed through a Receiver Operator Characteristic (<strong>ROC</strong>) curve (<a href="evaluate.html#fig-rocr">Figure&nbsp;<span>11.1</span></a>), which evaluates at each threshold the <strong>confusion matrix</strong> (<a href="evaluate.html#tbl-confusion-matrix">Table&nbsp;<span>11.1</span></a>).</p>
-<div id="tbl-confusion-matrix" class="anchored">
-<table class="table">
-<caption>Table&nbsp;9.1: Confusion matrix to understand predicted versus observed.</caption>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>Predicted</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>0 (absence)</td>
-<td>1 (presence)</td>
-</tr>
-<tr class="odd">
-<td>Observed</td>
-<td>0 (absence)</td>
-<td>True absence</td>
-<td>False presence</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>1 (presence)</td>
-<td>False absence</td>
-<td>True presence</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="fig-rocr" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><a href="figures/rocr.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: ROCR: visualizing classifier performance in R"><img src="figures/rocr.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Figure&nbsp;9.1: ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: <a href="https://cran.rstudio.com/web/packages/ROCR/vignettes/ROCR.html">ROCR: visualizing classifier performance in R</a></figcaption>
-</figure>
-</div>
 
 
 <!-- -->
@@ -499,7 +446,6 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 Akaike, H. 1974. <span>“A New Look at the Statistical Model Identification.”</span> <em>IEEE Transactions on Automatic Control</em> 19 (6): 716723.
 </div>
 </div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -913,30 +859,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Calibrate</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>The process of refining the model to only the most relevant environmental predictor terms is commonly called "Model Selection." One of the most cited scientific paper of all time <span class="co">[</span><span class="ot">@akaike1974</span><span class="co">]</span> is based on taking a most parsimonious approach to this process -- the so called Akaike Information Criteria (AIC).</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>It is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Predict</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>The prediction step applies the environmental relationships from the fitted model to a new set of data, typically the seascape of interest, and perhaps with some sort of temporal snapshot (e.g., climatic annual or monthly average).</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Evaluate</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Model evaluation uses the set aside test data from the earlier splitting to evaluate how well the model predicts the response of presence or absence. Since the test response data is binary <span class="sc">\[</span>0,1<span class="sc">\]</span> and the prediction from the model is continuous <span class="sc">\[</span>0-1<span class="sc">\]</span>, a threshold needs to be applied to assign to convert the continuous response to binary. This is often performed through a Receiver Operator Characteristic (**ROC**) curve (@fig-rocr), which evaluates at each threshold the **confusion matrix** (@tbl-confusion-matrix).</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>|          |              |               |                |</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>|----------|--------------|---------------|----------------|</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>|          |              | Predicted     |                |</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>|          |              | 0 (absence)   | 1 (presence)   |</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>| Observed | 0 (absence)  | True absence  | False presence |</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>|          | 1 (presence) | False absence | True presence  |</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>: Confusion matrix to understand predicted versus observed. {#tbl-confusion-matrix}</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: [ROCR: visualizing classifier performance in R](https://cran.rstudio.com/web/packages/ROCR/vignettes/ROCR.html)</span><span class="co">](figures/rocr.png)</span>{#fig-rocr}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Calibrate"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Calibrate model fit, i.e., model selection"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>The process of refining the model to only the most relevant environmental predictor terms is commonly called "Model Selection." One of the most cited scientific paper of all time <span class="co">[</span><span class="ot">@akaike1974</span><span class="co">]</span> is based on taking a most parsimonious approach to this process -- the so called Akaike Information Criteria (AIC).</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>It is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -944,11 +874,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© <a href="https://bbest.github.io/cv/">Ben Best</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/calibrate.qmd" class="toc-action">Edit this page</a></p></div></div></div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":true,"closeEffect":"zoom"});</script>
 
 
 
