@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MarineSDMs - Explorations</title>
+<title>MarineSDMs - 8&nbsp; Fit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,10 +83,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./explorations/am-fine.html" rel="next">
-<link href="./glossary.html" rel="prev">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<link href="./calibrate.html" rel="next">
+<link href="./split.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -79,6 +96,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -99,35 +119,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing-experiments .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing-experiments'] = new List('listing-listing-experiments', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V3HZN14Z8G"></script>
 
 <script type="text/javascript">
@@ -138,8 +129,6 @@ gtag('js', new Date());
 gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="glossary.css">
 </head>
@@ -153,7 +142,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="./explorations.html">Explorations</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./model.html">Model</a></li><li class="breadcrumb-item"><a href="./fit.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fit</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -285,7 +274,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./fit.html" class="sidebar-item-text sidebar-link">
+  <a href="./fit.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fit</span></span></a>
   </div>
 </li>
@@ -385,13 +374,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./explorations.html" class="sidebar-item-text sidebar-link active">
+            <a href="./explorations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explorations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./explorations/am-fine.html" class="sidebar-item-text sidebar-link">
@@ -426,14 +415,22 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="data: AquaMaps">data: AquaMaps <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data: OBIS">data: OBIS <span class="quarto-category-count">(2)</span></div><div class="category" data-category="model: Maxent">model: Maxent <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tech: Google Earth Engine">tech: Google Earth Engine <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tech: R">tech: R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="tech: Shiny">tech: Shiny <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#calibrate" id="toc-calibrate" class="nav-link active" data-scroll-target="#calibrate"><span class="header-section-number">8.1</span> Calibrate</a></li>
+  <li><a href="#predict" id="toc-predict" class="nav-link" data-scroll-target="#predict"><span class="header-section-number">8.2</span> Predict</a></li>
+  <li><a href="#evaluate" id="toc-evaluate" class="nav-link" data-scroll-target="#evaluate"><span class="header-section-number">8.3</span> Evaluate</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/fit.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Explorations</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fit</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -448,144 +445,67 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
-<div id="listing-listing-experiments" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="data: AquaMaps,tech: Google Earth Engine,tech: Shiny" data-listing-file-modified-sort="1700762093360" data-listing-reading-time-sort="1">
-<a href="./explorations/am-fine.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./figures/explorations/aquamaps-downscaled.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AquaMaps Downscaled
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: AquaMaps'); return false;">
-data: AquaMaps
+<p>Model fitting in theory is quite complex, but quite simple in practice, with feeding the prepared data into the modeling function.</p>
+<p>However there are MANY modeling techniques from which to choose. For instance check out 238 entries in <a href="https://topepo.github.io/caret/available-models.html">6 Available Models | The caret Package</a>.</p>
+<section id="calibrate" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="calibrate"><span class="header-section-number">8.1</span> Calibrate</h2>
+<p>The process of refining the model to only the most relevant environmental predictor terms is commonly called “Model Selection.” One of the most cited scientific paper of all time <span class="citation" data-cites="akaike1974">(<a href="references.html#ref-akaike1974" role="doc-biblioref">Akaike 1974</a>)</span> is based on taking a most parsimonious approach to this process – the so called Akaike Information Criteria (AIC).</p>
+<p>It is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.</p>
+</section>
+<section id="predict" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="predict"><span class="header-section-number">8.2</span> Predict</h2>
+<p>The prediction step applies the environmental relationships from the fitted model to a new set of data, typically the seascape of interest, and perhaps with some sort of temporal snapshot (e.g., climatic annual or monthly average).</p>
+</section>
+<section id="evaluate" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="evaluate"><span class="header-section-number">8.3</span> Evaluate</h2>
+<p>Model evaluation uses the set aside test data from the earlier splitting to evaluate how well the model predicts the response of presence or absence. Since the test response data is binary [0,1] and the prediction from the model is continuous [0-1], a threshold needs to be applied to assign to convert the continuous response to binary. This is often performed through a Receiver Operator Characteristic (<strong>ROC</strong>) curve (<a href="evaluate.html#fig-rocr">Figure&nbsp;<span>11.1</span></a>), which evaluates at each threshold the <strong>confusion matrix</strong> (<a href="evaluate.html#tbl-confusion-matrix">Table&nbsp;<span>11.1</span></a>).</p>
+<div id="tbl-confusion-matrix" class="anchored">
+<table class="table">
+<caption>Table&nbsp;8.1: Confusion matrix to understand predicted versus observed.</caption>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Predicted</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>0 (absence)</td>
+<td>1 (presence)</td>
+</tr>
+<tr class="odd">
+<td>Observed</td>
+<td>0 (absence)</td>
+<td>True absence</td>
+<td>False presence</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1 (presence)</td>
+<td>False absence</td>
+<td>True presence</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: Google Earth Engine'); return false;">
-tech: Google Earth Engine
+<div id="fig-rocr" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="figures/rocr.png" class="lightbox" title="ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: ROCR: visualizing classifier performance in R" data-gallery="quarto-lightbox-gallery-1"><img src="figures/rocr.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;8.1: ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: <a href="https://cran.rstudio.com/web/packages/ROCR/vignettes/ROCR.html">ROCR: visualizing classifier performance in R</a></figcaption>
+</figure>
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: Shiny'); return false;">
-tech: Shiny
-</div>
-</div>
-<div class="card-text listing-description">
-Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="data: AquaMaps,tech: R" data-listing-file-modified-sort="1700762093360" data-listing-reading-time-sort="1">
-<a href="./explorations/am-envelope.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="https://marinebon.github.io/aquamaps-downscaled/index_files/figure-html/fig-blue_whale_env_yes-1.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AquaMaps Envelope
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: AquaMaps'); return false;">
-data: AquaMaps
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: R'); return false;">
-tech: R
-</div>
-</div>
-<div class="card-text listing-description">
-Extract and plot AquaMaps environmental envelope, ramp rasters, using R.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="data: OBIS,tech: R" data-listing-file-modified-sort="1700762093361" data-listing-reading-time-sort="1">
-<a href="./explorations/obis-top-spp-by-class.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./figures/explorations/obis-top-spp-by-class.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-OBIS Top Species by Class
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: OBIS'); return false;">
-data: OBIS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: R'); return false;">
-tech: R
-</div>
-</div>
-<div class="card-text listing-description">
-Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="data: OBIS,tech: R,model: Maxent" data-listing-file-modified-sort="1700762093361" data-listing-reading-time-sort="1">
-<a href="./explorations/sdm-1_predicts.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./figures/explorations/sdm-1_predicts.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-SDM using <code>predicts</code> in R
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: OBIS'); return false;">
-data: OBIS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: R'); return false;">
-tech: R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('model: Maxent'); return false;">
-model: Maxent
-</div>
-</div>
-<div class="card-text listing-description">
-Predict species distribution of N Atlantic right whale using OBIS occcurrences and <code>predicts</code> package in R.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
 
 
 <!-- -->
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-akaike1974" class="csl-entry" role="listitem">
+Akaike, H. 1974. <span>“A New Look at the Statistical Model Identification.”</span> <em>IEEE Transactions on Automatic Control</em> 19 (6): 716723.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -989,28 +909,46 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./glossary.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span>
+      <a href="./split.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Split</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./explorations/am-fine.html" class="pagination-link">
-        <span class="nav-page-text">AquaMaps Downscaled</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./calibrate.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Calibrate</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Explorations</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  id: listing-experiments</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  contents:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">   - "explorations/*.qmd"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  type: grid</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Fit</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Model fitting in theory is quite complex, but quite simple in practice, with feeding the prepared data into the modeling function.</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>However there are MANY modeling techniques from which to choose. For instance check out 238 entries in <span class="co">[</span><span class="ot">6 Available Models | The caret Package</span><span class="co">](https://topepo.github.io/caret/available-models.html)</span>. </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Calibrate</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>The process of refining the model to only the most relevant environmental predictor terms is commonly called "Model Selection." One of the most cited scientific paper of all time <span class="co">[</span><span class="ot">@akaike1974</span><span class="co">]</span> is based on taking a most parsimonious approach to this process -- the so called Akaike Information Criteria (AIC).</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>::: {#listing-experiments}</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>It is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Predict</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>The prediction step applies the environmental relationships from the fitted model to a new set of data, typically the seascape of interest, and perhaps with some sort of temporal snapshot (e.g., climatic annual or monthly average).</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Evaluate</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Model evaluation uses the set aside test data from the earlier splitting to evaluate how well the model predicts the response of presence or absence. Since the test response data is binary <span class="sc">\[</span>0,1<span class="sc">\]</span> and the prediction from the model is continuous <span class="sc">\[</span>0-1<span class="sc">\]</span>, a threshold needs to be applied to assign to convert the continuous response to binary. This is often performed through a Receiver Operator Characteristic (**ROC**) curve (@fig-rocr), which evaluates at each threshold the **confusion matrix** (@tbl-confusion-matrix).</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>|          |              |               |                |</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>|----------|--------------|---------------|----------------|</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>|          |              | Predicted     |                |</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>|          |              | 0 (absence)   | 1 (presence)   |</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>| Observed | 0 (absence)  | True absence  | False presence |</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>|          | 1 (presence) | False absence | True presence  |</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>: Confusion matrix to understand predicted versus observed. {#tbl-confusion-matrix}</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: [ROCR: visualizing classifier performance in R](https://cran.rstudio.com/web/packages/ROCR/vignettes/ROCR.html)</span><span class="co">](figures/rocr.png)</span>{#fig-rocr}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -1018,10 +956,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© <a href="https://bbest.github.io/cv/">Ben Best</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/explorations.qmd" class="toc-action">Edit this page</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom","openEffect":"zoom"});</script>
 
 
 

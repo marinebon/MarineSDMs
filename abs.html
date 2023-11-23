@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MarineSDMs - 6&nbsp; Group Taxa</title>
+<title>MarineSDMs - 4&nbsp; Pseudo-absences</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,8 +83,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./indicators.html" rel="next">
-<link href="./mosaic.html" rel="prev">
+<link href="./env.html" rel="next">
+<link href="./occ.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -139,7 +139,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./combine.html">Combine SDMs</a></li><li class="breadcrumb-item"><a href="./group.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group Taxa</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prep.html">Prepare</a></li><li class="breadcrumb-item"><a href="./abs.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pseudo-absences</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -215,8 +215,8 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./create.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create SDM</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Prepare</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -224,22 +224,34 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prep-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare Data</span></span></a>
+  <a href="./prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./model.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Model</span></span></a>
+  <a href="./occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Occurrences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./abs.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pseudo-absences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./env.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Environment</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./combine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Combine SDMs</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Model</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -247,26 +259,79 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./split.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Split</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./calibrate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Calibrate</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./predict.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Predict</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Evaluate</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Combine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./combine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Combine</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./ensemble.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mosaic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mosaic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Mosaic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./group.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group Taxa</span></span></a>
+  <a href="./taxa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Taxa</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./indicators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
   </div>
 </li>
       </ul>
@@ -274,13 +339,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Software</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Software</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./organize.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Organize</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Organize</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -291,13 +356,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./glossary.html" class="sidebar-item-text sidebar-link">
@@ -308,11 +373,11 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a href="./explorations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explorations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./explorations/am-fine.html" class="sidebar-item-text sidebar-link">
@@ -347,14 +412,23 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#all-background" id="toc-all-background" class="nav-link active" data-scroll-target="#all-background"><span class="header-section-number">4.1</span> All background</a></li>
+  <li><a href="#mask-by-fao-areas" id="toc-mask-by-fao-areas" class="nav-link" data-scroll-target="#mask-by-fao-areas"><span class="header-section-number">4.2</span> Mask by FAO areas</a></li>
+  <li><a href="#use-occurrences-from-same-family-different-species" id="toc-use-occurrences-from-same-family-different-species" class="nav-link" data-scroll-target="#use-occurrences-from-same-family-different-species"><span class="header-section-number">4.3</span> Use occurrences from same Family, different species</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/abs.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group Taxa</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pseudo-absences</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Generate pseudo-absence or background environmental values to compare with occurrence environment</p>
 </div>
 
 
@@ -369,19 +443,43 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
-<p>Taxonomic groups <span class="citation" data-cites="tittensor2010">(<a href="references.html#ref-tittensor2010" role="doc-biblioref">Tittensor et al. 2010</a>)</span> in the high seas <span class="citation" data-cites="visalli2020">(<a href="references.html#ref-visalli2020" role="doc-biblioref">Visalli et al. 2020</a>)</span> were packaged with simple query statements in the draft R package <a href="https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups"><code>gmbi</code></a> (global marine biodiversity indicators).</p>
+<p>Describe various strategies for generating pseudo-absences.</p>
+<ul>
+<li><a href="https://biomodhub.github.io/biomod2/articles/vignette_pseudoAbsences.html">Pseudo-absences • biomod2</a>
+<ul>
+<li><span class="citation" data-cites="barbet-massin2012">(<a href="references.html#ref-barbet-massin2012" role="doc-biblioref">Barbet-Massin et al. 2012</a>)</span></li>
+</ul></li>
+</ul>
+<section id="all-background" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="all-background"><span class="header-section-number">4.1</span> All background</h2>
+<p>A common Maxent strategy is to feed all background points into Maxent, and then to use the resulting distribution as a null model. This is the default strategy in Maxent <span class="citation" data-cites="phillips2017 phillips2006 phillips2008">(<a href="references.html#ref-phillips2017" role="doc-biblioref">Phillips et al. 2017</a>; <a href="references.html#ref-phillips2006" role="doc-biblioref">Phillips, Anderson, and Schapire 2006</a>; <a href="references.html#ref-phillips2008" role="doc-biblioref">Phillips and Dudík 2008</a>)</span>.</p>
+</section>
+<section id="mask-by-fao-areas" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="mask-by-fao-areas"><span class="header-section-number">4.2</span> Mask by FAO areas</h2>
+<p>The FAO areas applicable to species are included in the <code>aquamapsdata</code>, presumably from evaluating OBIS observations and the literature.</p>
+</section>
+<section id="use-occurrences-from-same-family-different-species" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="use-occurrences-from-same-family-different-species"><span class="header-section-number">4.3</span> Use occurrences from same Family, different species</h2>
+<p>By using the same family, we can be sure that the pseudo-absences are ecologically similar to the species of interest.</p>
 
 
 <!-- -->
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-tittensor2010" class="csl-entry" role="listitem">
-Tittensor, Derek P., Camilo Mora, Walter Jetz, Heike K. Lotze, Daniel Ricard, Edward Vanden Berghe, and Boris Worm. 2010. <span>“Global Patterns and Predictors of Marine Biodiversity Across Taxa.”</span> <em>Nature</em> 466 (7310): 1098–1101. <a href="https://doi.org/10.1038/nature09329">https://doi.org/10.1038/nature09329</a>.
+<div id="ref-barbet-massin2012" class="csl-entry" role="listitem">
+Barbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and Wilfried Thuiller. 2012. <span>“Selecting Pseudo-Absences for Species Distribution Models: How, Where and How Many?”</span> <em>Methods in Ecology and Evolution</em> 3 (2): 327–38. <a href="https://doi.org/10.1111/j.2041-210X.2011.00172.x">https://doi.org/10.1111/j.2041-210X.2011.00172.x</a>.
 </div>
-<div id="ref-visalli2020" class="csl-entry" role="listitem">
-Visalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. <span>“Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.”</span> <em>Marine Policy</em>, March, 103927. <a href="https://doi.org/10.1016/j.marpol.2020.103927">https://doi.org/10.1016/j.marpol.2020.103927</a>.
+<div id="ref-phillips2017" class="csl-entry" role="listitem">
+Phillips, Steven J., Robert P. Anderson, Miroslav Dudík, Robert E. Schapire, and Mary E. Blair. 2017. <span>“Opening the Black Box: An Open-Source Release of Maxent.”</span> <em>Ecography</em> 40 (7): 887–93. <a href="https://doi.org/10.1111/ecog.03049">https://doi.org/10.1111/ecog.03049</a>.
+</div>
+<div id="ref-phillips2006" class="csl-entry" role="listitem">
+Phillips, Steven J., Robert P. Anderson, and Robert E. Schapire. 2006. <span>“Maximum Entropy Modeling of Species Geographic Distributions.”</span> <em>Ecological Modelling</em> 190 (3): 231–59. <a href="https://doi.org/10.1016/j.ecolmodel.2005.03.026">https://doi.org/10.1016/j.ecolmodel.2005.03.026</a>.
+</div>
+<div id="ref-phillips2008" class="csl-entry" role="listitem">
+Phillips, Steven J., and Miroslav Dudík. 2008. <span>“Modeling of Species Distributions with Maxent: New Extensions and a Comprehensive Evaluation.”</span> <em>Ecography</em> 31 (2): 161–75. <a href="https://doi.org/10.1111/j.0906-7590.2008.5203.x">https://doi.org/10.1111/j.0906-7590.2008.5203.x</a>.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -785,21 +883,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./mosaic.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mosaic</span></span>
+      <a href="./occ.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Occurrences</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./indicators.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./env.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Environment</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Group Taxa"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Taxonomic groups <span class="co">[</span><span class="ot">@tittensor2010</span><span class="co">]</span> in the high seas <span class="co">[</span><span class="ot">@visalli2020</span><span class="co">]</span> were packaged with simple query statements in the draft R package <span class="co">[</span><span class="ot">`gmbi`</span><span class="co">](https://marinebon.github.io/gmbi/articles/calc.html#assign-taxonomic-groups)</span> (global marine biodiversity indicators).</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pseudo-absences"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Generate pseudo-absence or background environmental values to compare with occurrence environment"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Describe various strategies for generating pseudo-absences.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">Pseudo-absences • biomod2</span><span class="co">](https://biomodhub.github.io/biomod2/articles/vignette_pseudoAbsences.html)</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span><span class="co">[</span><span class="ot">@barbet-massin2012</span><span class="co">]</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## All background</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>A common Maxent strategy is to feed all background points into Maxent, and then to use the resulting distribution as a null model. This is the default strategy in Maxent <span class="co">[</span><span class="ot">@phillips2017; @phillips2006; @phillips2008</span><span class="co">]</span>.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mask by FAO areas</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>The FAO areas applicable to species are included in the <span class="in">`aquamapsdata`</span>, presumably from evaluating OBIS observations and the literature.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Use occurrences from same Family, different species</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>By using the same family, we can be sure that the pseudo-absences are ecologically similar to the species of interest.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -807,7 +921,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© <a href="https://bbest.github.io/cv/">Ben Best</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/group.qmd" class="toc-action">Edit this page</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>

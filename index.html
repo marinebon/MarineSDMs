@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ben Best">
-<meta name="dcterms.date" content="2023-11-21">
+<meta name="dcterms.date" content="2023-11-23">
 
 <title>MarineSDMs</title>
 <style>
@@ -85,7 +85,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./create.html" rel="next">
+<link href="./prep.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -128,6 +128,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -220,8 +224,8 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./create.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create SDM</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Prepare</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -229,22 +233,34 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prep-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare Data</span></span></a>
+  <a href="./prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./model.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Model</span></span></a>
+  <a href="./occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Occurrences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./abs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pseudo-absences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./env.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Environment</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./combine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Combine SDMs</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Model</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -252,26 +268,79 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./split.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Split</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./calibrate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Calibrate</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./predict.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Predict</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Evaluate</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Combine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./combine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Combine</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./ensemble.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mosaic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mosaic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Mosaic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./group.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group Taxa</span></span></a>
+  <a href="./taxa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Taxa</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./indicators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
   </div>
 </li>
       </ul>
@@ -279,13 +348,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Software</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Software</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./organize.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Organize</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Organize</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -296,13 +365,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./glossary.html" class="sidebar-item-text sidebar-link">
@@ -313,11 +382,11 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a href="./explorations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explorations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./explorations/am-fine.html" class="sidebar-item-text sidebar-link">
@@ -361,8 +430,9 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
   <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">1.1</span> Background</a></li>
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals"><span class="header-section-number">1.2</span> Goals</a></li>
   <li><a href="#motivations" id="toc-motivations" class="nav-link" data-scroll-target="#motivations"><span class="header-section-number">1.3</span> Motivations</a></li>
-  <li><a href="#contribute" id="toc-contribute" class="nav-link" data-scroll-target="#contribute"><span class="header-section-number">1.4</span> Contribute</a></li>
-  <li><a href="#features-of-this-book" id="toc-features-of-this-book" class="nav-link" data-scroll-target="#features-of-this-book"><span class="header-section-number">1.5</span> Features of this Book</a></li>
+  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process"><span class="header-section-number">1.4</span> Process</a></li>
+  <li><a href="#contribute" id="toc-contribute" class="nav-link" data-scroll-target="#contribute"><span class="header-section-number">1.5</span> Contribute</a></li>
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features"><span class="header-section-number">1.6</span> Features</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/index.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
@@ -390,7 +460,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2023-11-21</p>
+      <p class="date">2023-11-23</p>
     </div>
   </div>
   
@@ -438,8 +508,78 @@ The Ocean Biogeographic Information System <span class="citation" data-cites="kl
 <li><p>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called “<a href="https://en.wikipedia.org/wiki/30_by_30"><strong>30 by 30</strong></a>”. In the U.S., this is <a href="https://www.noaa.gov/america-the-beautiful">America the Beautiful</a> initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of <strong>climate change</strong>, as evidenced by marine heatwaves and shifts in population distributions.</p></li>
 </ul>
 </section>
-<section id="contribute" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="contribute"><span class="header-section-number">1.4</span> Contribute</h2>
+<section id="process" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="process"><span class="header-section-number">1.4</span> Process</h2>
+<div class="cell" data-file="diagrams/sdm-process.mmd">
+<div class="cell-output-display">
+<div id="fig-process" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-process">flowchart TD
+
+  %% nodes
+  P(presence):::in
+  A("pseudo-absence"):::in
+  pts(obs):::out
+  X[/extract/]:::fxn
+  env(env):::in
+  D[[data]]:::out
+  S[/split/]:::fxn
+  t1[[train]]:::out
+  t2[[test]]:::out
+  F[/fit/]:::fxn
+  M{{model}}:::out
+  E[/evaluate/]:::fxn
+  C[/calibrate/]:::fxn
+  pr[/predict/]:::fxn
+  N[["new data"]]:::in
+  prd(prediction):::out
+  prf(performance):::out
+
+  %% edges
+  P   --&gt; pts
+  A   --&gt; pts
+  pts --&gt; X
+  env --&gt; X
+  X   --&gt; D
+  D   --&gt; S
+  S   --&gt; t1
+  S   --&gt; t2
+  t1  --&gt; F
+  F   --&gt; M
+  t2  --&gt; E
+  M   --&gt; C
+  C   --&gt; F
+  M   --&gt; pr
+  N   --&gt; pr
+  M   --&gt; E
+  pr  --&gt; prd
+  E   --&gt; prf
+
+  %% Legend
+  in(input):::in
+  fxn[/process/]:::fxn
+  out(output):::out
+  subgraph Legend
+    in
+    fxn
+    out
+  end
+
+  %% styles
+  classDef in  fill:lightblue
+  classDef out fill:lightgreen
+  classDef fxn fill:yellow
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1.1: Diagram of SDM data preparation and model fitting.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="contribute" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="contribute"><span class="header-section-number">1.5</span> Contribute</h2>
 <p>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</p>
 <ol type="1">
 <li><p>Email Ben (ben@ecoquants.com) with any suggestions, including suggested revisions of this online book.</p>
@@ -466,14 +606,16 @@ Note
 <li><p>If you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).</p></li>
 </ol>
 </section>
-<section id="features-of-this-book" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="features-of-this-book"><span class="header-section-number">1.5</span> Features of this Book</h2>
+<section id="features" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="features"><span class="header-section-number">1.6</span> Features</h2>
+<p>This Quarto book has a few cool features:</p>
 <ul>
 <li><p>Multiple formats<br>
 From the singe set of source Quarto documents (*.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.</p></li>
 <li><p>Self-rendering<br>
 Github hosts the web pages (*.html), which get rendered from the source code (*.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.</p></li>
-<li><p>Mermaid diagrams</p></li>
+<li><p>Mermaid diagrams<br>
+e.g., <a href="#fig-process">Figure&nbsp;<span>1.1</span></a>, <a href="prep.html#fig-prep">Figure&nbsp;<span>3.1</span></a>, <a href="model.html#fig-model">Figure&nbsp;<span>6.1</span></a></p></li>
 <li><p>Quarto document listings</p></li>
 <li><p>References</p></li>
 <li><p>Glossary</p></li>
@@ -928,8 +1070,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./create.html" class="pagination-link">
-        <span class="nav-page-text">Create SDM</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./prep.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
@@ -997,45 +1139,56 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "<span class="co">[</span><span class="ot">**30 by 30**</span><span class="co">](https://en.wikipedia.org/wiki/30_by_30)</span>". In the U.S., this is <span class="co">[</span><span class="ot">America the Beautiful</span><span class="co">](https://www.noaa.gov/america-the-beautiful)</span> initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.</span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contribute</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Process</span></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Email Ben (ben\@ecoquants.com) with any suggestions, including suggested revisions of this online book.</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    ::: callout-note</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    Note that you can download this entire book as:</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>{{&lt; fa file-pdf &gt;}} Adobe Acrobat <span class="co">[</span><span class="ot">pdf</span><span class="co">](https://marinebon.github.io/MarineSDMs/MarineSDMs.pdf)</span> to add annotations; or</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>{{&lt; fa file-word &gt;}} Microsoft Word <span class="co">[</span><span class="ot">docx</span><span class="co">](https://marinebon.github.io/MarineSDMs/MarineSDMs.docx)</span> to edit with Track Changes on.</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    These are available in the upper left navigation menu by clicking the download icon <span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">"bi bi-download"</span><span class="kw">&gt;&lt;/i&gt;</span>.</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    :::</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>%%| label: fig<span class="ot">-p</span>rocess</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>%%| fig<span class="ot">-c</span>ap: <span class="ot">"</span><span class="st">Diagram of SDM data preparation and model fitting.</span><span class="ot">"</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>%%| file: diagrams/sdm<span class="ot">-p</span>rocess.mmd</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contribute</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Email Ben (ben\@ecoquants.com) with any suggestions, including suggested revisions of this online book.</span>
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Submit a <span class="co">[</span><span class="ot">New Issue</span><span class="co">](https://github.com/marinebon/MarineSDMs/issues/new/choose)</span> on Github.</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Click on "<span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">"bi bi-github"</span><span class="kw">&gt;&lt;/i&gt;</span> Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request.</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>If you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## Features of this Book</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Multiple formats\</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>    From the singe set of source Quarto documents (<span class="sc">\*</span>.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Self-rendering\</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>    Github hosts the web pages (<span class="sc">\*</span>.html), which get rendered from the source code (<span class="sc">\*</span>.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>    ::: callout-note</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>    Note that you can download this entire book as:</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>{{&lt; fa file-pdf &gt;}} Adobe Acrobat <span class="co">[</span><span class="ot">pdf</span><span class="co">](https://marinebon.github.io/MarineSDMs/MarineSDMs.pdf)</span> to add annotations; or</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>{{&lt; fa file-word &gt;}} Microsoft Word <span class="co">[</span><span class="ot">docx</span><span class="co">](https://marinebon.github.io/MarineSDMs/MarineSDMs.docx)</span> to edit with Track Changes on.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>    These are available in the upper left navigation menu by clicking the download icon <span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">"bi bi-download"</span><span class="kw">&gt;&lt;/i&gt;</span>.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>    :::</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Submit a <span class="co">[</span><span class="ot">New Issue</span><span class="co">](https://github.com/marinebon/MarineSDMs/issues/new/choose)</span> on Github.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Click on "<span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">"bi bi-github"</span><span class="kw">&gt;&lt;/i&gt;</span> Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request.</span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Mermaid diagrams</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>If you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).</span>
 <span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Quarto document listings</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## Features</span></span>
 <span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>References</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>This Quarto book has a few cool features:</span>
 <span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Glossary</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Search</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Multiple formats\</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>    From the singe set of source Quarto documents (<span class="sc">\*</span>.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Self-rendering\</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>    Github hosts the web pages (<span class="sc">\*</span>.html), which get rendered from the source code (<span class="sc">\*</span>.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Mermaid diagrams\</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>    e.g., @fig-process, @fig-prep, @fig-model</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Quarto document listings</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>References</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Glossary</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Search</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

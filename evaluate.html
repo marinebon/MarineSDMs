@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MarineSDMs - Create SDM</title>
+<title>MarineSDMs - 11&nbsp; Evaluate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./prep-data.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./combine.html" rel="next">
+<link href="./predict.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -77,6 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -106,10 +109,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </script>
-<meta name="mermaid-theme" content="neutral">
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="glossary.css">
@@ -124,7 +123,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./create.html">Create SDM</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./model.html">Model</a></li><li class="breadcrumb-item"><a href="./evaluate.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Evaluate</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -200,8 +199,8 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./create.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Create SDM</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Prepare</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -209,22 +208,34 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prep-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare Data</span></span></a>
+  <a href="./prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./model.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Model</span></span></a>
+  <a href="./occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Occurrences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./abs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pseudo-absences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./env.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Environment</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./combine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Combine SDMs</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Model</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -232,26 +243,79 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./split.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Split</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./calibrate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Calibrate</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./predict.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Predict</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluate.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Evaluate</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Combine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./combine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Combine</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./ensemble.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mosaic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Mosaic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Mosaic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./group.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group Taxa</span></span></a>
+  <a href="./taxa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Taxa</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./indicators.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Indicators</span></span></a>
   </div>
 </li>
       </ul>
@@ -259,13 +323,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Software</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Software</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./organize.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Organize</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Organize</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -276,13 +340,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./glossary.html" class="sidebar-item-text sidebar-link">
@@ -293,11 +357,11 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a href="./explorations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explorations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./explorations/am-fine.html" class="sidebar-item-text sidebar-link">
@@ -339,7 +403,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Create SDM</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Evaluate</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -354,72 +418,43 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
-<div class="cell" data-file="diagrams/sdm-process.mmd">
-<div class="cell-output-display">
-<div id="fig-process" class="quarto-figure quarto-figure-center anchored">
+<p>Model evaluation uses the set aside test data from the earlier splitting to evaluate how well the model predicts the response of presence or absence. Since the test response data is binary [0,1] and the prediction from the model is continuous [0-1], a threshold needs to be applied to assign to convert the continuous response to binary. This is often performed through a Receiver Operator Characteristic (<strong>ROC</strong>) curve (<a href="#fig-rocr">Figure&nbsp;<span>11.1</span></a>), which evaluates at each threshold the <strong>confusion matrix</strong> (<a href="#tbl-confusion-matrix">Table&nbsp;<span>11.1</span></a>).</p>
+<div id="tbl-confusion-matrix" class="anchored">
+<table class="table">
+<caption>Table&nbsp;11.1: Confusion matrix to understand predicted versus observed.</caption>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Predicted</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>0 (absence)</td>
+<td>1 (presence)</td>
+</tr>
+<tr class="odd">
+<td>Observed</td>
+<td>0 (absence)</td>
+<td>True absence</td>
+<td>False presence</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1 (presence)</td>
+<td>False absence</td>
+<td>True presence</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="fig-rocr" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-process">flowchart TD
-
-  %% nodes
-  P(presence):::in
-  A("pseudo-absence"):::in
-  pts(obs):::out
-  X[/extract/]:::fxn
-  env(env):::in
-  D[[data]]:::out
-  S[/split/]:::fxn
-  t1[[train]]:::out
-  t2[[test]]:::out
-  F[/fit/]:::fxn
-  M{{model}}:::out
-  E[/evaluate/]:::fxn
-  C[/calibrate/]:::fxn
-  pr[/predict/]:::fxn
-  N[["new data"]]:::in
-  prd(prediction):::out
-  prf(performance):::out
-
-  %% edges
-  P   --&gt; pts
-  A   --&gt; pts
-  pts --&gt; X
-  env --&gt; X
-  X   --&gt; D
-  D   --&gt; S
-  S   --&gt; t1
-  S   --&gt; t2
-  t1  --&gt; F
-  F   --&gt; M
-  t2  --&gt; E
-  M   --&gt; C
-  C   --&gt; F
-  M   --&gt; pr
-  N   --&gt; pr
-  M   --&gt; E
-  pr  --&gt; prd
-  E   --&gt; prf
-
-  %% Legend
-  in(input):::in
-  fxn[/process/]:::fxn
-  out(output):::out
-  subgraph Legend
-    in
-    fxn
-    out
-  end
-
-  %% styles
-  classDef in  fill:lightblue
-  classDef out fill:lightgreen
-  classDef fxn fill:yellow
-</pre>
-</div>
-<figcaption class="figure-caption">Figure&nbsp;1: Diagram of SDM data preparation and model fitting.</figcaption>
+<p><a href="figures/rocr.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: ROCR: visualizing classifier performance in R"><img src="figures/rocr.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Figure&nbsp;11.1: ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: <a href="https://cran.rstudio.com/web/packages/ROCR/vignettes/ROCR.html">ROCR: visualizing classifier performance in R</a></figcaption>
 </figure>
-</div>
-</div>
 </div>
 
 
@@ -828,24 +863,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./predict.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Predict</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./prep-data.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./combine.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Combine</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Create SDM</span></span>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Evaluate</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>%%| label: fig<span class="ot">-p</span>rocess</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>%%| fig<span class="ot">-c</span>ap: <span class="ot">"</span><span class="st">Diagram of SDM data preparation and model fitting.</span><span class="ot">"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>%%| file: diagrams/sdm<span class="ot">-p</span>rocess.mmd</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Model evaluation uses the set aside test data from the earlier splitting to evaluate how well the model predicts the response of presence or absence. Since the test response data is binary <span class="sc">\[</span>0,1<span class="sc">\]</span> and the prediction from the model is continuous <span class="sc">\[</span>0-1<span class="sc">\]</span>, a threshold needs to be applied to assign to convert the continuous response to binary. This is often performed through a Receiver Operator Characteristic (**ROC**) curve (@fig-rocr), which evaluates at each threshold the **confusion matrix** (@tbl-confusion-matrix).</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>|          |              |               |                |</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>|----------|--------------|---------------|----------------|</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>|          |              | Predicted     |                |</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>|          |              | 0 (absence)   | 1 (presence)   |</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>| Observed | 0 (absence)  | True absence  | False presence |</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>|          | 1 (presence) | False absence | True presence  |</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>: Confusion matrix to understand predicted versus observed. {#tbl-confusion-matrix}</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: [ROCR: visualizing classifier performance in R](https://cran.rstudio.com/web/packages/ROCR/vignettes/ROCR.html)</span><span class="co">](figures/rocr.png)</span>{#fig-rocr}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -853,10 +894,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© <a href="https://bbest.github.io/cv/">Ben Best</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/create.qmd" class="toc-action">Edit this page</a></p></div></div></div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/evaluate.qmd" class="toc-action">Edit this page</a></p></div></div></div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":true});</script>
 
 
 

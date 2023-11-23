@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MarineSDMs - Explorations</title>
+<title>MarineSDMs - 2&nbsp; Prepare</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,10 +83,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./explorations/am-fine.html" rel="next">
-<link href="./glossary.html" rel="prev">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<link href="./occ.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -99,35 +116,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing-experiments .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing-experiments'] = new List('listing-listing-experiments', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-V3HZN14Z8G"></script>
 
 <script type="text/javascript">
@@ -137,9 +125,11 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="glossary.css">
 </head>
@@ -153,7 +143,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="./explorations.html">Explorations</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prep.html">Prepare</a></li><li class="breadcrumb-item"><a href="./prep.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -238,7 +228,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prep.html" class="sidebar-item-text sidebar-link">
+  <a href="./prep.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></span></a>
   </div>
 </li>
@@ -385,13 +375,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./explorations.html" class="sidebar-item-text sidebar-link active">
+            <a href="./explorations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Explorations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./explorations/am-fine.html" class="sidebar-item-text sidebar-link">
@@ -426,14 +416,29 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="data: AquaMaps">data: AquaMaps <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data: OBIS">data: OBIS <span class="quarto-category-count">(2)</span></div><div class="category" data-category="model: Maxent">model: Maxent <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tech: Google Earth Engine">tech: Google Earth Engine <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tech: R">tech: R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="tech: Shiny">tech: Shiny <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#prepare" id="toc-prepare" class="nav-link active" data-scroll-target="#prepare"><span class="header-section-number">3</span> Prepare</a>
+  <ul class="collapse">
+  <li><a href="#environmental-predictors" id="toc-environmental-predictors" class="nav-link" data-scroll-target="#environmental-predictors"><span class="header-section-number">3.1</span> Environmental Predictors</a>
+  <ul class="collapse">
+  <li><a href="#physiographic" id="toc-physiographic" class="nav-link" data-scroll-target="#physiographic"><span class="header-section-number">3.1.1</span> Physiographic</a></li>
+  <li><a href="#time-varying" id="toc-time-varying" class="nav-link" data-scroll-target="#time-varying"><span class="header-section-number">3.1.2</span> Time Varying</a></li>
+  <li><a href="#depth-time-varying" id="toc-depth-time-varying" class="nav-link" data-scroll-target="#depth-time-varying"><span class="header-section-number">3.1.3</span> Depth &amp; Time Varying</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/prep.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Explorations</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prepare</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Prepare observations and environmental data for modeling</p>
 </div>
 
 
@@ -448,144 +453,105 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
-<div id="listing-listing-experiments" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="data: AquaMaps,tech: Google Earth Engine,tech: Shiny" data-listing-file-modified-sort="1700762093360" data-listing-reading-time-sort="1">
-<a href="./explorations/am-fine.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./figures/explorations/aquamaps-downscaled.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AquaMaps Downscaled
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: AquaMaps'); return false;">
-data: AquaMaps
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: Google Earth Engine'); return false;">
-tech: Google Earth Engine
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: Shiny'); return false;">
-tech: Shiny
-</div>
-</div>
-<div class="card-text listing-description">
-Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+<section id="prepare" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Prepare</h1>
+<div class="cell" data-file="diagrams/sdm-prep.mmd">
+<div class="cell-output-display">
+<div id="fig-prep" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-prep">flowchart LR
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="data: AquaMaps,tech: R" data-listing-file-modified-sort="1700762093360" data-listing-reading-time-sort="1">
-<a href="./explorations/am-envelope.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="https://marinebon.github.io/aquamaps-downscaled/index_files/figure-html/fig-blue_whale_env_yes-1.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AquaMaps Envelope
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: AquaMaps'); return false;">
-data: AquaMaps
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: R'); return false;">
-tech: R
-</div>
-</div>
-<div class="card-text listing-description">
-Extract and plot AquaMaps environmental envelope, ramp rasters, using R.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+  %% nodes
+  P(presence):::in
+  A("pseudo-absence"):::in
+  pts(obs):::out
+  X[/extract/]:::fxn
+  env(env):::in
+  D[[data]]:::out
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="data: OBIS,tech: R" data-listing-file-modified-sort="1700762093361" data-listing-reading-time-sort="1">
-<a href="./explorations/obis-top-spp-by-class.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./figures/explorations/obis-top-spp-by-class.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-OBIS Top Species by Class
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: OBIS'); return false;">
-data: OBIS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: R'); return false;">
-tech: R
-</div>
-</div>
-<div class="card-text listing-description">
-Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+  %% edges
+  P   --&gt; pts
+  A   --&gt; pts
+  pts --&gt; X
+  env --&gt; X
+  X   --&gt; D
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="data: OBIS,tech: R,model: Maxent" data-listing-file-modified-sort="1700762093361" data-listing-reading-time-sort="1">
-<a href="./explorations/sdm-1_predicts.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./figures/explorations/sdm-1_predicts.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-SDM using <code>predicts</code> in R
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data: OBIS'); return false;">
-data: OBIS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tech: R'); return false;">
-tech: R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('model: Maxent'); return false;">
-model: Maxent
-</div>
-</div>
-<div class="card-text listing-description">
-Predict species distribution of N Atlantic right whale using OBIS occcurrences and <code>predicts</code> package in R.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+  %% Legend
+  in(input):::in
+  fxn[/process/]:::fxn
+  out(output):::out
+  subgraph Legend
+    in
+    fxn
+    out
+  end
 
+  %% styles
+  classDef in  fill:lightblue
+  classDef out fill:lightgreen
+  classDef fxn fill:yellow
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;3.1: Diagram of SDM data preparation for model fitting.</figcaption>
+</figure>
 </div>
 </div>
 </div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
+<ul>
+<li><strong>obs<br>
+</strong>observations: occurrences from OBIS; masked by FAO regions defined by AquaMaps <span class="citation" data-cites="aquamapsdata">(<a href="references.html#ref-aquamapsdata" role="doc-biblioref">Skyttner 2020</a>)</span>
+<ul>
+<li><strong>presence</strong><br>
+OBIS: species occurrence</li>
+<li><strong>absence</strong><br>
+OBIS not-species, but same family</li>
+</ul></li>
+<li><strong>env<br>
+</strong>environment</li>
+<li><strong>tbl</strong><br>
+table of observations (presence and absence) with environmental values</li>
+</ul>
+<section id="environmental-predictors" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="environmental-predictors"><span class="header-section-number">3.1</span> Environmental Predictors</h2>
+<section id="physiographic" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="physiographic"><span class="header-section-number">3.1.1</span> Physiographic</h3>
+<ul>
+<li><p><code>depth</code><br>
+Bathymetric Depth</p></li>
+<li><p><code>d2coast</code><br>
+Distance to Coast</p></li>
+<li><p><code>d2shelf</code><br>
+Distance to Shelf</p></li>
+</ul>
+</section>
+<section id="time-varying" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="time-varying"><span class="header-section-number">3.1.2</span> Time Varying</h3>
+<ul>
+<li><code>vgpm</code><br>
+Vertically integrated primary Productivity model</li>
+</ul>
+</section>
+<section id="depth-time-varying" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="depth-time-varying"><span class="header-section-number">3.1.3</span> Depth &amp; Time Varying</h3>
+<ul>
+<li><p><code>temp</code><br>
+Temperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus</p></li>
+<li><p><code>salin</code><br>
+Salinity</p></li>
+</ul>
 
 
 <!-- -->
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-aquamapsdata" class="csl-entry" role="listitem">
+Skyttner, Markus. 2020. <span>“Aquamapsdata: Curated Data from AquaMaps.org.”</span> <a href="https://github.com/raquamaps/aquamapsdata">https://github.com/raquamaps/aquamapsdata</a>.
+</div>
+</div>
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -989,28 +955,66 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./glossary.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./explorations/am-fine.html" class="pagination-link">
-        <span class="nav-page-text">AquaMaps Downscaled</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./occ.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Occurrences</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Explorations</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  id: listing-experiments</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  contents:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">   - "explorations/*.qmd"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  type: grid</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>::: {#listing-experiments}</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Prepare"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Prepare observations and environmental data for modeling"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu"># Prepare</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>%%| label: fig<span class="ot">-p</span>rep</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>%%| fig<span class="ot">-c</span>ap: <span class="ot">"</span><span class="st">Diagram of SDM data preparation for model fitting.</span><span class="ot">"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>%%| file: diagrams/sdm<span class="ot">-p</span>rep.mmd</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**obs\</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    **observations: occurrences from OBIS; masked by FAO regions defined by AquaMaps <span class="co">[</span><span class="ot">@aquamapsdata</span><span class="co">]</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**presence**\</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        OBIS: species occurrence</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**absence**\</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        OBIS not-species, but same family</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**env\</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    **environment</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**tbl**\</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    table of observations (presence and absence) with environmental values</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Environmental Predictors</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">### Physiographic</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`depth`</span>\</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    Bathymetric Depth</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`d2coast`</span>\</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    Distance to Coast</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`d2shelf`</span>\</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    Distance to Shelf</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Time Varying</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`vgpm`</span>\</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    Vertically integrated primary Productivity model</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Depth &amp; Time Varying</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`temp`</span>\</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    Temperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`salin`</span>\</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    Salinity</span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -1018,7 +1022,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© <a href="https://bbest.github.io/cv/">Ben Best</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/explorations.qmd" class="toc-action">Edit this page</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
