@@ -67,6 +67,13 @@
 
         -   Miguel Araujo\
 
+    -   [NCEAS](https://www.nceas.ucsb.edu/)\
+        *National Center for Ecological Analysis and Synthesis*
+
+        -   Casey O'Hara
+
+        -   Ben Halpern\
+
     -   [PMEL](https://www.pmel.noaa.gov/)\
         *Pacific Marine Environmental Lab (NOAA)*
 
