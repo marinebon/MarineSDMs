@@ -46,6 +46,7 @@ book:
         - mosaic.qmd
         - taxa.qmd
         - indicators.qmd
+        - portal.qmd
     - software.qmd
     - organize.qmd
     - references.qmd

@@ -40,37 +40,41 @@
 
 -   ***Proposed***
 
-    -   [**FishGLOB**](https://fishglob.sites.ucsc.edu/)\
-        *fish biodiversity under global change (global bottom trawl)*\
+    -   [FishGLOB](https://fishglob.sites.ucsc.edu/)\
+        *Fish biodiversity under global change (global bottom trawl)*\
         contacts:
 
         -   Malin Pinsky
 
-    -   [**MGEL**](https://mgel.env.duke.edu/)\
-        *Marine Geospatial Ecology Lab, Duke*\
+    -   [Lenfest Marine Biodiversity Dialogues](https://www.lenfestocean.org/en/research-projects/marine-biodiversity-dialogues-task-force-i) \
+        (Smithsonian, U of Queensland)
+
+        -   Daniel Dunn
+
+        -   Emmett Duffy
+
+    -   [MGEL](https://mgel.env.duke.edu/)\
+        *Marine Geospatial Ecology Lab (Duke)*\
         contacts:
 
         -   Jason Roberts
 
         -   Patrick Halpin
 
-    -   [**PMEL**](https://www.pmel.noaa.gov/)\
-        *Pacific Marine Environmental Lab, NOAA*\
+    -   [PMEL](https://www.pmel.noaa.gov/)\
+        *Pacific Marine Environmental Lab (NOAA)*\
         contacts:
 
         -   Heather Welch
 
         -   Elliot Hazen
 
-## Portal
+    -   [Wallace](https://wallaceecomod.github.io)\
+        *Shiny web interface (terrestrial so far) for creating SDMs (AMNH)*
 
--   Candidate website:\
-    [MarineSpeciesMaps.org](MarineSpeciesMaps.org) (BDB registered domain)
-    -   similar to:
-        -   MarineRegions.org\
-            spatial authority
-        -   MarineSpecies.org\
-            taxonomic authority
+        -   Jamie Kass
+
+        -   Mary Blair
 
 ## Timeline
 
