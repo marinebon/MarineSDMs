@@ -4,23 +4,13 @@
 
 -   ***Confirmed***
 
-    -   [**AquaMaps**](https://www.aquamaps.org/)**\
-        ***distribution maps for over 33,500 species of fishes, marine mammals and invertebrates*\
-        contacts:
+    -   [AquaMaps](https://www.aquamaps.org/)\
+        *distribution maps for over 33,500 species of fishes, marine mammals and invertebrates*
 
         -   Gabriel Reygondeau (g.reygondeau\@oceans.ubc.ca)
 
-    -   [**DisMAP**](https://apps-st.fisheries.noaa.gov/dismap/)\
-        *Distribution Mapping and Analysis Portal (NOAA)*\
-        contacts:
-
-        -   Melissa Karp (melissa.karp\@noaa.gov)
-
-        -   Roger Griffis (roger.b.griffis\@noaa.gov)
-
-    -   [**MBON**](https://marinebon.org/)**\
-        ***Marine Biodiversity Observation Network (NOAA, NASA)*\
-        contacts:
+    -   [MBON](https://marinebon.org/)\
+        *Marine Biodiversity Observation Network (NOAA, NASA)*
 
         -   Ben Best
 
@@ -30,9 +20,8 @@
 
         -   Frank Muller-Karger
 
-    -   [**OBIS**](https://obis.org/)**\
-        ***Ocean Biodiversity Information System (UNESCO)*\
-        contacts:
+    -   [OBIS](https://obis.org/)**\
+        ***Ocean Biodiversity Information System (UNESCO)*
 
         -   Candido Principe De Souza, Silas (s.principe\@unesco.org)
 
@@ -40,22 +29,34 @@
 
 -   ***Proposed***
 
+    -   [DisMAP](https://apps-st.fisheries.noaa.gov/dismap/)\
+        *Distribution Mapping and Analysis Portal (NOAA)*
+
+        -   Melissa Karp (melissa.karp\@noaa.gov)
+
+        -   Roger Griffis (roger.b.griffis\@noaa.gov)
+
+    -   [FishBase](https://www.fishbase.org.au/v4)\
+        *global species database of fish species (also: Sea Around Us / Sea Life Base)*
+
+        -   Deng Palomares
+
+        -   Kathleen Reyes
+
     -   [FishGLOB](https://fishglob.sites.ucsc.edu/)\
-        *Fish biodiversity under global change (global bottom trawl)*\
-        contacts:
+        *Fish biodiversity under global change (global bottom trawl)*
 
         -   Malin Pinsky
 
     -   [Lenfest Marine Biodiversity Dialogues](https://www.lenfestocean.org/en/research-projects/marine-biodiversity-dialogues-task-force-i) \
-        (Smithsonian, U of Queensland)
+        *developing a framework to assess the abundance and distribution of marine biodiversity in U.S. (Smithsonian, U of Queensland)*
 
         -   Daniel Dunn
 
         -   Emmett Duffy
 
     -   [MGEL](https://mgel.env.duke.edu/)\
-        *Marine Geospatial Ecology Lab (Duke)*\
-        contacts:
+        *Marine Geospatial Ecology Lab (Duke)*
 
         -   Jason Roberts
 
@@ -67,8 +68,7 @@
         -   Miguel Araujo\
 
     -   [PMEL](https://www.pmel.noaa.gov/)\
-        *Pacific Marine Environmental Lab (NOAA)*\
-        contacts:
+        *Pacific Marine Environmental Lab (NOAA)*
 
         -   Heather Welch
 
