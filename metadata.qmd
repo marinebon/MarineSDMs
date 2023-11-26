@@ -1,0 +1,24 @@
+---
+title: "Metadata"
+subtitle: "Metadata standards for reproducible and stackable SDMs"
+---
+
+What standards [@araújo2019; @kass2023; @zurell2020] are required for models to be hosted?
+
+-   input
+
+    -   input observations
+
+    -   environmental predictors\
+        and range of values in original observations
+
+    -   model type and object
+
+-   outputs
+
+    -   model object
+
+    -   mean prediction
+
+    -   measure(s) of uncertainty\
+        standard error, standard deviation (`sd`), confidence intervals (e.g., 5% and 95%), coefficient of variation (cv)...

@@ -1,24 +1,35 @@
 ---
 title: "Portal"
-subtitle: "Portal and metadata standards needed to host and combine for user-specific needs"
-bibliography: references.bib
+subtitle: "Portal to host and combine for user-specific needs"
 ---
 
 Can we supplement an existing portal or create a new one to host different types of model outputs and combine them?
 
-What standards [@araújo2019; @kass2023; @zurell2020] are required for models to be hosted?
+What are publishing workflows for existing portals?
 
--   Existing SDM portals
-    -   [AquaMaps](https://aquamaps.org/)
-        *Standardized distribution maps for over 33,500 species of fishes, marine mammals and invertebrates*
+-   Existing portals used to share SDMs
+    -   [AquaMaps](https://aquamaps.org/) *Standardized distribution maps for over 33,500 species of fishes, marine mammals and invertebrates*
+
     -   [DisMAP](https://apps-st.fisheries.noaa.gov/dismap/)\
         *Distribution Mapping and Analysis Portal*
+
     -   [OBIS-SEAMAP Model Repository](https://seamap.env.duke.edu/models/)\
         *World Data Center for Marine Mammal, Seabird, Sea Turtle, Shark & Ray Distributions*
+
+    -   [NCEI](https://www.ncei.noaa.gov/)\
+        *National Centers for Environmental Information (NOAA)*
+
+    -   [DataONE](https://www.dataone.org/)\
+        *Data Observation Network for Earth*
+
+    -   [ArcGIS Online](https://www.arcgis.com/index.html)
+
+        *Esri's commercial data sharing platform*
 -   Candidate portal\
-    [MarineSpeciesMaps.org](MarineSpeciesMaps.org) \
+    [MarineSpeciesMaps.org](MarineSpeciesMaps.org)\
     BDB registered the domain. Similar to:
     -   **MarineRegions.org**\
         *spatial authority*
     -   **MarineSpecies.org**\
         *taxonomic authority*
+

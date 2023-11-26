@@ -46,6 +46,10 @@ book:
         - mosaic.qmd
         - taxa.qmd
         - indicators.qmd
+    - part: "Share"
+      chapters:
+        - share.qmd
+        - metadata.qmd
         - portal.qmd
     - software.qmd
     - organize.qmd
