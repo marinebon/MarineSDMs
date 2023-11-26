@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MarineSDMs - 13&nbsp; Ensemble</title>
+<title>MarineSDMs - 18&nbsp; Metadata</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,8 +83,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./mosaic.html" rel="next">
-<link href="./combine.html" rel="prev">
+<link href="./portal.html" rel="next">
+<link href="./share.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -77,9 +96,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -123,7 +139,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./combine.html">Combine</a></li><li class="breadcrumb-item"><a href="./ensemble.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Ensemble</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./share.html">Share</a></li><li class="breadcrumb-item"><a href="./metadata.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Metadata</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -296,7 +312,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ensemble.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ensemble.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Ensemble</span></span></a>
   </div>
 </li>
@@ -337,7 +353,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./metadata.html" class="sidebar-item-text sidebar-link">
+  <a href="./metadata.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Metadata</span></span></a>
   </div>
 </li>
@@ -432,7 +448,8 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Ensemble</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Metadata</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Metadata standards for reproducible and stackable SDMs</p>
 </div>
 
 
@@ -447,15 +464,38 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
+<p>What standards <span class="citation" data-cites="araújo2019 kass2023 zurell2020">(<a href="references.html#ref-araújo2019" role="doc-biblioref">Araújo et al. 2019</a>; <a href="references.html#ref-kass2023" role="doc-biblioref">Kass et al. 2023</a>; <a href="references.html#ref-zurell2020" role="doc-biblioref">Zurell et al. 2020</a>)</span> are required for models to be hosted?</p>
 <ul>
-<li><a href="https://biomodhub.github.io/biomod2/"><code>biomod2</code></a><br>
-<em>Species distribution modeling, calibration and evaluation, ensemble modeling<br>
-</em><a href="https://biomodhub.github.io/biomod2/articles/pictures/SCHEMA_BIOMOD2_WORKFLOW_functions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Graphical overview of `biomod2` functions for data formatting, single SDMs, ensemble methods and visualization. Source: [`biomod2`](https://biomodhub.github.io/biomod2/)"><img src="https://biomodhub.github.io/biomod2/articles/pictures/SCHEMA_BIOMOD2_WORKFLOW_functions.png" class="img-fluid" alt="Graphical overview of `biomod2` functions for data formatting, single SDMs, ensemble methods and visualization. Source: [`biomod2`](https://biomodhub.github.io/biomod2/)"></a></li>
+<li><p>input</p>
+<ul>
+<li><p>input observations</p></li>
+<li><p>environmental predictors<br>
+and range of values in original observations</p></li>
+<li><p>model type and object</p></li>
+</ul></li>
+<li><p>outputs</p>
+<ul>
+<li><p>model object</p></li>
+<li><p>mean prediction</p></li>
+<li><p>measure(s) of uncertainty<br>
+standard error, standard deviation (<code>sd</code>), confidence intervals (e.g., 5% and 95%), coefficient of variation (cv)…</p></li>
+</ul></li>
 </ul>
 
 
 <!-- -->
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-araújo2019" class="csl-entry" role="listitem">
+Araújo, Miguel B., Robert P. Anderson, A. Márcia Barbosa, Colin M. Beale, Carsten F. Dormann, Regan Early, Raquel A. Garcia, et al. 2019. <span>“Standards for Distribution Models in Biodiversity Assessments.”</span> <em>Science Advances</em> 5 (1): eaat4858. <a href="https://doi.org/10.1126/sciadv.aat4858">https://doi.org/10.1126/sciadv.aat4858</a>.
+</div>
+<div id="ref-kass2023" class="csl-entry" role="listitem">
+Kass, Jamie M., Gonzalo E. Pinilla-Buitrago, Andrea Paz, Bethany A. Johnson, Valentina Grisales-Betancur, Sarah I. Meenan, Dean Attali, et al. 2023. <span>“Wallace 2: A Shiny App for Modeling Species Niches and Distributions Redesigned to Facilitate Expansion via Module Contributions.”</span> <em>Ecography</em> 2023 (3): e06547. <a href="https://doi.org/10.1111/ecog.06547">https://doi.org/10.1111/ecog.06547</a>.
+</div>
+<div id="ref-zurell2020" class="csl-entry" role="listitem">
+Zurell, Damaris, Janet Franklin, Christian König, Phil J. Bouchet, Carsten F. Dormann, Jane Elith, Guillermo Fandos, et al. 2020. <span>“A Standard Protocol for Reporting Species Distribution Models.”</span> <em>Ecography</em> 43 (9): 1261–77. <a href="https://doi.org/10.1111/ecog.04960">https://doi.org/10.1111/ecog.04960</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -859,23 +899,40 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./combine.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Combine</span></span>
+      <a href="./share.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Share</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mosaic.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Mosaic</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./portal.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Portal</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Ensemble"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">`biomod2`</span><span class="co">](https://biomodhub.github.io/biomod2/)</span>\</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    *Species distribution modeling, calibration and evaluation, ensemble modeling\</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    *<span class="al">![Graphical overview of \`biomod2\` functions for data formatting, single SDMs, ensemble methods and visualization. Source: \[\`biomod2\`\](https://biomodhub.github.io/biomod2/)](https://biomodhub.github.io/biomod2/articles/pictures/SCHEMA_BIOMOD2_WORKFLOW_functions.png)</span>{alt="Graphical overview of <span class="in">`biomod2`</span> functions for data formatting, single SDMs, ensemble methods and visualization. Source: <span class="co">[</span><span class="ot">`biomod2`</span><span class="co">](https://biomodhub.github.io/biomod2/)</span>"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Metadata"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Metadata standards for reproducible and stackable SDMs"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>What standards <span class="co">[</span><span class="ot">@araújo2019; @kass2023; @zurell2020</span><span class="co">]</span> are required for models to be hosted?</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>input</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>input observations</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>environmental predictors\</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        and range of values in original observations</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>model type and object</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>outputs</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>model object</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>mean prediction</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>measure(s) of uncertainty\</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        standard error, standard deviation (<span class="in">`sd`</span>), confidence intervals (e.g., 5% and 95%), coefficient of variation (cv)...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -883,11 +940,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© <a href="https://bbest.github.io/cv/">Ben Best</a></div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/ensemble.qmd" class="toc-action">Edit this page</a></p></div></div></div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/marinebon/sdm-book/edit/main/metadata.qmd" class="toc-action">Edit this page</a></p></div></div></div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":true,"descPosition":"bottom"});</script>
 
 
 
