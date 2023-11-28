@@ -1,0 +1,16 @@
+﻿**Type** /<br>Covariates,Resolution,Time range,Description
+**Physiographic**,,,
+"Depth, Slope",30 arc sec,,"Seafloor depth and slope, derived from SRTM30-PLUS global bathymetry20"
+"DistToShore, DistTo125m, DistTo300m, DistTo1500m",30 arc sec,,"Distance to the closest shoreline, excluding Bermuda and Sable Island, and various ecologically-relevant isobaths20"
+"DistToCanyon, DistToCanyon OrSeamount",30 arc sec,,"Distance to the closest submarine canyon, and to the closest canyon or seamount21"
+**SST & Winds**,,,
+"SST, DistToFront","0.2°, daily",1991-2014,"Foundation sea surface temperature (SST), from GHRSST Level 4 CMC SST22, and distance to the closest SST front identified with the Canny edge detection algorithm23"
+WindSpeed,"0.25°, daily",1991-2014,30-day running mean of NOAA NCDC 1/4° Blended Sea Winds24
+**Currents**,,,
+"TKE, EKE","0.25°, daily",1993-2013,"Total kinetic energy (TKE) and eddy kinetic energy (EKE), from Aviso 1/4° DT-MADT geostrophic currents"
+"DistToEddy, DistToAEddy, DistToCEddy","0.25°, weekly",1993-2013,"Distance to the ring of the closest geostrophic eddy having any (DistToEddy), anticyclonic (DistToAEddy), or cyclonic (DistToCEddy) polarity, from Aviso 1/4° DT-MADT using a revision of the Chelton et al. algorithm25; we tested eddies at least 9, 4, and 0 weeks old"
+**Biological**,,,
+Chl,"9 km, daily",1997-2014,"GSM merged SeaWiFS/Aqua/MERIS/VIIRS chlorophyll (Chl) a concentration26, smoothed with a 3D Gaussian smoother to reduce data loss to < 10%"
+"VGPM, CumVGPM45, CumVGPM90","9 km, 8 days",1997-2014,Net primary production (mg C m-2 day-1) derived from SeaWiFS and Aqua using the Vertically Generalized Production Model (VPGM)27; we tested the original 8 day estimates as well as 45 and 90 day running accumulations
+"PkPP, PkPB","0.25°, weekly",1997-2013,Zooplankton production (PkPP; g m-2 day-1) and biomass (PkPB; g m-2) from the SEAPODYM ocean model28
+"EpiMnkPP, EpiMnkPB","0.25°, weekly",1997-2013,Epipelagic micronekton production (EpiMnkPP; g m-2 day-1) and biomass (EpiMnkPB; g m-2) from the SEAPODYM model(28)

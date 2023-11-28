@@ -20,7 +20,7 @@ book:
   page-navigation: true
   page-footer:
     left: |
-      © [Ben Best](https://bbest.github.io/cv/)
+      © <a href="https://bbest.github.io/cv/"  target="_blank">Ben Best</a>, <a href="https://marinebon.org"  target="_blank">MarineBON</a>
     right: |
       Built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
