@@ -88,7 +88,7 @@ We very much welcome your feedback, contributions and collaboration. As soon as 
 
 2.  Submit a [New Issue](https://github.com/marinebon/MarineSDMs/issues/new/choose) on Github.
 
-3.  Click on "<i class="bi bi-github"></i> Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request.
+3.  Click on "<i class="bi bi-github"></i> Edit this Page" in the upper right. If you have a Github account, then you can fork this repository from owner "marinebon" to your username, edit the page(s) and submit a pull request. See [Hello World - GitHub Docs](https://docs.github.com/en/get-started/quickstart/hello-world).
 
 4.  If you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).
 
