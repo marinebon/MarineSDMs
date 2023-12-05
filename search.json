@@ -259,41 +259,6 @@
     "text": "Can we supplement an existing portal or create a new one to host different types of model outputs and combine them?\nWhat are publishing workflows for existing portals?\n\nExisting portals used to share SDMs\n\nAquaMaps Standardized distribution maps for over 33,500 species of fishes, marine mammals and invertebrates\nDisMAP\nDistribution Mapping and Analysis Portal\nOBIS-SEAMAP Model Repository\nWorld Data Center for Marine Mammal, Seabird, Sea Turtle, Shark & Ray Distributions\nNCEI\nNational Centers for Environmental Information (NOAA)\nDataONE\nData Observation Network for Earth\nArcGIS Online\nEsri’s commercial data sharing platform\n\nCandidate portal\nMarineSpeciesMaps.org\nBDB registered the domain. Similar to:\n\nMarineRegions.org\nspatial authority\nMarineSpecies.org\ntaxonomic authority"
   },
   {
-    "objectID": "software.html#r",
-    "href": "software.html#r",
-    "title": "20  Software",
-    "section": "20.1 R",
-    "text": "20.1 R\nMost packages have not yet migrated from using the deprecated raster R package to the new terra package, except for biomod2 (ref?).\n\nbiomod2\nSpecies distribution modeling, calibration and evaluation, ensemble modeling\n\neks\nTidy and Geospatial Kernel Smoothing for spatially filtering outlier observations\n\n\n\nFigure 20.1: Source: Kernel density estimates for tidy and geospatial data in the eks package\n\n\npredicts\nNew R library using terra for predicting from fitted model"
-  },
-  {
-    "objectID": "software.html#python",
-    "href": "software.html#python",
-    "title": "20  Software",
-    "section": "20.2 Python",
-    "text": "20.2 Python\n\nXarray\nXarray makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!"
-  },
-  {
-    "objectID": "software.html#google-earth-engine",
-    "href": "software.html#google-earth-engine",
-    "title": "20  Software",
-    "section": "20.3 Google Earth Engine",
-    "text": "20.3 Google Earth Engine\n\nXEE\nXEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab. Documentation"
-  },
-  {
-    "objectID": "organize.html#partners",
-    "href": "organize.html#partners",
-    "title": "21  Organize",
-    "section": "21.1 Partners",
-    "text": "21.1 Partners\n\nConfirmed\n\nAquaMaps\ndistribution maps for over 33,500 species of fishes, marine mammals and invertebrates\n\nGabriel Reygondeau (g.reygondeau@oceans.ubc.ca)\n\nMBON\nMarine Biodiversity Observation Network (NOAA, NASA)\n\nBen Best\nTylar Murray\nDan Otis\nFrank Muller-Karger\n\nOBIS\nOcean Biodiversity Information System (UNESCO)\n\nCandido Principe De Souza, Silas (s.principe@unesco.org)\nWard Appeltans (w.appeltans@unesco.org)\n\n\nProposed\n\nDisMAP\nDistribution Mapping and Analysis Portal (NOAA)\n\nMelissa Karp (melissa.karp@noaa.gov)\nRoger Griffis (roger.b.griffis@noaa.gov)\n\nFishBase\nglobal species database of fish species (also: Sea Around Us / Sea Life Base)\n\nDeng Palomares\nKathleen Reyes\n\nFishGLOB\nFish biodiversity under global change (global bottom trawl)\n\nMalin Pinsky\n\nLenfest Marine Biodiversity Dialogues\ndeveloping a framework to assess the abundance and distribution of marine biodiversity in U.S. (Smithsonian, U of Queensland)\n\nDaniel Dunn\nEmmett Duffy\n\nMGEL\nMarine Geospatial Ecology Lab (Duke)\n\nJason Roberts\nPatrick Halpin\n\nMPA-Europe\n\nMark Costello\n\nNatura Connect\nThink Tank within the Natura Connect to discuss the implementation of the European Biodiversity Strategy in Portugal\n\nMiguel Araujo\n\n\nNCEAS\nNational Center for Ecological Analysis and Synthesis\n\nCasey O’Hara\nBen Halpern\n\n\nPMEL\nPacific Marine Environmental Lab (NOAA)\n\nHeather Welch\nElliot Hazen\n\nWallace\nShiny web interface (terrestrial so far) for creating SDMs (AMNH)\n\nJamie Kass\nMary Blair"
-  },
-  {
-    "objectID": "organize.html#timeline",
-    "href": "organize.html#timeline",
-    "title": "21  Organize",
-    "section": "21.2 Timeline",
-    "text": "21.2 Timeline\n\n21.2.1 Meetings\n\n2024-01-23\nMarine Biodiversity Summit in DC\n(organized by Gabrielle, Emmett)\n2024-03-21\nSDM meeting in New Orleans\n(organized by BDB; so far AquaMaps)\n\n\n\n21.2.2 Sequence"
-  },
-  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
@@ -303,7 +268,7 @@
   {
     "objectID": "glossary.html",
     "href": "glossary.html",
-    "title": "Appendix A — Glossary",
+    "title": "Glossary",
     "section": "",
     "text": "Code\nglossary::glossary_table(as_kable=F) |&gt; \n  knitr::kable(\"pipe\", escape = F, row.names = F)\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMBON\nMarine Biodiversity Observation Network; see MarineBON.org"
   },
@@ -341,5 +306,40 @@
     "title": "OBIS Top Species by Class",
     "section": "",
     "text": "Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n website\n code"
+  },
+  {
+    "objectID": "organize.html#partners",
+    "href": "organize.html#partners",
+    "title": "Organize",
+    "section": "Partners",
+    "text": "Partners\n\nConfirmed\n\nAquaMaps\ndistribution maps for over 33,500 species of fishes, marine mammals and invertebrates\n\nGabriel Reygondeau (g.reygondeau@oceans.ubc.ca)\n\nMBON\nMarine Biodiversity Observation Network (NOAA, NASA)\n\nBen Best\nTylar Murray\nDan Otis\nFrank Muller-Karger\n\nOBIS\nOcean Biodiversity Information System (UNESCO)\n\nCandido Principe De Souza, Silas (s.principe@unesco.org)\nWard Appeltans (w.appeltans@unesco.org)\n\n\nProposed\n\nDisMAP\nDistribution Mapping and Analysis Portal (NOAA)\n\nMelissa Karp (melissa.karp@noaa.gov)\nRoger Griffis (roger.b.griffis@noaa.gov)\n\nFishBase\nglobal species database of fish species (also: Sea Around Us / Sea Life Base)\n\nDeng Palomares\nKathleen Reyes\n\nFishGLOB\nFish biodiversity under global change (global bottom trawl)\n\nMalin Pinsky\n\nLenfest Marine Biodiversity Dialogues\ndeveloping a framework to assess the abundance and distribution of marine biodiversity in U.S. (Smithsonian, U of Queensland)\n\nDaniel Dunn\nEmmett Duffy\n\nMGEL\nMarine Geospatial Ecology Lab (Duke)\n\nJason Roberts\nPatrick Halpin\n\nMPA-Europe\n\nMark Costello\n\nNatura Connect\nThink Tank within the Natura Connect to discuss the implementation of the European Biodiversity Strategy in Portugal\n\nMiguel Araujo\n\n\nNCEAS\nNational Center for Ecological Analysis and Synthesis\n\nCasey O’Hara\nBen Halpern\n\n\nPMEL\nPacific Marine Environmental Lab (NOAA)\n\nHeather Welch\nElliot Hazen\n\nWallace\nShiny web interface (terrestrial so far) for creating SDMs (AMNH)\n\nJamie Kass\nMary Blair"
+  },
+  {
+    "objectID": "organize.html#timeline",
+    "href": "organize.html#timeline",
+    "title": "Organize",
+    "section": "Timeline",
+    "text": "Timeline\n\nMeetings\n\n2024-01-23\nMarine Biodiversity Summit in DC\n(organized by Gabrielle, Emmett)\n2024-03-21\nSDM meeting in New Orleans\n(organized by BDB; so far AquaMaps)\n\n\n\nSequence"
+  },
+  {
+    "objectID": "software.html#r",
+    "href": "software.html#r",
+    "title": "Software",
+    "section": "R",
+    "text": "R\nMost packages have not yet migrated from using the deprecated raster R package to the new terra package, except for biomod2 (ref?).\n\nbiomod2\nSpecies distribution modeling, calibration and evaluation, ensemble modeling\n\neks\nTidy and Geospatial Kernel Smoothing for spatially filtering outlier observations\n\n\n\nFigure 1: Source: Kernel density estimates for tidy and geospatial data in the eks package\n\n\npredicts\nNew R library using terra for predicting from fitted model"
+  },
+  {
+    "objectID": "software.html#python",
+    "href": "software.html#python",
+    "title": "Software",
+    "section": "Python",
+    "text": "Python\n\nXarray\nXarray makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!"
+  },
+  {
+    "objectID": "software.html#google-earth-engine",
+    "href": "software.html#google-earth-engine",
+    "title": "Software",
+    "section": "Google Earth Engine",
+    "text": "Google Earth Engine\n\nXEE\nXEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab. Documentation"
   }
 ]
