@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ben Best">
-<meta name="dcterms.date" content="2023-11-28">
+<meta name="dcterms.date" content="2023-12-05">
 
 <title>MarineSDMs</title>
 <style>
@@ -136,7 +136,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="glossary.css">
+<link rel="stylesheet" href="glossary/glossary.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -489,7 +489,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2023-11-28</p>
+      <p class="date">2023-12-05</p>
     </div>
   </div>
   
@@ -534,7 +534,7 @@ AquaMaps <span class="citation" data-cites="kaschner2006 ready2010">(<a href="re
 <li><p><a href="OBIS.org">OBIS.org</a><br>
 The Ocean Biogeographic Information System <span class="citation" data-cites="klein2019 grassle2000">(<a href="references.html#ref-klein2019" role="doc-biblioref">Klein et al. 2019</a>; <a href="references.html#ref-grassle2000" role="doc-biblioref">Grassle 2000</a>)</span>is the central portal for continuously added observations with extra flags for quality control, all of which makes marine SDMs possible.</p></li>
 <li><p><strong>Modeling</strong> methods have dramatically improved over time and are ripe for fresh application. The R package <code>dismo</code> originally came came out with an <a href="https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf">SDM vignette</a> as a practical supplement to their excellent review of SDMs <span class="citation" data-cites="elith2009">(<a href="references.html#ref-elith2009" role="doc-biblioref">Elith and Leathwick 2009</a>)</span> and using the Maxent algorithm <span class="citation" data-cites="elith2011">(<a href="references.html#ref-elith2011" role="doc-biblioref">Elith et al. 2011</a>)</span>. The raster package furthered that (raster<a href="https://rspatial.org/raster/sdm/">sdm</a>) and now there’s <a href="https://rspatial.org/sdm/"><code>terra</code> sdm</a>. Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine <span class="citation" data-cites="gorelick2017 camposEcologicalNicheModels2023">(<a href="references.html#ref-gorelick2017" role="doc-biblioref">Gorelick et al. 2017</a>; <a href="references.html#ref-camposEcologicalNicheModels2023" role="doc-biblioref">Campos et al. 2023</a>)</span>, allowing for dense global raster processing.</p></li>
-<li><p>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called “<a href="https://en.wikipedia.org/wiki/30_by_30"><strong>30 by 30</strong></a>”. In the U.S., this is <a href="https://www.noaa.gov/america-the-beautiful">America the Beautiful</a> initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of <strong>climate change</strong>, as evidenced by marine heatwaves and shifts in population distributions.</p></li>
+<li><p>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called “<a href="https://en.wikipedia.org/wiki/30_by_30"><strong>30 by 30</strong></a>”. In the U.S., this is <a href="https://www.noaa.gov/america-the-beautiful">America the Beautiful</a> initiative <span class="citation" data-cites="carroll2022">(<a href="references.html#ref-carroll2022" role="doc-biblioref">Carroll, Noss, and Stein 2022</a>)</span>. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of <strong>climate change</strong>, as evidenced by marine heatwaves and shifts in population distributions.</p></li>
 </ul>
 </section>
 <section id="process" class="level2" data-number="1.4">
@@ -609,7 +609,7 @@ The Ocean Biogeographic Information System <span class="citation" data-cites="kl
 </section>
 <section id="contribute" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="contribute"><span class="header-section-number">1.5</span> Contribute</h2>
-<p>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</p>
+<p>We very much welcome your feedback, contributions and collaboration. As soon as you contribute, we will add you to to the authors list. Here are a few ways to contribute from least to most involved:</p>
 <ol type="1">
 <li><p>Email Ben (ben@ecoquants.com) with any suggestions, including suggested revisions of this online book.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -657,6 +657,9 @@ e.g., <a href="#fig-process">Figure&nbsp;<span>1.1</span></a>, <a href="prep.htm
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-camposEcologicalNicheModels2023" class="csl-entry" role="listitem">
 Campos, João C., Nuno Garcia, João Alírio, Salvador Arenas-Castro, Ana C. Teodoro, and Neftalí Sillero. 2023. <span>“Ecological <span>Niche Models</span> Using <span>MaxEnt</span> in <span>Google Earth Engine</span>: <span>Evaluation</span>, Guidelines and Recommendations.”</span> <em>Ecological Informatics</em> 76 (September): 102147. <a href="https://doi.org/10.1016/j.ecoinf.2023.102147">https://doi.org/10.1016/j.ecoinf.2023.102147</a>.
+</div>
+<div id="ref-carroll2022" class="csl-entry" role="listitem">
+Carroll, C., R. F. Noss, and Bruce A. Stein. 2022. <span>“US Conservation Atlas Needs Biodiversity Data.”</span> <em>Science</em> 376 (6589): 144–45. <a href="https://doi.org/10.1126/science.abo0526">https://doi.org/10.1126/science.abo0526</a>.
 </div>
 <div id="ref-elith2009" class="csl-entry" role="listitem">
 Elith, Jane, and John R. Leathwick. 2009. <span>“Species Distribution Models: Ecological Explanation and Prediction Across Space and Time.”</span> <em>Annual Review of Ecology, Evolution, and Systematics</em> 40 (1): 677–97. <a href="https://doi.org/10.1146/annurev.ecolsys.110308.120159">https://doi.org/10.1146/annurev.ecolsys.110308.120159</a>.
@@ -1166,7 +1169,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Modeling** methods have dramatically improved over time and are ripe for fresh application. The R package <span class="in">`dismo`</span> originally came came out with an <span class="co">[</span><span class="ot">SDM vignette</span><span class="co">](https://cran.r-project.org/web/packages/dismo/vignettes/sdm.pdf)</span> as a practical supplement to their excellent review of SDMs <span class="co">[</span><span class="ot">@elith2009</span><span class="co">]</span> and using the Maxent algorithm <span class="co">[</span><span class="ot">@elith2011</span><span class="co">]</span>. The raster package furthered that (raster<span class="co">[</span><span class="ot">sdm</span><span class="co">](https://rspatial.org/raster/sdm/)</span>) and now there's <span class="co">[</span><span class="ot">`terra` sdm</span><span class="co">](https://rspatial.org/sdm/)</span>. Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine <span class="co">[</span><span class="ot">@gorelick2017; @camposEcologicalNicheModels2023</span><span class="co">]</span>, allowing for dense global raster processing.</span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "<span class="co">[</span><span class="ot">**30 by 30**</span><span class="co">](https://en.wikipedia.org/wiki/30_by_30)</span>". In the U.S., this is <span class="co">[</span><span class="ot">America the Beautiful</span><span class="co">](https://www.noaa.gov/america-the-beautiful)</span> initiative. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called "<span class="co">[</span><span class="ot">**30 by 30**</span><span class="co">](https://en.wikipedia.org/wiki/30_by_30)</span>". In the U.S., this is <span class="co">[</span><span class="ot">America the Beautiful</span><span class="co">](https://www.noaa.gov/america-the-beautiful)</span> initiative <span class="co">[</span><span class="ot">@carroll2022</span><span class="co">]</span>. We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of **climate change**, as evidenced by marine heatwaves and shifts in population distributions.</span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Process</span></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
@@ -1178,7 +1181,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contribute</span></span>
 <span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>We very much welcome your feedback, contributions and collaboration. Here are a few ways from least to most involved:</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>We very much welcome your feedback, contributions and collaboration. As soon as you contribute, we will add you to to the authors list. Here are a few ways to contribute from least to most involved:</span>
 <span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Email Ben (ben\@ecoquants.com) with any suggestions, including suggested revisions of this online book.</span>
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
