@@ -80,7 +80,7 @@ format:
     theme:
       light: flatly
       dark: darkly
-    css: glossary.css
+    css: glossary/glossary.css
   pdf:
     documentclass: scrreprt
     keep-tex: true
