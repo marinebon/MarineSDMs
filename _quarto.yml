@@ -7,7 +7,17 @@ project:
 book:
   title: "MarineSDMs"
   subtitle: "Marine Species Distribution Models"
-  author: "Ben Best"
+  author:
+  - name: Benjamin D. Best
+    orcid: 0000-0002-2686-0784
+    email: ben@ecoquants.com
+    affiliations:
+      - name: EcoQuants LLC
+        address: 211 W Gutierrez St, Unit 12
+        city: Santa Barbara
+        state: CA
+        postal-code: 93101
+      - name: MarineBON
   repo-url: https://github.com/marinebon/sdm-book
   reader-mode: true
   repo-actions: [edit]
@@ -51,8 +61,6 @@ book:
         - share.qmd
         - metadata.qmd
         - portal.qmd
-    - software.qmd
-    - organize.qmd
     - references.qmd
   appendices:
     - glossary.qmd
@@ -62,6 +70,8 @@ book:
         - explorations/am-envelope.qmd
         - "explorations/sdm-1_predicts.qmd"
         - "explorations/obis-top-spp-by-class.qmd"
+    - organize.qmd
+    - software.qmd
 
 bibliography: references.bib
 
