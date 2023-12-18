@@ -70,7 +70,7 @@ book:
         - explorations/am-envelope.qmd
         - "explorations/sdm-1_predicts.qmd"
         - "explorations/obis-top-spp-by-class.qmd"
-    - organize.qmd
+    # - organize.qmd
     - software.qmd
 
 bibliography: references.bib
