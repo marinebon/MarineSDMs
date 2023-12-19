@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.">
+<meta name="description" content="Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.">
 
-<title>MarineSDMs - AquaMaps Downscaled</title>
+<title>MarineSDMs - AquaMaps Treemap</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,7 +126,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="../explorations.html">Explorations</a></li><li class="breadcrumb-item"><a href="../explorations/am-fine.html">AquaMaps Downscaled</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="../explorations.html">Explorations</a></li><li class="breadcrumb-item"><a href="../explorations/am-fine.html">AquaMaps Treemap</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -385,7 +385,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/am-fine.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">AquaMaps Downscaled</span></a>
+ <span class="menu-text">AquaMaps Treemap</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -397,13 +397,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/sdm-1_predicts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SDM using <code>predicts</code> in R</span></a>
+ <span class="menu-text">SDM <code>predicts</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/obis-top-spp-by-class.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">OBIS Top Species by Class</span></a>
+ <span class="menu-text">OBIS Top Classes</span></a>
   </div>
 </li>
       </ul>
@@ -429,10 +429,11 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">AquaMaps Downscaled</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">AquaMaps Treemap</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">data: AquaMaps</div>
-    <div class="quarto-category">tech: Google Earth Engine</div>
+    <div class="quarto-category">tech: DuckDB</div>
+    <div class="quarto-category">tech: R</div>
     <div class="quarto-category">tech: Shiny</div>
   </div>
   </div>
@@ -449,16 +450,17 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 </header>
 
-<p>Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.</p>
+<p>Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.</p>
 <ul>
-<li><p><a href="https://shiny.marinebon.app/am-fine/"><i class="fa-solid fa-globe" aria-label="globe"></i> website</a></p></li>
-<li><p><a href="https://github.com/marinebon/aquamaps-downscaled/tree/main/sp-map"><i class="fa-brands fa-github" aria-label="github"></i> <code>code</code></a></p></li>
+<li><p><a href="https://shiny.marinebon.app/am-sanct/"><i class="fa-solid fa-globe" aria-label="globe"></i> website</a></p></li>
+<li><p><a href="https://github.com/marinebon/aquamapsduckdb/tree/main/inst/app"><i class="fa-brands fa-github" aria-label="github"></i> <code>code</code></a></p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../figures/explorations/aquamaps-downscaled.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../figures/explorations/aquamaps-downscaled.png" class="img-fluid figure-img"></a></p>
+<p><a href="../figures/explorations/am-sanct.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../figures/explorations/am-sanct.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
+<p>This app uses <a href="https://raquamaps.github.io/aquamapsdata/articles/intro.html"><code>aquamapsdata</code></a> after translating from <code>sqlite</code> (slow) and <code>raster</code> (deprecated) R functions to <code>duckdb</code> (fast) and <code>terra</code> (superceding) R functions. We can use these distributional data to calculate place-based indicators with anticipation of the distributional data getting improved upon in 2024 by AquaX and others.</p>
 
 
 <!-- -->
@@ -877,37 +879,40 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny."</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "../figures/explorations/aquamaps-downscaled.png"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">url:</span><span class="co"> "https://shiny.marinebon.app/am-fine/"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">url-code:</span><span class="co"> "https://github.com/marinebon/aquamaps-downscaled/tree/main/sp-map"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "../figures/explorations/am-sanct.png"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">url:</span><span class="co"> "https://shiny.marinebon.app/am-sanct/"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">url-code:</span><span class="co"> "https://github.com/marinebon/aquamapsduckdb/tree/main/inst/app"</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> </span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">   - "data: AquaMaps"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">   - "tech: Google Earth Engine"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">   - "tech: Shiny"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> source   </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu"># AquaMaps Downscaled {.unnumbered}</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rmarkdown)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>descr    <span class="ot">&lt;-</span> metadata[[<span class="st">"description"</span>]]</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>img      <span class="ot">&lt;-</span> metadata[[<span class="st">"image"</span>]]</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>url_web  <span class="ot">&lt;-</span> metadata[[<span class="st">"url"</span>]]</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>url_code <span class="ot">&lt;-</span> metadata[[<span class="st">"url-code"</span>]]</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="in">`r descr`</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">{{&lt; fa globe &gt;}} website</span><span class="co">](`r url_web`)</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">{{&lt; fa brands github &gt;}} `code`</span><span class="co">](`r url_code`)</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="al">![](`r img`)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">   - "tech: DuckDB"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">   - "tech: R"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">   - "tech: Shiny"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> source   </span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu"># AquaMaps Treemap {.unnumbered}</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rmarkdown)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>descr    <span class="ot">&lt;-</span> metadata[[<span class="st">"description"</span>]]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>img      <span class="ot">&lt;-</span> metadata[[<span class="st">"image"</span>]]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>url_web  <span class="ot">&lt;-</span> metadata[[<span class="st">"url"</span>]]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>url_code <span class="ot">&lt;-</span> metadata[[<span class="st">"url-code"</span>]]</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in">`r descr`</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">{{&lt; fa globe &gt;}} website</span><span class="co">](`r url_web`)</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">{{&lt; fa brands github &gt;}} `code`</span><span class="co">](`r url_code`)</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="al">![](`r img`)</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>This app uses <span class="co">[</span><span class="ot">`aquamapsdata`</span><span class="co">](https://raquamaps.github.io/aquamapsdata/articles/intro.html)</span> after translating from <span class="in">`sqlite`</span> (slow) and <span class="in">`raster`</span> (deprecated) R functions to <span class="in">`duckdb`</span> (fast) and <span class="in">`terra`</span> (superceding) R functions. We can use these distributional data to calculate place-based indicators with anticipation of the distributional data getting improved upon in 2024 by AquaX and others.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
@@ -920,7 +925,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":true,"closeEffect":"zoom"});</script>
 
 
 

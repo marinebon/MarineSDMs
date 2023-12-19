@@ -8,7 +8,7 @@
 
 <meta name="description" content="Predict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.">
 
-<title>MarineSDMs - SDM using predicts in R</title>
+<title>MarineSDMs - SDM predicts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,7 +126,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="../explorations.html">Explorations</a></li><li class="breadcrumb-item"><a href="../explorations/sdm-1_predicts.html">SDM using <code>predicts</code> in R</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="../explorations.html">Explorations</a></li><li class="breadcrumb-item"><a href="../explorations/sdm-1_predicts.html">SDM <code>predicts</code></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -385,7 +385,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/am-fine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AquaMaps Downscaled</span></a>
+ <span class="menu-text">AquaMaps Treemap</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -397,13 +397,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/sdm-1_predicts.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">SDM using <code>predicts</code> in R</span></a>
+ <span class="menu-text">SDM <code>predicts</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/obis-top-spp-by-class.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">OBIS Top Species by Class</span></a>
+ <span class="menu-text">OBIS Top Classes</span></a>
   </div>
 </li>
       </ul>
@@ -429,7 +429,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">SDM using <code>predicts</code> in R</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">SDM <code>predicts</code></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">data: OBIS</div>
     <div class="quarto-category">tech: R</div>
@@ -872,7 +872,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="../explorations/obis-top-spp-by-class.html" class="pagination-link">
-        <span class="nav-page-text">OBIS Top Species by Class</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">OBIS Top Classes</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
@@ -888,7 +888,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> source   </span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu"># SDM using `predicts` in R {.unnumbered}</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu"># SDM `predicts` {.unnumbered}</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
@@ -920,7 +920,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":true,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom"});</script>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":true,"closeEffect":"zoom"});</script>
 
 
 

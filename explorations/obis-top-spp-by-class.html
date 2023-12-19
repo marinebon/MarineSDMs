@@ -8,7 +8,7 @@
 
 <meta name="description" content="Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.">
 
-<title>MarineSDMs - OBIS Top Species by Class</title>
+<title>MarineSDMs - OBIS Top Classes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,7 +126,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="../explorations.html">Explorations</a></li><li class="breadcrumb-item"><a href="../explorations/obis-top-spp-by-class.html">OBIS Top Species by Class</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../glossary.html">Appendices</a></li><li class="breadcrumb-item"><a href="../explorations.html">Explorations</a></li><li class="breadcrumb-item"><a href="../explorations/obis-top-spp-by-class.html">OBIS Top Classes</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -385,7 +385,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/am-fine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AquaMaps Downscaled</span></a>
+ <span class="menu-text">AquaMaps Treemap</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -397,13 +397,13 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/sdm-1_predicts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SDM using <code>predicts</code> in R</span></a>
+ <span class="menu-text">SDM <code>predicts</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../explorations/obis-top-spp-by-class.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">OBIS Top Species by Class</span></a>
+ <span class="menu-text">OBIS Top Classes</span></a>
   </div>
 </li>
       </ul>
@@ -429,7 +429,7 @@ gtag('config', 'G-V3HZN14Z8G', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">OBIS Top Species by Class</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">OBIS Top Classes</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">data: OBIS</div>
     <div class="quarto-category">tech: R</div>
@@ -866,7 +866,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../explorations/sdm-1_predicts.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">SDM using <code>predicts</code> in R</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">SDM <code>predicts</code></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -886,7 +886,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> source   </span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># OBIS Top Species by Class {.unnumbered}</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># OBIS Top Classes {.unnumbered}</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
@@ -918,7 +918,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">Built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom","openEffect":"zoom"});</script>
 
 
 
