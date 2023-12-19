@@ -10,7 +10,7 @@ categories:
 editor: source   
 ---
 
-# SDM using `predicts` in R {.unnumbered}
+# SDM `predicts` {.unnumbered}
 
 ```{r}
 #| echo: false

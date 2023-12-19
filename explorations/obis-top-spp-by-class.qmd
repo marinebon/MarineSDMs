@@ -9,7 +9,7 @@ categories:
 editor: source   
 ---
 
-# OBIS Top Species by Class {.unnumbered}
+# OBIS Top Classes {.unnumbered}
 
 ```{r}
 #| echo: false
