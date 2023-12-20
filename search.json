@@ -277,7 +277,7 @@
     "href": "explorations.html",
     "title": "Explorations",
     "section": "",
-    "text": "AquaMaps Downscaled\n\n\n\ndata: AquaMaps\n\n\ntech: Google Earth Engine\n\n\ntech: Shiny\n\n\n\nDownscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Envelope\n\n\n\ndata: AquaMaps\n\n\ntech: R\n\n\n\nExtract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOBIS Top Classes\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\n\nExtract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSDM predicts\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\nmodel: Maxent\n\n\n\nPredict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "AquaMaps Downscaled\n\n\n\ndata: AquaMaps\n\n\ntech: Google Earth Engine\n\n\ntech: Shiny\n\n\n\nDownscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Envelope\n\n\n\ndata: AquaMaps\n\n\ntech: R\n\n\n\nExtract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Treemap\n\n\n\ndata: AquaMaps\n\n\ntech: DuckDB\n\n\ntech: R\n\n\ntech: Shiny\n\n\n\nSelect a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOBIS Top Classes\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\n\nExtract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSDM predicts\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\nmodel: Maxent\n\n\n\nPredict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "explorations/am-fine.html",
@@ -292,6 +292,13 @@
     "title": "AquaMaps Envelope",
     "section": "",
     "text": "Extract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n website\n code"
+  },
+  {
+    "objectID": "explorations/am-tree.html",
+    "href": "explorations/am-tree.html",
+    "title": "AquaMaps Treemap",
+    "section": "",
+    "text": "Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.\n\n website\n code\n\n\n\n\n\n\nThis app uses aquamapsdata after translating from sqlite (slow) and raster (deprecated) R functions to duckdb (fast) and terra (superceding) R functions. We can use these distributional data to calculate place-based indicators with anticipation of the distributional data getting improved upon in 2024 by AquaX and others."
   },
   {
     "objectID": "explorations/sdm-1_predicts.html",
