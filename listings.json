@@ -2,8 +2,8 @@
   {
     "listing": "/explorations.html",
     "items": [
-      "/explorations/am-envelope.html",
       "/explorations/am-fine.html",
+      "/explorations/am-envelope.html",
       "/explorations/obis-top-spp-by-class.html",
       "/explorations/sdm-1_predicts.html"
     ]
