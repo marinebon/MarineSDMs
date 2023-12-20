@@ -1,6 +1,6 @@
 ---
 description: "Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition."
-image: "../figures/explorations/am-sanct.png"
+image: "../figures/explorations/am-tree.png"
 url: "https://shiny.marinebon.app/am-sanct/"
 url-code: "https://github.com/marinebon/aquamapsduckdb/tree/main/inst/app"
 categories: 

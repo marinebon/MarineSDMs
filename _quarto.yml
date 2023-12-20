@@ -68,6 +68,7 @@ book:
       chapters:
         - explorations/am-fine.qmd
         - explorations/am-envelope.qmd
+        - explorations/am-tree.qmd
         - "explorations/sdm-1_predicts.qmd"
         - "explorations/obis-top-spp-by-class.qmd"
     # - organize.qmd
