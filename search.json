@@ -4,335 +4,556 @@
     "href": "index.html",
     "title": "MarineSDMs",
     "section": "",
-    "text": "1 Introduction"
+    "text": "1 Introduction",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#background",
     "href": "index.html#background",
     "title": "MarineSDMs",
     "section": "1.1 Background",
-    "text": "1.1 Background\nThe best available global distributions are presently AquaMaps (Kaschner et al. 2006; Ready et al. 2010) with supplementation by IUCN RedList range maps1. These have been used to calculate the biodiversity within national waters (Halpern et al. 2012) as well as beyond in the high seas (Visalli et al. 2020)."
+    "text": "1.1 Background\nThe best available global distributions are presently AquaMaps (Kaschner et al. 2006; Ready et al. 2010) with supplementation by IUCN RedList range maps1. These have been used to calculate the biodiversity within national waters (Halpern et al. 2012) as well as beyond in the high seas (Visalli et al. 2020).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#goals",
     "href": "index.html#goals",
     "title": "MarineSDMs",
     "section": "1.2 Goals",
-    "text": "1.2 Goals\nThis book aims to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:\n\nSpace\nThe current AquaMaps distributions are \\({1}/{2}\\)º (~55 km at equator), whereas the best available global bathymetry is \\({1}/{240}\\)º (&lt; 0.5 km).\nTime\nThe current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.\nEnvironment\nOther environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species’ environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.\nBiology\nWhere sufficient observations exist, additional models should be developed highlighting differences between:\n\nLife stage, e.g. larval vs adult.\nGender where varies, such as male sperm whales being more cosmopolitan.\nSubpopulations for understanding metapopulation dynamics\nBehavior, such as migrating, feeding or breeding.\n\n\nBy definition MBONMarine Biodiversity Observation Network; see MarineBON.org is a network, so this is inclusive of and meant for all participants."
+    "text": "1.2 Goals\nThis book aims to capture the overview and details of modeling species distributions in the marine environment for the purposes of advancing the status quo of global and U.S. national species distributions along the following dimensions:\n\nSpace\nThe current AquaMaps distributions are \\({1}/{2}\\)º (~55 km at equator), whereas the best available global bathymetry is \\({1}/{240}\\)º (&lt; 0.5 km).\nTime\nThe current AquaMaps distributions are based on static climatic averages over all seasons, which does not capture temporal dynamics: seasonally within a year, nor long-term climate change trends. This will necessitate sampling the environment contemporaneously with species observations before fitting the model and predicting to different environmental snapshots.\nEnvironment\nOther environmental variables besides the initial physiographic (depth) and oceanographic (temperature, chlorophyll, primary productivity and ice) may elicit an improved statistical fit, related to species’ environmental niche. Some candidates include: temperature fronts, eddy kinetic energy, distance from shore, distance from shelf.\nBiology\nWhere sufficient observations exist, additional models should be developed highlighting differences between:\n\nLife stage, e.g. larval vs adult.\nGender where varies, such as male sperm whales being more cosmopolitan.\nSubpopulations for understanding metapopulation dynamics\nBehavior, such as migrating, feeding or breeding.\n\n\nBy definition MBONMarine Biodiversity Observation Network; see MarineBON.org is a network, so this is inclusive of and meant for all participants.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#motivations",
     "href": "index.html#motivations",
     "title": "MarineSDMs",
     "section": "1.3 Motivations",
-    "text": "1.3 Motivations\n\nAquaMaps.org\nAquaMaps (Kaschner et al. 2006; Ready et al. 2010) represents a massive amount of work to gather parameters for &gt;33.5K marine species, including areas to mask out.\nOBIS.org\nThe Ocean Biogeographic Information System (Klein et al. 2019; Grassle 2000) is the central portal for continuously added observations with extra flags for quality control, all of which makes marine SDMs possible.\nModeling methods have dramatically improved over time and are ripe for fresh application. The R package dismo originally came came out with an SDM vignette as a practical supplement to their excellent review of SDMs (Elith and Leathwick 2009) and using the Maxent algorithm (Elith et al. 2011). The raster package furthered that (raster sdm) and now there’s terra sdm. Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine (Gorelick et al. 2017; Campos et al. 2023), allowing for dense global raster processing.\nThe world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called “30 by 30”. In the U.S., this is America the Beautiful initiative (Carroll, Noss, and Stein 2022) for which MBONMarine Biodiversity Observation Network; see MarineBON.org is well poised to inform (Fautin et al. 2010; Muller-Karger et al. 2018). We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of climate change, as evidenced by marine heatwaves and shifts in population distributions."
+    "text": "1.3 Motivations\n\nAquaMaps.org\nAquaMaps (Kaschner et al. 2006; Ready et al. 2010) represents a massive amount of work to gather parameters for &gt;33.5K marine species, including areas to mask out.\nOBIS.org\nThe Ocean Biogeographic Information System (Klein et al. 2019; Grassle 2000) is the central portal for continuously added observations with extra flags for quality control, all of which makes marine SDMs possible.\nModeling methods have dramatically improved over time and are ripe for fresh application. The R package dismo originally came came out with an SDM vignette as a practical supplement to their excellent review of SDMs (Elith and Leathwick 2009) and using the Maxent algorithm (Elith et al. 2011). The raster package furthered that (raster sdm) and now there’s terra sdm. Alongside these developments has been a boon of cloud-computing, particularly Google Earth Engine (Gorelick et al. 2017; Campos et al. 2023), allowing for dense global raster processing.\nThe world is quickly moving towards a future trying to conserve 30% of the oceans by 2030, so called “30 by 30”. In the U.S., this is America the Beautiful initiative (Carroll, Noss, and Stein 2022) for which MBONMarine Biodiversity Observation Network; see MarineBON.org is well poised to inform (Fautin et al. 2010; Muller-Karger et al. 2018). We need biodiversity indicators to track progress. This push for conservation is driven by increasing impacts of climate change, as evidenced by marine heatwaves and shifts in population distributions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#process",
     "href": "index.html#process",
     "title": "MarineSDMs",
     "section": "1.4 Process",
-    "text": "1.4 Process\n\n\n\n\n\nflowchart TD\n\n  %% nodes\n  P(presence):::in\n  A(\"pseudo-absence\"):::in\n  pts(obs):::out\n  X[/extract/]:::fxn\n  env(env):::in\n  D[[data]]:::out\n  S[/split/]:::fxn\n  t1[[train]]:::out\n  t2[[test]]:::out\n  F[/fit/]:::fxn\n  M{{model}}:::out\n  E[/evaluate/]:::fxn\n  C[/calibrate/]:::fxn\n  pr[/predict/]:::fxn\n  N[[\"new data\"]]:::in\n  prd(prediction):::out\n  prf(performance):::out\n\n  %% edges\n  P   --&gt; pts\n  A   --&gt; pts\n  pts --&gt; X\n  env --&gt; X\n  X   --&gt; D\n  D   --&gt; S\n  S   --&gt; t1\n  S   --&gt; t2\n  t1  --&gt; F\n  F   --&gt; M\n  t2  --&gt; E\n  M   --&gt; C\n  C   --&gt; F\n  M   --&gt; pr\n  N   --&gt; pr\n  M   --&gt; E\n  pr  --&gt; prd\n  E   --&gt; prf\n\n  %% Legend\n  in(input):::in\n  fxn[/process/]:::fxn\n  out(output):::out\n  subgraph Legend\n    in\n    fxn\n    out\n  end\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n\nFigure 1.1: Diagram of SDM data preparation and model fitting."
+    "text": "1.4 Process\n\n\n\n\n\n\nflowchart TD\n\n  %% nodes\n  P(presence):::in\n  A(\"pseudo-absence\"):::in\n  pts(obs):::out\n  X[/extract/]:::fxn\n  env(env):::in\n  D[[data]]:::out\n  S[/split/]:::fxn\n  t1[[train]]:::out\n  t2[[test]]:::out\n  F[/fit/]:::fxn\n  M{{model}}:::out\n  E[/evaluate/]:::fxn\n  C[/calibrate/]:::fxn\n  pr[/predict/]:::fxn\n  N[[\"new data\"]]:::in\n  prd(prediction):::out\n  prf(performance):::out\n\n  %% edges\n  P   --&gt; pts\n  A   --&gt; pts\n  pts --&gt; X\n  env --&gt; X\n  X   --&gt; D\n  D   --&gt; S\n  S   --&gt; t1\n  S   --&gt; t2\n  t1  --&gt; F\n  F   --&gt; M\n  t2  --&gt; E\n  M   --&gt; C\n  C   --&gt; F\n  M   --&gt; pr\n  N   --&gt; pr\n  M   --&gt; E\n  pr  --&gt; prd\n  E   --&gt; prf\n\n  %% Legend\n  in(input):::in\n  fxn[/process/]:::fxn\n  out(output):::out\n  subgraph Legend\n    in\n    fxn\n    out\n  end\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n\n\n\nFigure 1.1: Diagram of SDM data preparation and model fitting.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#contribute",
     "href": "index.html#contribute",
     "title": "MarineSDMs",
     "section": "1.5 Contribute",
-    "text": "1.5 Contribute\nWe very much welcome your feedback, contributions and collaboration. As soon as you contribute, we will add you to to the authors list. Here are a few ways to contribute from least to most involved:\n\nEmail Ben (ben@ecoquants.com) with any suggestions, including suggested revisions of this online book.\n\n\n\n\n\n\nNote\n\n\n\nNote that you can download this entire book as:\n\n Adobe Acrobat pdf to add annotations; or\n Microsoft Word docx to edit with Track Changes on.\n\nThese are available in the upper left navigation menu by clicking the download icon .\n\n\nSubmit a New Issue on Github.\nClick on “ Edit this Page” in the upper right. If you have a Github account, then you can fork this repository from owner “marinebon” to your username, edit the page(s) and submit a pull request. See Hello World - GitHub Docs.\nIf you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request)."
+    "text": "1.5 Contribute\nWe very much welcome your feedback, contributions and collaboration. As soon as you contribute, we will add you to to the authors list. Here are a few ways to contribute from least to most involved:\n\nEmail Ben (ben@ecoquants.com) with any suggestions, including suggested revisions of this online book.\n\n\n\n\n\n\nNote\n\n\n\nNote that you can download this entire book as:\n\n Adobe Acrobat pdf to add annotations; or\n Microsoft Word docx to edit with Track Changes on.\n\nThese are available in the upper left navigation menu by clicking the download icon .\n\n\nSubmit a New Issue on Github.\nClick on “ Edit this Page” in the upper right. If you have a Github account, then you can fork this repository from owner “marinebon” to your username, edit the page(s) and submit a pull request. See Hello World - GitHub Docs.\nIf you are a regular contributor, you can be added to the collaborators of this repository to push changes directly (without needing a pull request).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#features",
     "href": "index.html#features",
     "title": "MarineSDMs",
     "section": "1.6 Features",
-    "text": "1.6 Features\nThis Quarto book has a few cool features:\n\nMultiple formats\nFrom the singe set of source Quarto documents (*.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.\nSelf-rendering\nGithub hosts the web pages (*.html), which get rendered from the source code (*.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.\nMermaid diagrams\ne.g., Figure 1.1, Figure 3.1, Figure 6.1\nQuarto document listings\nReferences\nGlossary\nSearch\n\n\n\n\n\n\n\nCampos, João C., Nuno Garcia, João Alírio, Salvador Arenas-Castro, Ana C. Teodoro, and Neftalí Sillero. 2023. “Ecological Niche Models Using MaxEnt in Google Earth Engine: Evaluation, Guidelines and Recommendations.” Ecological Informatics 76 (September): 102147. https://doi.org/10.1016/j.ecoinf.2023.102147.\n\n\nCarroll, C., R. F. Noss, and Bruce A. Stein. 2022. “US Conservation Atlas Needs Biodiversity Data.” Science 376 (6589): 144–45. https://doi.org/10.1126/science.abo0526.\n\n\nElith, Jane, and John R. Leathwick. 2009. “Species Distribution Models: Ecological Explanation and Prediction Across Space and Time.” Annual Review of Ecology, Evolution, and Systematics 40 (1): 677–97. https://doi.org/10.1146/annurev.ecolsys.110308.120159.\n\n\nElith, Jane, Steven J. Phillips, Trevor Hastie, Miroslav Dudík, Yung En Chee, and Colin J. Yates. 2011. “A Statistical Explanation of MaxEnt for Ecologists.” Diversity and Distributions 17 (1): 43–57. http://dx.doi.org/10.1111/j.1472-4642.2010.00725.x.\n\n\nFautin, Daphne, Penelope Dalton, Lewis S. Incze, Jo-Ann C. Leong, Clarence Pautzke, Andrew Rosenberg, Paul Sandifer, et al. 2010. “An Overview of Marine Biodiversity in United States Waters.” PLoS ONE 5 (8): e11914. https://doi.org/10.1371/journal.pone.0011914.\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. “Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.” Remote Sensing of Environment, Big remotely sensed data: Tools, applications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031.\n\n\nGrassle, J. Frederick. 2000. “The Ocean Biogeographic Information System (OBIS): An on-Line, Worldwide Atlas for Accessing, Modeling and Mapping Marine Biological Data in a Multidimensional Geographic Context.” Oceanography 13 (3): 5–7. https://www.jstor.org/stable/43924357.\n\n\nHalpern, Benjamin S., Catherine Longo, Darren Hardy, Karen L. McLeod, Jameal F. Samhouri, Steven K. Katona, Kristin Kleisner, et al. 2012. “An Index to Assess the Health and Benefits of the Global Ocean.” Nature. https://doi.org/10.1038/nature11397.\n\n\nKaschner, K., R. Watson, A. W. Trites, and D. Pauly. 2006. “Mapping World-Wide Distributions of Marine Mammal Species Using a Relative Environmental Suitability (RES) Model.” Marine Ecology Progress Series 316 (July): 285–310. https://doi.org/10.3354/meps316285.\n\n\nKlein, Eduardo, Ward Appeltans, Pieter Provoost, Hanieh Saeedi, Abigail Benson, Lenore Bajona, Ana Carolina Peralta, and R. Sky Bristol. 2019. “OBIS Infrastructure, Lessons Learned, and Vision for the Future.” Frontiers in Marine Science 6. https://www.frontiersin.org/articles/10.3389/fmars.2019.00588.\n\n\nMuller-Karger, Frank E., Patricia Miloslavich, Nicholas J. Bax, Samantha Simmons, Mark J. Costello, Isabel Sousa Pinto, Gabrielle Canonico, et al. 2018. “Advancing Marine Biological Observations and Data Requirements of the Complementary Essential Ocean Variables (EOVs) and Essential Biodiversity Variables (EBVs) Frameworks.” Frontiers in Marine Science 5. https://doi.org/10.3389/fmars.2018.00211.\n\n\nReady, Jonathan, Kristin Kaschner, Andy B. South, Paul D. Eastwood, Tony Rees, Josephine Rius, Eli Agbayani, Sven Kullander, and Rainer Froese. 2010. “Predicting the Distributions of Marine Organisms at the Global Scale.” Ecological Modelling 221 (3): 467–78. https://doi.org/10.1016/j.ecolmodel.2009.10.025.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. “Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.” Marine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927."
+    "text": "1.6 Features\nThis Quarto book has a few cool features:\n\nMultiple formats\nFrom the singe set of source Quarto documents (*.qmd), several output formats are rendered: html, pdf, docx. This is particularly helpful when suggesting changes. It also lends itself well to being carved into manuscripts.\nSelf-rendering\nGithub hosts the web pages (*.html), which get rendered from the source code (*.qmd) using a Github Action. So edits can be made simply through the web interface and all outputs get updated (html, pdf, docx). It also ensures the reproducibility of the document with a common setup environment.\nMermaid diagrams\ne.g., Figure 1.1, Figure 3.1, Figure 6.1\nQuarto document listings\nReferences\nGlossary\nSearch\n\n\n\n\n\n\n\nCampos, João C., Nuno Garcia, João Alírio, Salvador Arenas-Castro, Ana C. Teodoro, and Neftalí Sillero. 2023. “Ecological Niche Models Using MaxEnt in Google Earth Engine: Evaluation, Guidelines and Recommendations.” Ecological Informatics 76 (September): 102147. https://doi.org/10.1016/j.ecoinf.2023.102147.\n\n\nCarroll, C., R. F. Noss, and Bruce A. Stein. 2022. “US Conservation Atlas Needs Biodiversity Data.” Science 376 (6589): 144–45. https://doi.org/10.1126/science.abo0526.\n\n\nElith, Jane, and John R. Leathwick. 2009. “Species Distribution Models: Ecological Explanation and Prediction Across Space and Time.” Annual Review of Ecology, Evolution, and Systematics 40 (1): 677–97. https://doi.org/10.1146/annurev.ecolsys.110308.120159.\n\n\nElith, Jane, Steven J. Phillips, Trevor Hastie, Miroslav Dudík, Yung En Chee, and Colin J. Yates. 2011. “A Statistical Explanation of MaxEnt for Ecologists.” Diversity and Distributions 17 (1): 43–57. http://dx.doi.org/10.1111/j.1472-4642.2010.00725.x.\n\n\nFautin, Daphne, Penelope Dalton, Lewis S. Incze, Jo-Ann C. Leong, Clarence Pautzke, Andrew Rosenberg, Paul Sandifer, et al. 2010. “An Overview of Marine Biodiversity in United States Waters.” PLoS ONE 5 (8): e11914. https://doi.org/10.1371/journal.pone.0011914.\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca Moore. 2017. “Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone.” Remote Sensing of Environment, Big remotely sensed data: Tools, applications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031.\n\n\nGrassle, J. Frederick. 2000. “The Ocean Biogeographic Information System (OBIS): An on-Line, Worldwide Atlas for Accessing, Modeling and Mapping Marine Biological Data in a Multidimensional Geographic Context.” Oceanography 13 (3): 5–7. https://www.jstor.org/stable/43924357.\n\n\nHalpern, Benjamin S., Catherine Longo, Darren Hardy, Karen L. McLeod, Jameal F. Samhouri, Steven K. Katona, Kristin Kleisner, et al. 2012. “An Index to Assess the Health and Benefits of the Global Ocean.” Nature. https://doi.org/10.1038/nature11397.\n\n\nKaschner, K., R. Watson, A. W. Trites, and D. Pauly. 2006. “Mapping World-Wide Distributions of Marine Mammal Species Using a Relative Environmental Suitability (RES) Model.” Marine Ecology Progress Series 316 (July): 285–310. https://doi.org/10.3354/meps316285.\n\n\nKlein, Eduardo, Ward Appeltans, Pieter Provoost, Hanieh Saeedi, Abigail Benson, Lenore Bajona, Ana Carolina Peralta, and R. Sky Bristol. 2019. “OBIS Infrastructure, Lessons Learned, and Vision for the Future.” Frontiers in Marine Science 6. https://www.frontiersin.org/articles/10.3389/fmars.2019.00588.\n\n\nMuller-Karger, Frank E., Patricia Miloslavich, Nicholas J. Bax, Samantha Simmons, Mark J. Costello, Isabel Sousa Pinto, Gabrielle Canonico, et al. 2018. “Advancing Marine Biological Observations and Data Requirements of the Complementary Essential Ocean Variables (EOVs) and Essential Biodiversity Variables (EBVs) Frameworks.” Frontiers in Marine Science 5. https://doi.org/10.3389/fmars.2018.00211.\n\n\nReady, Jonathan, Kristin Kaschner, Andy B. South, Paul D. Eastwood, Tony Rees, Josephine Rius, Eli Agbayani, Sven Kullander, and Rainer Froese. 2010. “Predicting the Distributions of Marine Organisms at the Global Scale.” Ecological Modelling 221 (3): 467–78. https://doi.org/10.1016/j.ecolmodel.2009.10.025.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. “Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.” Marine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
     "title": "MarineSDMs",
     "section": "",
-    "text": "IUCN RedList range maps: https://www.iucnredlist.org/resources/spatial-data-download↩︎"
+    "text": "IUCN RedList range maps: https://www.iucnredlist.org/resources/spatial-data-download↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   },
   {
     "objectID": "prep.html",
     "href": "prep.html",
     "title": "2  Prepare",
     "section": "",
-    "text": "3 Prepare\nflowchart LR\n\n  %% nodes\n  P(presence):::in\n  A(\"pseudo-absence\"):::in\n  pts(obs):::out\n  X[/extract/]:::fxn\n  env(env):::in\n  D[[data]]:::out\n\n  %% edges\n  P   --&gt; pts\n  A   --&gt; pts\n  pts --&gt; X\n  env --&gt; X\n  X   --&gt; D\n\n  %% Legend\n  in(input):::in\n  fxn[/process/]:::fxn\n  out(output):::out\n  subgraph Legend\n    in\n    fxn\n    out\n  end\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n\nFigure 3.1: Diagram of SDM data preparation for model fitting."
+    "text": "3 Prepare\nflowchart LR\n\n  %% nodes\n  P(presence):::in\n  A(\"pseudo-absence\"):::in\n  pts(obs):::out\n  X[/extract/]:::fxn\n  env(env):::in\n  D[[data]]:::out\n\n  %% edges\n  P   --&gt; pts\n  A   --&gt; pts\n  pts --&gt; X\n  env --&gt; X\n  X   --&gt; D\n\n  %% Legend\n  in(input):::in\n  fxn[/process/]:::fxn\n  out(output):::out\n  subgraph Legend\n    in\n    fxn\n    out\n  end\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n\n\n\nFigure 3.1: Diagram of SDM data preparation for model fitting.",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prepare</span>"
+    ]
   },
   {
     "objectID": "prep.html#environmental-predictors",
     "href": "prep.html#environmental-predictors",
     "title": "2  Prepare",
     "section": "3.1 Environmental Predictors",
-    "text": "3.1 Environmental Predictors\n\n3.1.1 Physiographic\n\ndepth\nBathymetric Depth\nd2coast\nDistance to Coast\nd2shelf\nDistance to Shelf\n\n\n\n3.1.2 Time Varying\n\nvgpm\nVertically integrated primary Productivity model\n\n\n\n3.1.3 Depth & Time Varying\n\ntemp\nTemperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus\nsalin\nSalinity\n\n\n\n\n\n\n\nSkyttner, Markus. 2020. “Aquamapsdata: Curated Data from AquaMaps.org.” https://github.com/raquamaps/aquamapsdata."
+    "text": "3.1 Environmental Predictors\n\n3.1.1 Physiographic\n\ndepth\nBathymetric Depth\nd2coast\nDistance to Coast\nd2shelf\nDistance to Shelf\n\n\n\n3.1.2 Time Varying\n\nvgpm\nVertically integrated primary Productivity model\n\n\n\n3.1.3 Depth & Time Varying\n\ntemp\nTemperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus\nsalin\nSalinity\n\n\n\n\n\n\n\nSkyttner, Markus. 2020. “Aquamapsdata: Curated Data from AquaMaps.org.” https://github.com/raquamaps/aquamapsdata.",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prepare</span>"
+    ]
   },
   {
-    "objectID": "occ.html#fetch-obis",
-    "href": "occ.html#fetch-obis",
+    "objectID": "occ.html",
+    "href": "occ.html",
     "title": "3  Occurrences",
-    "section": "3.1 Fetch OBIS",
-    "text": "3.1 Fetch OBIS"
+    "section": "",
+    "text": "3.1 Fetch OBIS",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Occurrences</span>"
+    ]
   },
   {
     "objectID": "occ.html#filter-occurrences",
     "href": "occ.html#filter-occurrences",
     "title": "3  Occurrences",
     "section": "3.2 Filter occurrences",
-    "text": "3.2 Filter occurrences"
+    "text": "3.2 Filter occurrences\n\n\n\n\n\nFigure 3.1: Source: Kernel density estimates for tidy and geospatial data in the eks package",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Occurrences</span>"
+    ]
   },
   {
-    "objectID": "abs.html#all-background",
-    "href": "abs.html#all-background",
+    "objectID": "abs.html",
+    "href": "abs.html",
     "title": "4  Pseudo-absences",
-    "section": "4.1 All background",
-    "text": "4.1 All background\nA common Maxent strategy is to feed all background points into Maxent, and then to use the resulting distribution as a null model. This is the default strategy in Maxent (Phillips et al. 2017; Phillips, Anderson, and Schapire 2006; Phillips and Dudík 2008)."
+    "section": "",
+    "text": "4.1 All background\nA common Maxent strategy is to feed all background points into Maxent, and then to use the resulting distribution as a null model. This is the default strategy in Maxent (Phillips et al. 2017; Phillips, Anderson, and Schapire 2006; Phillips and Dudík 2008).",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pseudo-absences</span>"
+    ]
   },
   {
     "objectID": "abs.html#mask-by-fao-areas",
     "href": "abs.html#mask-by-fao-areas",
     "title": "4  Pseudo-absences",
     "section": "4.2 Mask by FAO areas",
-    "text": "4.2 Mask by FAO areas\nThe FAO areas applicable to species are included in the aquamapsdata, presumably from evaluating OBIS observations and the literature."
+    "text": "4.2 Mask by FAO areas\nThe FAO areas applicable to species are included in the aquamapsdata, presumably from evaluating OBIS observations and the literature.",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pseudo-absences</span>"
+    ]
   },
   {
     "objectID": "abs.html#use-occurrences-from-same-family-different-species",
     "href": "abs.html#use-occurrences-from-same-family-different-species",
     "title": "4  Pseudo-absences",
     "section": "4.3 Use occurrences from same Family, different species",
-    "text": "4.3 Use occurrences from same Family, different species\nBy using the same family, we can be sure that the pseudo-absences are ecologically similar to the species of interest.\n\n\n\n\n\n\nBarbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and Wilfried Thuiller. 2012. “Selecting Pseudo-Absences for Species Distribution Models: How, Where and How Many?” Methods in Ecology and Evolution 3 (2): 327–38. https://doi.org/10.1111/j.2041-210X.2011.00172.x.\n\n\nPhillips, Steven J., Robert P. Anderson, Miroslav Dudík, Robert E. Schapire, and Mary E. Blair. 2017. “Opening the Black Box: An Open-Source Release of Maxent.” Ecography 40 (7): 887–93. https://doi.org/10.1111/ecog.03049.\n\n\nPhillips, Steven J., Robert P. Anderson, and Robert E. Schapire. 2006. “Maximum Entropy Modeling of Species Geographic Distributions.” Ecological Modelling 190 (3): 231–59. https://doi.org/10.1016/j.ecolmodel.2005.03.026.\n\n\nPhillips, Steven J., and Miroslav Dudík. 2008. “Modeling of Species Distributions with Maxent: New Extensions and a Comprehensive Evaluation.” Ecography 31 (2): 161–75. https://doi.org/10.1111/j.0906-7590.2008.5203.x."
+    "text": "4.3 Use occurrences from same Family, different species\nBy using the same family, we can be sure that the pseudo-absences are ecologically similar to the species of interest.\n\n\n\n\n\n\nBarbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and Wilfried Thuiller. 2012. “Selecting Pseudo-Absences for Species Distribution Models: How, Where and How Many?” Methods in Ecology and Evolution 3 (2): 327–38. https://doi.org/10.1111/j.2041-210X.2011.00172.x.\n\n\nPhillips, Steven J., Robert P. Anderson, Miroslav Dudík, Robert E. Schapire, and Mary E. Blair. 2017. “Opening the Black Box: An Open-Source Release of Maxent.” Ecography 40 (7): 887–93. https://doi.org/10.1111/ecog.03049.\n\n\nPhillips, Steven J., Robert P. Anderson, and Robert E. Schapire. 2006. “Maximum Entropy Modeling of Species Geographic Distributions.” Ecological Modelling 190 (3): 231–59. https://doi.org/10.1016/j.ecolmodel.2005.03.026.\n\n\nPhillips, Steven J., and Miroslav Dudík. 2008. “Modeling of Species Distributions with Maxent: New Extensions and a Comprehensive Evaluation.” Ecography 31 (2): 161–75. https://doi.org/10.1111/j.0906-7590.2008.5203.x.",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pseudo-absences</span>"
+    ]
   },
   {
     "objectID": "env.html",
     "href": "env.html",
     "title": "5  Environment",
     "section": "",
-    "text": "Environmental data are used to fit the model and predict distribution onto the seascape, e.g. Table 5.1.\n\n\nCode\nlibrarian::shelf(\n  here, knitr, readr)\nlibrary(here)\nlibrary(knitr)\nlibrary(readr)\n\nd &lt;- read_csv(\n  here(\"data/Roberts-2016_env-predictors.csv\"),\n  show_col_types = F)\n\noptions(knitr.kable.NA = '')\nkable(d, format=\"pipe\")\n\n\n\n\nTable 5.1: Example of environmental predictors from Roberts et al. (2016).\n\n\n\n\n\n\n\n\nType /Covariates\nResolution\nTime range\nDescription\n\n\n\n\nPhysiographic\n\n\n\n\n\nDepth, Slope\n30 arc sec\n\nSeafloor depth and slope, derived from SRTM30-PLUS global bathymetry20\n\n\nDistToShore, DistTo125m, DistTo300m, DistTo1500m\n30 arc sec\n\nDistance to the closest shoreline, excluding Bermuda and Sable Island, and various ecologically-relevant isobaths20\n\n\nDistToCanyon, DistToCanyon OrSeamount\n30 arc sec\n\nDistance to the closest submarine canyon, and to the closest canyon or seamount21\n\n\nSST & Winds\n\n\n\n\n\nSST, DistToFront\n0.2°, daily\n1991-2014\nFoundation sea surface temperature (SST), from GHRSST Level 4 CMC SST22, and distance to the closest SST front identified with the Canny edge detection algorithm23\n\n\nWindSpeed\n0.25°, daily\n1991-2014\n30-day running mean of NOAA NCDC 1/4° Blended Sea Winds24\n\n\nCurrents\n\n\n\n\n\nTKE, EKE\n0.25°, daily\n1993-2013\nTotal kinetic energy (TKE) and eddy kinetic energy (EKE), from Aviso 1/4° DT-MADT geostrophic currents\n\n\nDistToEddy, DistToAEddy, DistToCEddy\n0.25°, weekly\n1993-2013\nDistance to the ring of the closest geostrophic eddy having any (DistToEddy), anticyclonic (DistToAEddy), or cyclonic (DistToCEddy) polarity, from Aviso 1/4° DT-MADT using a revision of the Chelton et al. algorithm25; we tested eddies at least 9, 4, and 0 weeks old\n\n\nBiological\n\n\n\n\n\nChl\n9 km, daily\n1997-2014\nGSM merged SeaWiFS/Aqua/MERIS/VIIRS chlorophyll (Chl) a concentration26, smoothed with a 3D Gaussian smoother to reduce data loss to &lt; 10%\n\n\nVGPM, CumVGPM45, CumVGPM90\n9 km, 8 days\n1997-2014\nNet primary production (mg C m-2 day-1) derived from SeaWiFS and Aqua using the Vertically Generalized Production Model (VPGM)27; we tested the original 8 day estimates as well as 45 and 90 day running accumulations\n\n\nPkPP, PkPB\n0.25°, weekly\n1997-2013\nZooplankton production (PkPP; g m-2 day-1) and biomass (PkPB; g m-2) from the SEAPODYM ocean model28\n\n\nEpiMnkPP, EpiMnkPB\n0.25°, weekly\n1997-2013\nEpipelagic micronekton production (EpiMnkPP; g m-2 day-1) and biomass (EpiMnkPB; g m-2) from the SEAPODYM model(28)\n\n\n\n\n\n\n\n5.0.1 Physiographic\n\ndepth\nBathymetric Depth\nd2coast\nDistance to Coast\nd2shelf\nDistance to Shelf\n\n\n\n5.0.2 Time Varying\n\nvgpm\nVertically integrated primary Productivity model\n\n\n\n5.0.3 Depth & Time Varying\n\ntemp\nTemperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus\nsalin\nSalinity\n\n\n\n\n\n\n\nRoberts, Jason J., Benjamin D. Best, Laura Mannocci, Ei Fujioka, Patrick N. Halpin, Debra L. Palka, Lance P. Garrison, et al. 2016. “Habitat-Based Cetacean Density Models for the u.s. Atlantic and Gulf of Mexico.” Scientific Reports 6 (March): 22615. https://doi.org/10.1038/srep22615."
+    "text": "Environmental data are used to fit the model and predict distribution onto the seascape, e.g. Table 5.1.\n\nCode\nlibrarian::shelf(\n  here, knitr, readr)\nlibrary(here)\nlibrary(knitr)\nlibrary(readr)\n\nd &lt;- read_csv(\n  here(\"data/Roberts-2016_env-predictors.csv\"),\n  show_col_types = F)\n\noptions(knitr.kable.NA = '')\nkable(d, format=\"pipe\")\n\n\n\n\nTable 5.1: Example of environmental predictors from Roberts et al. (2016).\n\n\n\n\n\n\n\n\n\n\n\nType /Covariates\nResolution\nTime range\nDescription\n\n\n\n\nPhysiographic\n\n\n\n\n\nDepth, Slope\n30 arc sec\n\nSeafloor depth and slope, derived from SRTM30-PLUS global bathymetry20\n\n\nDistToShore, DistTo125m, DistTo300m, DistTo1500m\n30 arc sec\n\nDistance to the closest shoreline, excluding Bermuda and Sable Island, and various ecologically-relevant isobaths20\n\n\nDistToCanyon, DistToCanyon OrSeamount\n30 arc sec\n\nDistance to the closest submarine canyon, and to the closest canyon or seamount21\n\n\nSST & Winds\n\n\n\n\n\nSST, DistToFront\n0.2°, daily\n1991-2014\nFoundation sea surface temperature (SST), from GHRSST Level 4 CMC SST22, and distance to the closest SST front identified with the Canny edge detection algorithm23\n\n\nWindSpeed\n0.25°, daily\n1991-2014\n30-day running mean of NOAA NCDC 1/4° Blended Sea Winds24\n\n\nCurrents\n\n\n\n\n\nTKE, EKE\n0.25°, daily\n1993-2013\nTotal kinetic energy (TKE) and eddy kinetic energy (EKE), from Aviso 1/4° DT-MADT geostrophic currents\n\n\nDistToEddy, DistToAEddy, DistToCEddy\n0.25°, weekly\n1993-2013\nDistance to the ring of the closest geostrophic eddy having any (DistToEddy), anticyclonic (DistToAEddy), or cyclonic (DistToCEddy) polarity, from Aviso 1/4° DT-MADT using a revision of the Chelton et al. algorithm25; we tested eddies at least 9, 4, and 0 weeks old\n\n\nBiological\n\n\n\n\n\nChl\n9 km, daily\n1997-2014\nGSM merged SeaWiFS/Aqua/MERIS/VIIRS chlorophyll (Chl) a concentration26, smoothed with a 3D Gaussian smoother to reduce data loss to &lt; 10%\n\n\nVGPM, CumVGPM45, CumVGPM90\n9 km, 8 days\n1997-2014\nNet primary production (mg C m-2 day-1) derived from SeaWiFS and Aqua using the Vertically Generalized Production Model (VPGM)27; we tested the original 8 day estimates as well as 45 and 90 day running accumulations\n\n\nPkPP, PkPB\n0.25°, weekly\n1997-2013\nZooplankton production (PkPP; g m-2 day-1) and biomass (PkPB; g m-2) from the SEAPODYM ocean model28\n\n\nEpiMnkPP, EpiMnkPB\n0.25°, weekly\n1997-2013\nEpipelagic micronekton production (EpiMnkPP; g m-2 day-1) and biomass (EpiMnkPB; g m-2) from the SEAPODYM model(28)\n\n\n\n\n\n\n\n5.0.1 Physiographic\n\ndepth\nBathymetric Depth\nd2coast\nDistance to Coast\nd2shelf\nDistance to Shelf\n\n\n\n5.0.2 Time Varying\n\nvgpm\nVertically integrated primary Productivity model\n\n\n\n5.0.3 Depth & Time Varying\n\ntemp\nTemperature, either sea-surface temperature (SST) or some modeled product from HyCOM, ROMS or Copernicus\nsalin\nSalinity\n\n\n\n\n\n\n\nRoberts, Jason J., Benjamin D. Best, Laura Mannocci, Ei Fujioka, Patrick N. Halpin, Debra L. Palka, Lance P. Garrison, et al. 2016. “Habitat-Based Cetacean Density Models for the u.s. Atlantic and Gulf of Mexico.” Scientific Reports 6 (March): 22615. https://doi.org/10.1038/srep22615.",
+    "crumbs": [
+      "Prepare",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Environment</span>"
+    ]
   },
   {
     "objectID": "model.html",
     "href": "model.html",
     "title": "6  Model",
     "section": "",
-    "text": "flowchart LR\n\n  %% nodes\n  D[[data]]:::in\n  S[/split/]:::fxn\n  t1[[train]]:::out\n  t2[[test]]:::out\n  F[/fit/]:::fxn\n  M{{model}}:::out\n  E[/evaluate/]:::fxn\n  C[/calibrate/]:::fxn\n  P[/predict/]:::fxn\n  N[[\"new data\"]]:::in\n  prd(prediction):::out\n  prf(performance):::out\n\n  %% edges\n  D  --&gt; S\n  S  --&gt; t1\n  S  --&gt; t2\n  t1 --&gt; F\n  F  --&gt; M\n  t2 --&gt; E\n  M  --&gt; C\n  C  --&gt; F\n  M  --&gt; P\n  N  --&gt; P\n  M  --&gt; E\n  P  --&gt; prd\n  E  --&gt; prf\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n%% source: https://bbest.github.io/eds232-ml/lab1d_sdm-evaluate.html\n\n\nFigure 6.1: Diagram of SDM Modeling processes."
+    "text": "flowchart LR\n\n  %% nodes\n  D[[data]]:::in\n  S[/split/]:::fxn\n  t1[[train]]:::out\n  t2[[test]]:::out\n  F[/fit/]:::fxn\n  M{{model}}:::out\n  E[/evaluate/]:::fxn\n  C[/calibrate/]:::fxn\n  P[/predict/]:::fxn\n  N[[\"new data\"]]:::in\n  prd(prediction):::out\n  prf(performance):::out\n\n  %% edges\n  D  --&gt; S\n  S  --&gt; t1\n  S  --&gt; t2\n  t1 --&gt; F\n  F  --&gt; M\n  t2 --&gt; E\n  M  --&gt; C\n  C  --&gt; F\n  M  --&gt; P\n  N  --&gt; P\n  M  --&gt; E\n  P  --&gt; prd\n  E  --&gt; prf\n\n  %% styles\n  classDef in  fill:lightblue\n  classDef out fill:lightgreen\n  classDef fxn fill:yellow\n\n%% source: https://bbest.github.io/eds232-ml/lab1d_sdm-evaluate.html\n\n\n\n\nFigure 6.1: Diagram of SDM Modeling processes.",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Model</span>"
+    ]
   },
   {
     "objectID": "split.html",
     "href": "split.html",
     "title": "7  Split",
     "section": "",
-    "text": "Data is often split so that ~20% of the observations (presence and absence) are set aside from the model fitting to be used for model evaluation.\nThe k-fold function is often used to split the data into k groups, and then the model is fit k times, each time using a different group as the test data and the remaining groups as the training data."
+    "text": "Data is often split so that ~20% of the observations (presence and absence) are set aside from the model fitting to be used for model evaluation.\nThe k-fold function is often used to split the data into k groups, and then the model is fit k times, each time using a different group as the test data and the remaining groups as the training data.",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Split</span>"
+    ]
   },
   {
     "objectID": "fit.html",
     "href": "fit.html",
     "title": "8  Fit",
     "section": "",
-    "text": "Model fitting in theory is quite complex, but quite simple in practice, with feeding the prepared data into the modeling function.\nHowever there are MANY modeling techniques from which to choose. For instance check out 238 entries in 6 Available Models | The caret Package."
+    "text": "Model fitting in theory is quite complex, but quite simple in practice, with feeding the prepared data into the modeling function.\nHowever there are MANY modeling techniques from which to choose. For instance check out 238 entries in 6 Available Models | The caret Package.",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Fit</span>"
+    ]
   },
   {
     "objectID": "calibrate.html",
     "href": "calibrate.html",
     "title": "9  Calibrate",
     "section": "",
-    "text": "The process of refining the model to only the most relevant environmental predictor terms is commonly called “Model Selection.” One of the most cited scientific paper of all time (Akaike 1974) is based on taking a most parsimonious approach to this process – the so called Akaike Information Criteria (AIC).\nIt is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.\n\n\n\n\n\n\nAkaike, H. 1974. “A New Look at the Statistical Model Identification.” IEEE Transactions on Automatic Control 19 (6): 716723."
+    "text": "The process of refining the model to only the most relevant environmental predictor terms is commonly called “Model Selection.” One of the most cited scientific paper of all time (Akaike 1974) is based on taking a most parsimonious approach to this process – the so called Akaike Information Criteria (AIC).\nIt is important to avoid using environmental predictors that are correlated with each other, since the effect of a predictor on the response could be the ecologically inverse, the result of explaining variance on the residuals of the other correlated predictor.\n\n\n\n\n\n\nAkaike, H. 1974. “A New Look at the Statistical Model Identification.” IEEE Transactions on Automatic Control 19 (6): 716723.",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Calibrate</span>"
+    ]
   },
   {
     "objectID": "predict.html",
     "href": "predict.html",
     "title": "10  Predict",
     "section": "",
-    "text": "The prediction step applies the environmental relationships from the fitted model to a new set of data, typically the seascape of interest, and perhaps with some sort of temporal snapshot (e.g., climatic annual or monthly average)."
+    "text": "The prediction step applies the environmental relationships from the fitted model to a new set of data, typically the seascape of interest, and perhaps with some sort of temporal snapshot (e.g., climatic annual or monthly average).",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Predict</span>"
+    ]
+  },
+  {
+    "objectID": "evaluate.html",
+    "href": "evaluate.html",
+    "title": "11  Evaluate",
+    "section": "",
+    "text": "11.1 More Resources",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Evaluate</span>"
+    ]
   },
   {
     "objectID": "evaluate.html#more-resources",
     "href": "evaluate.html#more-resources",
     "title": "11  Evaluate",
-    "section": "11.1 More Resources",
-    "text": "11.1 More Resources\n\nClassification: ROC Curve and AUC | Machine Learning | Google for Developers"
+    "section": "",
+    "text": "Classification: ROC Curve and AUC | Machine Learning | Google for Developers\n\n\n\n\n\n\nFigure 11.1: ROC curve generated by showing rates of false positive vs false negative as function of changing the threshold value (rainbow colors). Source: ROCR: visualizing classifier performance in R",
+    "crumbs": [
+      "Model",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Evaluate</span>"
+    ]
   },
   {
     "objectID": "combine.html",
     "href": "combine.html",
     "title": "12  Combine",
     "section": "",
-    "text": "We look at combining SDMs to calculate biodiversity based on addressing questions of interest and relevance."
+    "text": "We look at combining SDMs to calculate biodiversity based on addressing questions of interest and relevance.\n\nSee joint species distribution models (jSDMs) per Hartig et al (2023, Box 2) that includes species co-occurrence.\n\n\n\n\n\n\n\nHartig, Florian, Nerea Abrego, Alex Bush, Jonathan M. Chase, Gurutzeta Guillera-Arroita, Mathew A. Leibold, Otso Ovaskainen, et al. 2023. “Novel Community Data in Ecology-Properties and Prospects.” Trends in Ecology & Evolution 0 (0). https://doi.org/10.1016/j.tree.2023.09.017.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Combine</span>"
+    ]
   },
   {
     "objectID": "ensemble.html",
     "href": "ensemble.html",
     "title": "13  Ensemble",
     "section": "",
-    "text": "biomod2\nSpecies distribution modeling, calibration and evaluation, ensemble modeling"
+    "text": "biomod2\nSpecies distribution modeling, calibration and evaluation, ensemble modeling",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Ensemble</span>"
+    ]
   },
   {
     "objectID": "mosaic.html",
     "href": "mosaic.html",
     "title": "14  Mosaic",
     "section": "",
-    "text": "Figure 14.1: Hierarchy of preferred model outputs based on response type and age.\n\n\nThis is illustrated well by Figure 14.1."
+    "text": "Figure 14.1: Hierarchy of preferred model outputs based on response type and age.\n\n\n\nThis is illustrated well by Figure 14.1.\n\n\n\n\n\nFigure 14.1: Hierarchy of preferred model outputs based on response type and age.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mosaic</span>"
+    ]
   },
   {
     "objectID": "taxa.html",
     "href": "taxa.html",
     "title": "15  Taxa",
     "section": "",
-    "text": "Taxonomic groups (Tittensor et al. 2010) in the high seas (Visalli et al. 2020) were packaged with simple query statements in the draft R package gmbi (global marine biodiversity indicators).\n\n\n\n\n\n\nTittensor, Derek P., Camilo Mora, Walter Jetz, Heike K. Lotze, Daniel Ricard, Edward Vanden Berghe, and Boris Worm. 2010. “Global Patterns and Predictors of Marine Biodiversity Across Taxa.” Nature 466 (7310): 1098–1101. https://doi.org/10.1038/nature09329.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. “Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.” Marine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927."
+    "text": "Taxonomic groups (Tittensor et al. 2010) in the high seas (Visalli et al. 2020) were packaged with simple query statements in the draft R package gmbi (global marine biodiversity indicators).\n\n\n\n\n\n\nTittensor, Derek P., Camilo Mora, Walter Jetz, Heike K. Lotze, Daniel Ricard, Edward Vanden Berghe, and Boris Worm. 2010. “Global Patterns and Predictors of Marine Biodiversity Across Taxa.” Nature 466 (7310): 1098–1101. https://doi.org/10.1038/nature09329.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L. Cheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al. 2020. “Data-Driven Approach for Highlighting Priority Areas for Protection in Marine Areas Beyond National Jurisdiction.” Marine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Taxa</span>"
+    ]
+  },
+  {
+    "objectID": "indicators.html",
+    "href": "indicators.html",
+    "title": "16  Indicators",
+    "section": "",
+    "text": "16.1 Diversity\nHere are the classic diversity indices from the R package vegan:",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#diversity",
     "href": "indicators.html#diversity",
     "title": "16  Indicators",
-    "section": "16.1 Diversity",
-    "text": "16.1 Diversity\nHere are the classic diversity indices from the R package vegan:\n\n\\[\n\\begin{aligned}\nH   &= - \\sum_{i=1}^S p_i \\log_b  p_i  &\\text{Shannon-Weaver}  \\\\\nD_1 &= 1 - \\sum_{i=1}^S p_i^2          &\\text{Simpson}         \\\\\nD_2 &= \\frac{1}{\\sum_{i=1}^S p_i^2}    &\\text{inverse Simpson}\n\\end{aligned}\n\\]\nwhere \\(p_i\\) is the proportion of species \\(i\\), and \\(S\\) is the number of species so that \\(\\sum_{i=1}^S p_i = 1\\), and \\(b\\) is the base of the logarithm."
+    "section": "",
+    "text": "\\[\n\\begin{aligned}\nH   &= - \\sum_{i=1}^S p_i \\log_b  p_i  &\\text{Shannon-Weaver}  \\\\\nD_1 &= 1 - \\sum_{i=1}^S p_i^2          &\\text{Simpson}         \\\\\nD_2 &= \\frac{1}{\\sum_{i=1}^S p_i^2}    &\\text{inverse Simpson}\n\\end{aligned}\n\\]\nwhere \\(p_i\\) is the proportion of species \\(i\\), and \\(S\\) is the number of species so that \\(\\sum_{i=1}^S p_i = 1\\), and \\(b\\) is the base of the logarithm.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#endemism",
     "href": "indicators.html#endemism",
     "title": "16  Indicators",
     "section": "16.2 Endemism",
-    "text": "16.2 Endemism\nEndemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps."
+    "text": "16.2 Endemism\nEndemism could be measured as a function of the presence or average of the species range, given by either a global SDM converted to a binary range or using the existing IUCN range maps.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#extinction-risk",
     "href": "indicators.html#extinction-risk",
     "title": "16  Indicators",
     "section": "16.3 Extinction Risk",
-    "text": "16.3 Extinction Risk\nThis is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe’s Conservation Status Ranks for the U.S."
+    "text": "16.3 Extinction Risk\nThis is provided by IUCN RedList, as well as sometimes at a national level, such as NatureServe’s Conservation Status Ranks for the U.S.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#functional-importance",
     "href": "indicators.html#functional-importance",
     "title": "16  Indicators",
     "section": "16.4 Functional Importance",
-    "text": "16.4 Functional Importance"
+    "text": "16.4 Functional Importance",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#habitat-forming",
     "href": "indicators.html#habitat-forming",
     "title": "16  Indicators",
     "section": "16.5 Habitat Forming",
-    "text": "16.5 Habitat Forming\nHabitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services."
+    "text": "16.5 Habitat Forming\nHabitat forming species, such as coral, mangrove, seagrasses and kelp are especially important for biodiversity and ecosystem services.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#phylogenetic-uniqueness",
     "href": "indicators.html#phylogenetic-uniqueness",
     "title": "16  Indicators",
     "section": "16.6 Phylogenetic Uniqueness",
-    "text": "16.6 Phylogenetic Uniqueness"
+    "text": "16.6 Phylogenetic Uniqueness",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#richness",
     "href": "indicators.html#richness",
     "title": "16  Indicators",
     "section": "16.7 Richness",
-    "text": "16.7 Richness"
+    "text": "16.7 Richness",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#sensitivity",
     "href": "indicators.html#sensitivity",
     "title": "16  Indicators",
     "section": "16.8 Sensitivity",
-    "text": "16.8 Sensitivity\nSensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy."
+    "text": "16.8 Sensitivity\nSensitivity to specific human activities, such as shipping or fishing. Some activities may have different stages of development, such as construction versus operation of offshore wind energy.",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "indicators.html#trophic-index",
     "href": "indicators.html#trophic-index",
     "title": "16  Indicators",
     "section": "16.9 Trophic Index",
-    "text": "16.9 Trophic Index"
+    "text": "16.9 Trophic Index",
+    "crumbs": [
+      "Combine",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Indicators</span>"
+    ]
   },
   {
     "objectID": "metadata.html",
     "href": "metadata.html",
     "title": "18  Metadata",
     "section": "",
-    "text": "What standards (Araújo et al. 2019; Kass et al. 2023; Zurell et al. 2020) are required for models to be hosted?\n\ninput\n\ninput observations\nenvironmental predictors\nand range of values in original observations\nmodel type and object\n\noutputs\n\nmodel object\nmean prediction\nmeasure(s) of uncertainty\nstandard error, standard deviation (sd), confidence intervals (e.g., 5% and 95%), coefficient of variation (cv)…\n\n\n\n\n\n\n\n\nAraújo, Miguel B., Robert P. Anderson, A. Márcia Barbosa, Colin M. Beale, Carsten F. Dormann, Regan Early, Raquel A. Garcia, et al. 2019. “Standards for Distribution Models in Biodiversity Assessments.” Science Advances 5 (1): eaat4858. https://doi.org/10.1126/sciadv.aat4858.\n\n\nKass, Jamie M., Gonzalo E. Pinilla-Buitrago, Andrea Paz, Bethany A. Johnson, Valentina Grisales-Betancur, Sarah I. Meenan, Dean Attali, et al. 2023. “Wallace 2: A Shiny App for Modeling Species Niches and Distributions Redesigned to Facilitate Expansion via Module Contributions.” Ecography 2023 (3): e06547. https://doi.org/10.1111/ecog.06547.\n\n\nZurell, Damaris, Janet Franklin, Christian König, Phil J. Bouchet, Carsten F. Dormann, Jane Elith, Guillermo Fandos, et al. 2020. “A Standard Protocol for Reporting Species Distribution Models.” Ecography 43 (9): 1261–77. https://doi.org/10.1111/ecog.04960."
+    "text": "What standards (Araújo et al. 2019; Kass et al. 2023; Zurell et al. 2020) are required for models to be hosted?\n\ninput\n\ninput observations\nenvironmental predictors\nand range of values in original observations\nmodel type and object\n\noutputs\n\nmodel object\nmean prediction\nmeasure(s) of uncertainty\nstandard error, standard deviation (sd), confidence intervals (e.g., 5% and 95%), coefficient of variation (cv)…\n\n\n\n\n\n\n\n\nAraújo, Miguel B., Robert P. Anderson, A. Márcia Barbosa, Colin M. Beale, Carsten F. Dormann, Regan Early, Raquel A. Garcia, et al. 2019. “Standards for Distribution Models in Biodiversity Assessments.” Science Advances 5 (1): eaat4858. https://doi.org/10.1126/sciadv.aat4858.\n\n\nKass, Jamie M., Gonzalo E. Pinilla-Buitrago, Andrea Paz, Bethany A. Johnson, Valentina Grisales-Betancur, Sarah I. Meenan, Dean Attali, et al. 2023. “Wallace 2: A Shiny App for Modeling Species Niches and Distributions Redesigned to Facilitate Expansion via Module Contributions.” Ecography 2023 (3): e06547. https://doi.org/10.1111/ecog.06547.\n\n\nZurell, Damaris, Janet Franklin, Christian König, Phil J. Bouchet, Carsten F. Dormann, Jane Elith, Guillermo Fandos, et al. 2020. “A Standard Protocol for Reporting Species Distribution Models.” Ecography 43 (9): 1261–77. https://doi.org/10.1111/ecog.04960.",
+    "crumbs": [
+      "Share",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Metadata</span>"
+    ]
   },
   {
     "objectID": "portal.html",
     "href": "portal.html",
     "title": "19  Portal",
     "section": "",
-    "text": "Can we supplement an existing portal or create a new one to host different types of model outputs and combine them?\nWhat are publishing workflows for existing portals?\n\nExisting portals used to share SDMs\n\nAquaMaps Standardized distribution maps for over 33,500 species of fishes, marine mammals and invertebrates\nDisMAP\nDistribution Mapping and Analysis Portal\nOBIS-SEAMAP Model Repository\nWorld Data Center for Marine Mammal, Seabird, Sea Turtle, Shark & Ray Distributions\nNCEI\nNational Centers for Environmental Information (NOAA)\nDataONE\nData Observation Network for Earth\nArcGIS Online\nEsri’s commercial data sharing platform\n\nCandidate portal\nMarineSpeciesMaps.org\nBDB registered the domain. Similar to:\n\nMarineRegions.org\nspatial authority\nMarineSpecies.org\ntaxonomic authority"
+    "text": "Can we supplement an existing portal or create a new one to host different types of model outputs and combine them?\nWhat are publishing workflows for existing portals?\n\nExisting portals used to share SDMs\n\nAquaMaps Standardized distribution maps for over 33,500 species of fishes, marine mammals and invertebrates\nDisMAP\nDistribution Mapping and Analysis Portal\nOBIS-SEAMAP Model Repository\nWorld Data Center for Marine Mammal, Seabird, Sea Turtle, Shark & Ray Distributions\nNCEI\nNational Centers for Environmental Information (NOAA)\nDataONE\nData Observation Network for Earth\nArcGIS Online\nEsri’s commercial data sharing platform\n\nCandidate portal\nMarineSpeciesMaps.org\nBDB registered the domain. Similar to:\n\nMarineRegions.org\nspatial authority\nMarineSpecies.org\ntaxonomic authority",
+    "crumbs": [
+      "Share",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Portal</span>"
+    ]
   },
   {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Akaike, H. 1974. “A New Look at the Statistical Model\nIdentification.” IEEE Transactions on Automatic Control\n19 (6): 716723.\n\n\nAraújo, Miguel B., Robert P. Anderson, A. Márcia Barbosa, Colin M.\nBeale, Carsten F. Dormann, Regan Early, Raquel A. Garcia, et al. 2019.\n“Standards for Distribution Models in Biodiversity\nAssessments.” Science Advances 5 (1): eaat4858. https://doi.org/10.1126/sciadv.aat4858.\n\n\nBarbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and\nWilfried Thuiller. 2012. “Selecting Pseudo-Absences for Species\nDistribution Models: How, Where and How Many?” Methods in\nEcology and Evolution 3 (2): 327–38. https://doi.org/10.1111/j.2041-210X.2011.00172.x.\n\n\nCampos, João C., Nuno Garcia, João Alírio, Salvador Arenas-Castro, Ana\nC. Teodoro, and Neftalí Sillero. 2023. “Ecological Niche\nModels Using MaxEnt in Google Earth\nEngine: Evaluation, Guidelines and\nRecommendations.” Ecological Informatics 76 (September):\n102147. https://doi.org/10.1016/j.ecoinf.2023.102147.\n\n\nCarroll, C., R. F. Noss, and Bruce A. Stein. 2022. “US\nConservation Atlas Needs Biodiversity Data.” Science 376\n(6589): 144–45. https://doi.org/10.1126/science.abo0526.\n\n\nElith, Jane, and John R. Leathwick. 2009. “Species Distribution\nModels: Ecological Explanation and Prediction Across Space and\nTime.” Annual Review of Ecology, Evolution, and\nSystematics 40 (1): 677–97. https://doi.org/10.1146/annurev.ecolsys.110308.120159.\n\n\nElith, Jane, Steven J. Phillips, Trevor Hastie, Miroslav Dudík, Yung En\nChee, and Colin J. Yates. 2011. “A Statistical Explanation of\nMaxEnt for Ecologists.” Diversity and Distributions 17\n(1): 43–57. http://dx.doi.org/10.1111/j.1472-4642.2010.00725.x.\n\n\nFautin, Daphne, Penelope Dalton, Lewis S. Incze, Jo-Ann C. Leong,\nClarence Pautzke, Andrew Rosenberg, Paul Sandifer, et al. 2010.\n“An Overview of Marine Biodiversity in United States\nWaters.” PLoS ONE 5 (8): e11914. https://doi.org/10.1371/journal.pone.0011914.\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David\nThau, and Rebecca Moore. 2017. “Google Earth Engine:\nPlanetary-Scale Geospatial Analysis for Everyone.” Remote\nSensing of Environment, Big remotely sensed data: Tools,\napplications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031.\n\n\nGrassle, J. Frederick. 2000. “The Ocean Biogeographic Information\nSystem (OBIS): An on-Line, Worldwide Atlas for Accessing, Modeling and\nMapping Marine Biological Data in a Multidimensional Geographic\nContext.” Oceanography 13 (3): 5–7. https://www.jstor.org/stable/43924357.\n\n\nHalpern, Benjamin S., Catherine Longo, Darren Hardy, Karen L. McLeod,\nJameal F. Samhouri, Steven K. Katona, Kristin Kleisner, et al. 2012.\n“An Index to Assess the Health and Benefits of the Global\nOcean.” Nature. https://doi.org/10.1038/nature11397.\n\n\nKaschner, K., R. Watson, A. W. Trites, and D. Pauly. 2006.\n“Mapping World-Wide Distributions of Marine Mammal Species Using a\nRelative Environmental Suitability (RES) Model.” Marine\nEcology Progress Series 316 (July): 285–310. https://doi.org/10.3354/meps316285.\n\n\nKass, Jamie M., Gonzalo E. Pinilla-Buitrago, Andrea Paz, Bethany A.\nJohnson, Valentina Grisales-Betancur, Sarah I. Meenan, Dean Attali, et\nal. 2023. “Wallace 2: A Shiny App for Modeling Species Niches and\nDistributions Redesigned to Facilitate Expansion via Module\nContributions.” Ecography 2023 (3): e06547. https://doi.org/10.1111/ecog.06547.\n\n\nKlein, Eduardo, Ward Appeltans, Pieter Provoost, Hanieh Saeedi, Abigail\nBenson, Lenore Bajona, Ana Carolina Peralta, and R. Sky Bristol. 2019.\n“OBIS Infrastructure, Lessons Learned, and Vision for the\nFuture.” Frontiers in Marine Science 6. https://www.frontiersin.org/articles/10.3389/fmars.2019.00588.\n\n\nMuller-Karger, Frank E., Patricia Miloslavich, Nicholas J. Bax, Samantha\nSimmons, Mark J. Costello, Isabel Sousa Pinto, Gabrielle Canonico, et\nal. 2018. “Advancing Marine Biological Observations and Data\nRequirements of the Complementary Essential Ocean Variables (EOVs) and\nEssential Biodiversity Variables (EBVs) Frameworks.”\nFrontiers in Marine Science 5. https://doi.org/10.3389/fmars.2018.00211.\n\n\nPhillips, Steven J., Robert P. Anderson, Miroslav Dudík, Robert E.\nSchapire, and Mary E. Blair. 2017. “Opening the Black Box: An\nOpen-Source Release of Maxent.” Ecography 40 (7):\n887–93. https://doi.org/10.1111/ecog.03049.\n\n\nPhillips, Steven J., Robert P. Anderson, and Robert E. Schapire. 2006.\n“Maximum Entropy Modeling of Species Geographic\nDistributions.” Ecological Modelling 190 (3): 231–59. https://doi.org/10.1016/j.ecolmodel.2005.03.026.\n\n\nPhillips, Steven J., and Miroslav Dudík. 2008. “Modeling of\nSpecies Distributions with Maxent: New Extensions and a Comprehensive\nEvaluation.” Ecography 31 (2): 161–75. https://doi.org/10.1111/j.0906-7590.2008.5203.x.\n\n\nReady, Jonathan, Kristin Kaschner, Andy B. South, Paul D. Eastwood, Tony\nRees, Josephine Rius, Eli Agbayani, Sven Kullander, and Rainer Froese.\n2010. “Predicting the Distributions of Marine Organisms at the\nGlobal Scale.” Ecological Modelling 221 (3): 467–78. https://doi.org/10.1016/j.ecolmodel.2009.10.025.\n\n\nRoberts, Jason J., Benjamin D. Best, Laura Mannocci, Ei Fujioka, Patrick\nN. Halpin, Debra L. Palka, Lance P. Garrison, et al. 2016.\n“Habitat-Based Cetacean Density Models for the u.s. Atlantic and\nGulf of Mexico.” Scientific Reports 6 (March): 22615. https://doi.org/10.1038/srep22615.\n\n\nSkyttner, Markus. 2020. “Aquamapsdata: Curated Data from\nAquaMaps.org.” https://github.com/raquamaps/aquamapsdata.\n\n\nTittensor, Derek P., Camilo Mora, Walter Jetz, Heike K. Lotze, Daniel\nRicard, Edward Vanden Berghe, and Boris Worm. 2010. “Global\nPatterns and Predictors of Marine Biodiversity Across Taxa.”\nNature 466 (7310): 1098–1101. https://doi.org/10.1038/nature09329.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L.\nCheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al.\n2020. “Data-Driven Approach for Highlighting Priority Areas for\nProtection in Marine Areas Beyond National Jurisdiction.”\nMarine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927.\n\n\nZurell, Damaris, Janet Franklin, Christian König, Phil J. Bouchet,\nCarsten F. Dormann, Jane Elith, Guillermo Fandos, et al. 2020. “A\nStandard Protocol for Reporting Species Distribution Models.”\nEcography 43 (9): 1261–77. https://doi.org/10.1111/ecog.04960."
+    "text": "Akaike, H. 1974. “A New Look at the Statistical Model\nIdentification.” IEEE Transactions on Automatic Control\n19 (6): 716723.\n\n\nAraújo, Miguel B., Robert P. Anderson, A. Márcia Barbosa, Colin M.\nBeale, Carsten F. Dormann, Regan Early, Raquel A. Garcia, et al. 2019.\n“Standards for Distribution Models in Biodiversity\nAssessments.” Science Advances 5 (1): eaat4858. https://doi.org/10.1126/sciadv.aat4858.\n\n\nBarbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and\nWilfried Thuiller. 2012. “Selecting Pseudo-Absences for Species\nDistribution Models: How, Where and How Many?” Methods in\nEcology and Evolution 3 (2): 327–38. https://doi.org/10.1111/j.2041-210X.2011.00172.x.\n\n\nCampos, João C., Nuno Garcia, João Alírio, Salvador Arenas-Castro, Ana\nC. Teodoro, and Neftalí Sillero. 2023. “Ecological Niche\nModels Using MaxEnt in Google Earth\nEngine: Evaluation, Guidelines and\nRecommendations.” Ecological Informatics 76 (September):\n102147. https://doi.org/10.1016/j.ecoinf.2023.102147.\n\n\nCarroll, C., R. F. Noss, and Bruce A. Stein. 2022. “US\nConservation Atlas Needs Biodiversity Data.” Science 376\n(6589): 144–45. https://doi.org/10.1126/science.abo0526.\n\n\nElith, Jane, and John R. Leathwick. 2009. “Species Distribution\nModels: Ecological Explanation and Prediction Across Space and\nTime.” Annual Review of Ecology, Evolution, and\nSystematics 40 (1): 677–97. https://doi.org/10.1146/annurev.ecolsys.110308.120159.\n\n\nElith, Jane, Steven J. Phillips, Trevor Hastie, Miroslav Dudík, Yung En\nChee, and Colin J. Yates. 2011. “A Statistical Explanation of\nMaxEnt for Ecologists.” Diversity and Distributions 17\n(1): 43–57. http://dx.doi.org/10.1111/j.1472-4642.2010.00725.x.\n\n\nFautin, Daphne, Penelope Dalton, Lewis S. Incze, Jo-Ann C. Leong,\nClarence Pautzke, Andrew Rosenberg, Paul Sandifer, et al. 2010.\n“An Overview of Marine Biodiversity in United States\nWaters.” PLoS ONE 5 (8): e11914. https://doi.org/10.1371/journal.pone.0011914.\n\n\nGorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David\nThau, and Rebecca Moore. 2017. “Google Earth Engine:\nPlanetary-Scale Geospatial Analysis for Everyone.” Remote\nSensing of Environment, Big remotely sensed data: Tools,\napplications and experiences, 202 (December): 18–27. https://doi.org/10.1016/j.rse.2017.06.031.\n\n\nGrassle, J. Frederick. 2000. “The Ocean Biogeographic Information\nSystem (OBIS): An on-Line, Worldwide Atlas for Accessing, Modeling and\nMapping Marine Biological Data in a Multidimensional Geographic\nContext.” Oceanography 13 (3): 5–7. https://www.jstor.org/stable/43924357.\n\n\nHalpern, Benjamin S., Catherine Longo, Darren Hardy, Karen L. McLeod,\nJameal F. Samhouri, Steven K. Katona, Kristin Kleisner, et al. 2012.\n“An Index to Assess the Health and Benefits of the Global\nOcean.” Nature. https://doi.org/10.1038/nature11397.\n\n\nHartig, Florian, Nerea Abrego, Alex Bush, Jonathan M. Chase, Gurutzeta\nGuillera-Arroita, Mathew A. Leibold, Otso Ovaskainen, et al. 2023.\n“Novel Community Data in Ecology-Properties and Prospects.”\nTrends in Ecology & Evolution 0 (0). https://doi.org/10.1016/j.tree.2023.09.017.\n\n\nKaschner, K., R. Watson, A. W. Trites, and D. Pauly. 2006.\n“Mapping World-Wide Distributions of Marine Mammal Species Using a\nRelative Environmental Suitability (RES) Model.” Marine\nEcology Progress Series 316 (July): 285–310. https://doi.org/10.3354/meps316285.\n\n\nKass, Jamie M., Gonzalo E. Pinilla-Buitrago, Andrea Paz, Bethany A.\nJohnson, Valentina Grisales-Betancur, Sarah I. Meenan, Dean Attali, et\nal. 2023. “Wallace 2: A Shiny App for Modeling Species Niches and\nDistributions Redesigned to Facilitate Expansion via Module\nContributions.” Ecography 2023 (3): e06547. https://doi.org/10.1111/ecog.06547.\n\n\nKlein, Eduardo, Ward Appeltans, Pieter Provoost, Hanieh Saeedi, Abigail\nBenson, Lenore Bajona, Ana Carolina Peralta, and R. Sky Bristol. 2019.\n“OBIS Infrastructure, Lessons Learned, and Vision for the\nFuture.” Frontiers in Marine Science 6. https://www.frontiersin.org/articles/10.3389/fmars.2019.00588.\n\n\nMuller-Karger, Frank E., Patricia Miloslavich, Nicholas J. Bax, Samantha\nSimmons, Mark J. Costello, Isabel Sousa Pinto, Gabrielle Canonico, et\nal. 2018. “Advancing Marine Biological Observations and Data\nRequirements of the Complementary Essential Ocean Variables (EOVs) and\nEssential Biodiversity Variables (EBVs) Frameworks.”\nFrontiers in Marine Science 5. https://doi.org/10.3389/fmars.2018.00211.\n\n\nPhillips, Steven J., Robert P. Anderson, Miroslav Dudík, Robert E.\nSchapire, and Mary E. Blair. 2017. “Opening the Black Box: An\nOpen-Source Release of Maxent.” Ecography 40 (7):\n887–93. https://doi.org/10.1111/ecog.03049.\n\n\nPhillips, Steven J., Robert P. Anderson, and Robert E. Schapire. 2006.\n“Maximum Entropy Modeling of Species Geographic\nDistributions.” Ecological Modelling 190 (3): 231–59. https://doi.org/10.1016/j.ecolmodel.2005.03.026.\n\n\nPhillips, Steven J., and Miroslav Dudík. 2008. “Modeling of\nSpecies Distributions with Maxent: New Extensions and a Comprehensive\nEvaluation.” Ecography 31 (2): 161–75. https://doi.org/10.1111/j.0906-7590.2008.5203.x.\n\n\nReady, Jonathan, Kristin Kaschner, Andy B. South, Paul D. Eastwood, Tony\nRees, Josephine Rius, Eli Agbayani, Sven Kullander, and Rainer Froese.\n2010. “Predicting the Distributions of Marine Organisms at the\nGlobal Scale.” Ecological Modelling 221 (3): 467–78. https://doi.org/10.1016/j.ecolmodel.2009.10.025.\n\n\nRoberts, Jason J., Benjamin D. Best, Laura Mannocci, Ei Fujioka, Patrick\nN. Halpin, Debra L. Palka, Lance P. Garrison, et al. 2016.\n“Habitat-Based Cetacean Density Models for the u.s. Atlantic and\nGulf of Mexico.” Scientific Reports 6 (March): 22615. https://doi.org/10.1038/srep22615.\n\n\nSkyttner, Markus. 2020. “Aquamapsdata: Curated Data from\nAquaMaps.org.” https://github.com/raquamaps/aquamapsdata.\n\n\nTittensor, Derek P., Camilo Mora, Walter Jetz, Heike K. Lotze, Daniel\nRicard, Edward Vanden Berghe, and Boris Worm. 2010. “Global\nPatterns and Predictors of Marine Biodiversity Across Taxa.”\nNature 466 (7310): 1098–1101. https://doi.org/10.1038/nature09329.\n\n\nVisalli, Morgan E., Benjamin D. Best, Reniel B. Cabral, William W. L.\nCheung, Nichola A. Clark, Cristina Garilao, Kristin Kaschner, et al.\n2020. “Data-Driven Approach for Highlighting Priority Areas for\nProtection in Marine Areas Beyond National Jurisdiction.”\nMarine Policy, March, 103927. https://doi.org/10.1016/j.marpol.2020.103927.\n\n\nZurell, Damaris, Janet Franklin, Christian König, Phil J. Bouchet,\nCarsten F. Dormann, Jane Elith, Guillermo Fandos, et al. 2020. “A\nStandard Protocol for Reporting Species Distribution Models.”\nEcography 43 (9): 1261–77. https://doi.org/10.1111/ecog.04960.",
+    "crumbs": [
+      "References"
+    ]
   },
   {
     "objectID": "glossary.html",
     "href": "glossary.html",
     "title": "Glossary",
     "section": "",
-    "text": "Code\nglossary::glossary_table(as_kable=F) |&gt; \n  knitr::kable(\"pipe\", escape = F, row.names = F)\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMBON\nMarine Biodiversity Observation Network; see MarineBON.org"
+    "text": "Code\nglossary::glossary_table(as_kable=F) |&gt; \n  knitr::kable(\"pipe\", escape = F, row.names = F)\n\n\n\n\nterm\ndefinition\n\n\n\n\nMBON\nMarine Biodiversity Observation Network; see MarineBON.org",
+    "crumbs": [
+      "Appendices",
+      "Glossary"
+    ]
   },
   {
     "objectID": "explorations.html",
     "href": "explorations.html",
     "title": "Explorations",
     "section": "",
-    "text": "AquaMaps Downscaled\n\n\n\ndata: AquaMaps\n\n\ntech: Google Earth Engine\n\n\ntech: Shiny\n\n\n\nDownscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Envelope\n\n\n\ndata: AquaMaps\n\n\ntech: R\n\n\n\nExtract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Treemap\n\n\n\ndata: AquaMaps\n\n\ntech: DuckDB\n\n\ntech: R\n\n\ntech: Shiny\n\n\n\nSelect a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOBIS Top Classes\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\n\nExtract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSDM predicts\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\nmodel: Maxent\n\n\n\nPredict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "AquaMaps Downscaled\n\n\n\ndata: AquaMaps\n\n\ntech: Google Earth Engine\n\n\ntech: Shiny\n\n\n\nDownscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Envelope\n\n\n\ndata: AquaMaps\n\n\ntech: R\n\n\n\nExtract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAquaMaps Treemap\n\n\n\ndata: AquaMaps\n\n\ntech: DuckDB\n\n\ntech: R\n\n\ntech: Shiny\n\n\n\nSelect a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOBIS Top Classes\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\n\nExtract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSDM predicts\n\n\n\ndata: OBIS\n\n\ntech: R\n\n\nmodel: Maxent\n\n\n\nPredict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Appendices",
+      "Explorations"
+    ]
   },
   {
     "objectID": "explorations/am-fine.html",
     "href": "explorations/am-fine.html",
     "title": "AquaMaps Downscaled",
     "section": "",
-    "text": "Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.\n\n website\n code"
+    "text": "Downscale AquaMaps from 1/2º to GEBCO 1/240º using Google Earth Engine and Shiny.\n\n website\n code",
+    "crumbs": [
+      "Appendices",
+      "Explorations",
+      "AquaMaps Downscaled"
+    ]
   },
   {
     "objectID": "explorations/am-envelope.html",
     "href": "explorations/am-envelope.html",
     "title": "AquaMaps Envelope",
     "section": "",
-    "text": "Extract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n website\n code"
+    "text": "Extract and plot AquaMaps environmental envelope, ramp rasters, using R.\n\n website\n code",
+    "crumbs": [
+      "Appendices",
+      "Explorations",
+      "AquaMaps Envelope"
+    ]
   },
   {
     "objectID": "explorations/am-tree.html",
     "href": "explorations/am-tree.html",
     "title": "AquaMaps Treemap",
     "section": "",
-    "text": "Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.\n\n website\n code\n\n\n\n\n\n\nThis app uses aquamapsdata after translating from sqlite (slow) and raster (deprecated) R functions to duckdb (fast) and terra (superceding) R functions. We can use these distributional data to calculate place-based indicators with anticipation of the distributional data getting improved upon in 2024 by AquaX and others."
+    "text": "Select a Sanctuary or Draw a polygon to filter to 1/2º AquaMaps species and view as Table or treemap Plot for interactive taxonomic composition.\n\n website\n code\n\n\nThis app uses aquamapsdata after translating from sqlite (slow) and raster (deprecated) R functions to duckdb (fast) and terra (superceding) R functions. We can use these distributional data to calculate place-based indicators with anticipation of the distributional data getting improved upon in 2024 by AquaX and others.",
+    "crumbs": [
+      "Appendices",
+      "Explorations",
+      "AquaMaps Treemap"
+    ]
   },
   {
     "objectID": "explorations/sdm-1_predicts.html",
     "href": "explorations/sdm-1_predicts.html",
     "title": "SDM predicts",
     "section": "",
-    "text": "Predict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.\n\n website\n code"
+    "text": "Predict species distribution of N Atlantic right whale using OBIS occcurrences and predicts package in R.\n\n website\n code",
+    "crumbs": [
+      "Appendices",
+      "Explorations",
+      "SDM `predicts`"
+    ]
   },
   {
     "objectID": "explorations/obis-top-spp-by-class.html",
     "href": "explorations/obis-top-spp-by-class.html",
     "title": "OBIS Top Classes",
     "section": "",
-    "text": "Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n website\n code"
+    "text": "Extract the species with the most numerous observations by unique Class from the OBIS parquet archive in R.\n\n website\n code",
+    "crumbs": [
+      "Appendices",
+      "Explorations",
+      "OBIS Top Classes"
+    ]
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "R\nMost packages have not yet migrated from using the deprecated raster R package to the new terra package, except for biomod2 (ref?).",
+    "crumbs": [
+      "Appendices",
+      "Software"
+    ]
   },
   {
     "objectID": "software.html#r",
     "href": "software.html#r",
     "title": "Software",
-    "section": "R",
-    "text": "R\nMost packages have not yet migrated from using the deprecated raster R package to the new terra package, except for biomod2 (ref?).\n\nbiomod2\nSpecies distribution modeling, calibration and evaluation, ensemble modeling\n\neks\nTidy and Geospatial Kernel Smoothing for spatially filtering outlier observations\n\n\n\nFigure 1: Source: Kernel density estimates for tidy and geospatial data in the eks package\n\n\npredicts\nNew R library using terra for predicting from fitted model"
+    "section": "",
+    "text": "biomod2\nSpecies distribution modeling, calibration and evaluation, ensemble modeling\n\neks\nTidy and Geospatial Kernel Smoothing for spatially filtering outlier observations\n\n\n\n\n\n\nFigure 1: Source: Kernel density estimates for tidy and geospatial data in the eks package\n\n\n\npredicts\nNew R library using terra for predicting from fitted model",
+    "crumbs": [
+      "Appendices",
+      "Software"
+    ]
   },
   {
     "objectID": "software.html#python",
     "href": "software.html#python",
     "title": "Software",
     "section": "Python",
-    "text": "Python\n\nXarray\nXarray makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!"
+    "text": "Python\n\nXarray\nXarray makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun!",
+    "crumbs": [
+      "Appendices",
+      "Software"
+    ]
   },
   {
     "objectID": "software.html#google-earth-engine",
     "href": "software.html#google-earth-engine",
     "title": "Software",
     "section": "Google Earth Engine",
-    "text": "Google Earth Engine\n\nXEE\nXEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab. Documentation"
+    "text": "Google Earth Engine\n\nXEE\nXEE is a new Python package for Earth Engine that provides a set of functions to facilitate the use of Earth Engine API. It is designed to be used in Jupyter notebooks and Google Colab. Documentation\n\n\n\n\n\n\nFigure 1: Source: Kernel density estimates for tidy and geospatial data in the eks package",
+    "crumbs": [
+      "Appendices",
+      "Software"
+    ]
   }
 ]
