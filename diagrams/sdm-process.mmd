@@ -1,4 +1,4 @@
-flowchart TD
+flowchart LR
 
   %% nodes
   P(presence):::in
@@ -18,6 +18,10 @@ flowchart TD
   N[["new data"]]:::in
   prd(prediction):::out
   prf(performance):::out
+  res[result set]:::out
+  ens[ensemble]:::fxn
+  der[derived]:::out
+  web[web]:::out
 
   %% edges
   P   --> pts
@@ -38,6 +42,44 @@ flowchart TD
   M   --> E
   pr  --> prd
   E   --> prf
+  prd --> res
+  prf --> res
+  res --x ens
+  ens --> der
+  der --> web
+  res --> web
+
+  %% subgraphs
+  subgraph Share
+    direction LR
+    subgraph Combine
+      subgraph Prepare
+        P
+        A
+        pts
+        env
+        X
+        D
+      end
+      subgraph Model
+        S
+        t1
+        t2
+        F
+        M
+        E
+        C
+        pr
+        N
+        prd
+        prf
+        res
+      end
+      ens
+      der
+    end
+    web
+  end
 
   %% Legend
   in(input):::in

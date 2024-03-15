@@ -1,0 +1,4 @@
+:root {
+  /* https://quarto.org/docs/authoring/diagrams.html#customizing-mermaid */
+  --mermaid-fg-color--lightest: #d3d3d3
+}
