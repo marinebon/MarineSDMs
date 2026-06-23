@@ -7,7 +7,9 @@ name: Quarto Publish
 
 jobs:
   build-deploy:
-    runs-on: macOS-latest
+    # ubuntu pulls Posit Package Manager binaries for the exact pinned
+    # versions in renv.lock (no source compilation, unlike the macOS runner)
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
@@ -23,20 +25,21 @@ jobs:
           # to avoid 403 rate-limiting on rstudio/tinytex-releases
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # From https://github.com/rspatial/terra/blob/master/.github/workflows/pkgdown.yml
-      # - name: Install spatial dependencies
-      #   run: brew install gdal proj
-      #
-      # From https://github.com/actions/setup-python
-      # - name: Setup Python
-      #   uses: actions/setup-python@v3
+      - name: Install system dependencies
+        # runtime/build libs for svglite, systemfonts, curl, openssl, xml2
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcurl4-openssl-dev libssl-dev libxml2-dev \
+            libpng-dev libfontconfig1-dev libfreetype6-dev \
+            libharfbuzz-dev libfribidi-dev libjpeg-dev libtiff5-dev
 
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
-          # match renv.lock (R 4.3.2 / Bioconductor 3.18); newer R has no
-          # binaries for these pinned packages and some fail to compile
+          # match renv.lock (R 4.3.2); use-public-rspm enables binary packages
           r-version: '4.3.2'
+          use-public-rspm: true
 
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
